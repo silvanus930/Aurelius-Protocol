@@ -53,4 +53,12 @@ USER appuser
 # Default role — overridden at build time for registry images.
 ARG DEFAULT_CMD=aurelius-miner
 ENV AURELIUS_CMD="${DEFAULT_CMD}"
+
+# Concordia image digest is injected at build time from the
+# docker-build-concordia job's output so the validator's
+# REQUIRE_IMAGE_DIGEST=1 check matches the concordia:testnet
+# image that shipped in the same CI run. Empty at local `docker build`.
+ARG CONCORDIA_IMAGE_DIGEST=""
+ENV CONCORDIA_IMAGE_DIGEST=${CONCORDIA_IMAGE_DIGEST}
+
 CMD ["sh", "-c", "exec ${AURELIUS_CMD}"]

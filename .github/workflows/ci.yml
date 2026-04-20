@@ -52,7 +52,7 @@ jobs:
       (github.ref == 'refs/heads/main' ||
        github.ref == 'refs/heads/testnet' ||
        startsWith(github.ref, 'refs/tags/v'))
-    needs: [lint]
+    needs: [lint, docker-build-concordia]
     runs-on: blacksmith-4vcpu-ubuntu-2404
     permissions:
       contents: read
@@ -112,18 +112,21 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             DEFAULT_CMD=aurelius-${{ matrix.role }}
+            CONCORDIA_IMAGE_DIGEST=${{ needs.docker-build-concordia.outputs.concordia_digest }}
 
   docker-build-concordia:
     if: |
       (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
-      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/testnet')
+      (github.ref == 'refs/heads/main' ||
+       github.ref == 'refs/heads/testnet' ||
+       startsWith(github.ref, 'refs/tags/v'))
     needs: [lint]
     runs-on: blacksmith-4vcpu-ubuntu-2404
     permissions:
-      # `contents: write` so the digest-pin step below can commit an update
-      # to DEFAULT_CONCORDIA_IMAGE_DIGEST back to main.
-      contents: write
+      contents: read
       packages: write
+    outputs:
+      concordia_digest: ${{ steps.build-push.outputs.digest }}
 
     steps:
       - name: Free runner disk space
@@ -169,53 +172,9 @@ jobs:
           # Disable attestations — the legacy v3 repo's prior pushes left
           # provenance blobs in aurelius-concordia whose HEAD-checks our
           # token can't satisfy, causing 403 on every re-push. Supply-chain
-          # guarantee is already provided by the digest-pin step below.
+          # guarantee is provided by the digest exported from this job's
+          # outputs and baked into the validator/miner image via build-arg.
           provenance: false
           sbom: false
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Pin CONCORDIA_IMAGE_DIGEST in config.py
-        # Captures the digest emitted by build-push-action and rewrites the
-        # _COMMON["CONCORDIA_IMAGE_DIGEST"] default in aurelius/config.py so
-        # validators in strict mode (REQUIRE_IMAGE_DIGEST=1 on testnet/mainnet)
-        # don't have to set it themselves. Idempotent: only commits when the
-        # digest actually changed, which prevents the auto-commit loop from
-        # running forever — the follow-up CI run will rebuild the validator/
-        # miner images with the pinned digest baked in, then produce the same
-        # concordia digest and short-circuit here.
-        env:
-          NEW_DIGEST: ${{ steps.build-push.outputs.digest }}
-        run: |
-          set -euo pipefail
-          FILE="aurelius/config.py"
-
-          if [ -z "${NEW_DIGEST:-}" ]; then
-            echo "build-push did not emit a digest — skipping pin."
-            exit 0
-          fi
-
-          # Awk: the dict line is `    "CONCORDIA_IMAGE_DIGEST": "<value>",`
-          # Splitting on `"` gives $2=key, $4=value.
-          CURRENT=$(awk -F'"' '/"CONCORDIA_IMAGE_DIGEST":[[:space:]]*"/ {print $4; exit}' "$FILE")
-          echo "current: ${CURRENT:-<empty>}"
-          echo "new:     ${NEW_DIGEST}"
-
-          if [ "$CURRENT" = "$NEW_DIGEST" ]; then
-            echo "Digest unchanged — no commit needed."
-            exit 0
-          fi
-
-          sed -i -E "s|(\"CONCORDIA_IMAGE_DIGEST\":[[:space:]]*\")[^\"]*(\")|\\1${NEW_DIGEST}\\2|" "$FILE"
-
-          UPDATED=$(awk -F'"' '/"CONCORDIA_IMAGE_DIGEST":[[:space:]]*"/ {print $4; exit}' "$FILE")
-          if [ "$UPDATED" != "$NEW_DIGEST" ]; then
-            echo "sed did not rewrite CONCORDIA_IMAGE_DIGEST in $FILE — aborting" >&2
-            exit 1
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$FILE"
-          git commit -m "ci: pin CONCORDIA_IMAGE_DIGEST=${NEW_DIGEST}"
-          git push origin HEAD:${{ github.ref_name }}
