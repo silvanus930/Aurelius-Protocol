@@ -219,16 +219,17 @@ class RemoteConfig:
             self._fetch_failures = 0
             logger.info("Remote config refreshed")
             return True
-        except Exception:
+        except Exception as e:
             self._fetch_failures += 1
             if self.is_stale:
                 logger.warning(
-                    "Remote config stale (last success: %.0fs ago, failures: %d). Using cached values.",
+                    "Remote config stale (last success: %.0fs ago, failures: %d): %s. Using cached values.",
                     now - self._last_success if self._last_success else float("inf"),
                     self._fetch_failures,
+                    e,
                 )
             else:
-                logger.debug("Remote config fetch failed (%d), using cached values", self._fetch_failures)
+                logger.debug("Remote config fetch failed (%d): %s, using cached values", self._fetch_failures, e)
             return False
 
     def get(self, key: str, default=None):
