@@ -435,16 +435,21 @@ class DockerSimulationRunner:
         self._is_local_llm = self._check_local_base_url(self.llm_base_url)
         if self.llm_api_key and not self._is_local_llm:
             # External LLM API (including base_url pointing to public APIs like DeepSeek)
-            # — restrict container to known API hosts only
+            # — restrict container to known API hosts only when the operator
+            # has asked for enforcement. An empty resolved allowlist is an
+            # explicit opt-out: skip RestrictedNetwork entirely rather than
+            # resurrecting enforcement by auto-appending the LLM base host.
             allowed_hosts = self._resolve_allowed_hosts()
-            if self.llm_base_url:
-                # Add the base_url host to allowed hosts
-                from urllib.parse import urlparse
-
-                base_host = urlparse(self.llm_base_url).hostname
-                if base_host and base_host not in allowed_hosts:
-                    allowed_hosts.append(base_host)
             if allowed_hosts:
+                if self.llm_base_url:
+                    # Ensure the base_url host is reachable through the
+                    # restricted network (convenience — only applied when
+                    # enforcement is already desired).
+                    from urllib.parse import urlparse
+
+                    base_host = urlparse(self.llm_base_url).hostname
+                    if base_host and base_host not in allowed_hosts:
+                        allowed_hosts.append(base_host)
                 network_name = _cfg("sim_network_name", "SIM_NETWORK_NAME")
                 self._restricted_network = RestrictedNetwork(
                     allowed_hosts=allowed_hosts,

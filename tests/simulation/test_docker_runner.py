@@ -188,12 +188,18 @@ class TestRestrictedNetworkIptablesGuard:
     def test_runner_init_propagates_isolation_failure(self):
         """DockerSimulationRunner.__init__ must surface NetworkIsolationUnavailableError
         from RestrictedNetwork.ensure_network() instead of swallowing it into
-        the catch-all branch."""
+        the catch-all branch. Requires an explicit non-empty allowlist —
+        an empty allowlist is an opt-out that skips RestrictedNetwork entirely."""
         from aurelius.simulation.docker_runner import NetworkIsolationUnavailableError
 
         with patch("shutil.which", return_value=None):
-            with pytest.raises(NetworkIsolationUnavailableError):
-                DockerSimulationRunner(
-                    llm_api_key="sk-test",
-                    llm_base_url="https://api.deepseek.com/v1",
-                )
+            with patch.object(
+                DockerSimulationRunner,
+                "_resolve_allowed_hosts",
+                return_value=["api.deepseek.com"],
+            ):
+                with pytest.raises(NetworkIsolationUnavailableError):
+                    DockerSimulationRunner(
+                        llm_api_key="sk-test",
+                        llm_base_url="https://api.deepseek.com/v1",
+                    )
