@@ -27,7 +27,7 @@ DEFAULT_IMAGE_TAG = "v3.0.0"
 DEFAULT_POOL_SIZE = 2
 
 
-class NetworkIsolationUnavailable(RuntimeError):
+class NetworkIsolationUnavailableError(RuntimeError):
     """Raised when sim egress restriction is configured but cannot be enforced.
 
     ASSERTIONS.md §Concordia requires simulation containers to have no network
@@ -104,7 +104,7 @@ class RestrictedNetwork:
         import shutil
 
         if shutil.which("iptables") is None:
-            raise NetworkIsolationUnavailable(
+            raise NetworkIsolationUnavailableError(
                 "SIM_ALLOWED_LLM_HOSTS is non-empty but the iptables binary "
                 "is not on PATH. Without it, simulation containers would "
                 "have unrestricted network egress (ASSERTIONS.md §Concordia). "
@@ -117,7 +117,7 @@ class RestrictedNetwork:
         """Create or reuse the restricted network. Returns network name.
 
         Raises:
-            NetworkIsolationUnavailable: the allowlist is non-empty but
+            NetworkIsolationUnavailableError: the allowlist is non-empty but
                 iptables is unavailable to enforce it.
         """
         self._check_iptables_available()
@@ -452,7 +452,7 @@ class DockerSimulationRunner:
                 )
                 try:
                     self._restricted_network.ensure_network()
-                except NetworkIsolationUnavailable:
+                except NetworkIsolationUnavailableError:
                     # Fail closed — never silently run sims with unrestricted
                     # egress when the operator asked for an allowlist.
                     raise

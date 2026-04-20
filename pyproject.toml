@@ -29,7 +29,9 @@ dependencies = [
 ml = [
     "sentence-transformers>=2.3.0,<4",
     "faiss-cpu>=1.7.0,<2",
-    "xgboost>=2.0.0,<3",
+    # xgboost 2.1 changed the sklearn estimator-type plumbing in a way that
+    # breaks XGBClassifier.save_model — pin to 2.0.x until upstream settles.
+    "xgboost>=2.0.0,<2.1",
     "scikit-learn>=1.4.0,<2",
 ]
 tools = [

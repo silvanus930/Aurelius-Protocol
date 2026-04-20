@@ -140,11 +140,11 @@ class TestRestrictedNetworkIptablesGuard:
     """
 
     def test_ensure_network_raises_when_iptables_missing_and_hosts_set(self):
-        from aurelius.simulation.docker_runner import NetworkIsolationUnavailable, RestrictedNetwork
+        from aurelius.simulation.docker_runner import NetworkIsolationUnavailableError, RestrictedNetwork
 
         net = RestrictedNetwork(allowed_hosts=["api.deepseek.com"])
         with patch("shutil.which", return_value=None):
-            with pytest.raises(NetworkIsolationUnavailable, match="iptables"):
+            with pytest.raises(NetworkIsolationUnavailableError, match="iptables"):
                 net.ensure_network()
 
     def test_ensure_network_skips_check_when_allowlist_empty(self):
@@ -181,18 +181,18 @@ class TestRestrictedNetworkIptablesGuard:
     def test_network_isolation_unavailable_is_runtime_error(self):
         """Subclass of RuntimeError so existing ``except RuntimeError``
         handlers (e.g. validator startup preflight) catch it."""
-        from aurelius.simulation.docker_runner import NetworkIsolationUnavailable
+        from aurelius.simulation.docker_runner import NetworkIsolationUnavailableError
 
-        assert issubclass(NetworkIsolationUnavailable, RuntimeError)
+        assert issubclass(NetworkIsolationUnavailableError, RuntimeError)
 
     def test_runner_init_propagates_isolation_failure(self):
-        """DockerSimulationRunner.__init__ must surface NetworkIsolationUnavailable
+        """DockerSimulationRunner.__init__ must surface NetworkIsolationUnavailableError
         from RestrictedNetwork.ensure_network() instead of swallowing it into
         the catch-all branch."""
-        from aurelius.simulation.docker_runner import NetworkIsolationUnavailable
+        from aurelius.simulation.docker_runner import NetworkIsolationUnavailableError
 
         with patch("shutil.which", return_value=None):
-            with pytest.raises(NetworkIsolationUnavailable):
+            with pytest.raises(NetworkIsolationUnavailableError):
                 DockerSimulationRunner(
                     llm_api_key="sk-test",
                     llm_base_url="https://api.deepseek.com/v1",
