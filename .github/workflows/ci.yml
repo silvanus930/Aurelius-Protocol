@@ -8,8 +8,14 @@ on:
     # `main` can't reach them automatically. See `docker-compose.validator.yml`
     # and VALIDATOR_SETUP.md §Upgrades.
     tags: ["v*.*.*"]
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
   pull_request:
     branches: [main, testnet]
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
   workflow_dispatch:
 
 jobs:
