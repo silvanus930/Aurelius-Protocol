@@ -45,7 +45,7 @@ WORKDIR /app
 # the container's bounding set; file caps then admit the effective set
 # to the process.
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq5 curl iptables libcap2-bin \
+    libpq5 curl iptables libcap2-bin procps \
     && setcap 'cap_net_admin,cap_net_raw+eip' /usr/sbin/xtables-nft-multi \
     && ([ -e /usr/sbin/xtables-legacy-multi ] \
         && setcap 'cap_net_admin,cap_net_raw+eip' /usr/sbin/xtables-legacy-multi \
