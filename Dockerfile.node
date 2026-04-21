@@ -6,11 +6,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential libpq-dev curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy project and install to /install prefix so we can copy only runtime files
-COPY pyproject.toml .
-COPY aurelius/ aurelius/
+# Install heavy dependencies first, isolated from application source.
+# Everything below the `COPY aurelius/` line re-runs on every source change;
+# everything above stays cached unless pyproject.toml / README changes.
+# This turns a typical commit from a ~3 min pip install into a ~15 s
+# no-deps reinstall.
+COPY pyproject.toml README.md ./
+RUN mkdir -p aurelius \
+    && echo '"""placeholder for dep resolution — real source copied below"""' > aurelius/__init__.py \
+    && pip install --no-cache-dir --prefix=/install ".[ml,simulation,llm]"
 
-RUN pip install --no-cache-dir --prefix=/install ".[ml,simulation,llm]"
+# Real source — cache-busts from here on.
+COPY aurelius/ aurelius/
+RUN pip install --no-cache-dir --no-deps --prefix=/install --force-reinstall .
 
 # Pre-download the sentence-transformers embedding model so validators
 # don't need to fetch it on first startup (~80 MB).
