@@ -44,9 +44,12 @@ jobs:
       - run: pytest tests/ --ignore=tests/e2e --ignore=tests/common/test_embeddings.py -x --tb=short
 
   docker-build:
-    # Build on main pushes (re-tagging :latest and :<sha>), on testnet pushes
-    # (tagging :testnet and :<sha>), and on semver tag pushes (re-tagging
-    # :vX.Y.Z for third-party pinning — B-2).
+    # Build a single image and publish it under both aurelius-validator and
+    # aurelius-miner package names. The images are byte-identical — only the
+    # runtime command differs, which is now driven by AURELIUS_CMD in each
+    # operator's .env (set to aurelius-validator or aurelius-miner by
+    # deploy.sh). Building once instead of twice halves CI compute and
+    # wall-clock for the docker-build job.
     if: |
       (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
       (github.ref == 'refs/heads/main' ||
@@ -57,10 +60,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-
-    strategy:
-      matrix:
-        role: [validator, miner]
 
     steps:
       - name: Free runner disk space
@@ -95,7 +94,11 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          images: ghcr.io/${{ steps.repo.outputs.owner }}/aurelius-${{ matrix.role }}
+          # Same tag set applied to two image names; docker/metadata-action
+          # produces tags on each.
+          images: |
+            ghcr.io/${{ steps.repo.outputs.owner }}/aurelius-validator
+            ghcr.io/${{ steps.repo.outputs.owner }}/aurelius-miner
           tags: |
             type=sha,prefix=
             type=ref,event=branch
@@ -111,7 +114,6 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            DEFAULT_CMD=aurelius-${{ matrix.role }}
             CONCORDIA_IMAGE_DIGEST=${{ needs.docker-build-concordia.outputs.concordia_digest }}
 
   docker-build-concordia:

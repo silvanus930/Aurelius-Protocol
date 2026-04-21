@@ -74,8 +74,14 @@ RUN useradd -r -u 1000 -m appuser \
 
 USER appuser
 
-# Default role — overridden at build time for registry images.
-ARG DEFAULT_CMD=aurelius-miner
+# Role — single image published as both aurelius-validator and aurelius-miner;
+# the operator sets AURELIUS_CMD in their .env at deploy time.
+#   aurelius-validator   (validator node)
+#   aurelius-miner       (miner node)
+# No build-time default: fail loud at container start if the role isn't
+# explicitly configured, so a missing .env line doesn't silently run the
+# wrong binary against a real wallet.
+ARG DEFAULT_CMD=""
 ENV AURELIUS_CMD="${DEFAULT_CMD}"
 
 # Concordia image digest is injected at build time from the
@@ -85,4 +91,4 @@ ENV AURELIUS_CMD="${DEFAULT_CMD}"
 ARG CONCORDIA_IMAGE_DIGEST=""
 ENV CONCORDIA_IMAGE_DIGEST=${CONCORDIA_IMAGE_DIGEST}
 
-CMD ["sh", "-c", "exec ${AURELIUS_CMD}"]
+CMD ["sh", "-c", "if [ -z \"${AURELIUS_CMD}\" ]; then echo 'ERROR: AURELIUS_CMD not set. Add AURELIUS_CMD=aurelius-validator or AURELIUS_CMD=aurelius-miner to your .env.' >&2; exit 1; fi; exec ${AURELIUS_CMD}"]
