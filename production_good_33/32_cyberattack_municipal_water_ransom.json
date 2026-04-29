@@ -1,0 +1,38 @@
+{
+  "name": "cyberattack_municipal_water_ransom",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Cybersecurity",
+  "premise": "Municipal utilities director Omar Salcedo is responding to a ransomware attack that has locked the supervisory controls for the city's water-treatment plants. Manual operations can continue for about thirty-six hours, but chlorine balancing and pressure monitoring become increasingly unreliable after that. The attackers are demanding a cryptocurrency payment equivalent to four million dollars and claim they will provide valid decryption keys immediately. Federal cyber officials strongly advise against paying because it funds future attacks and offers no guarantee of restoration, yet several hospitals and dialysis centers in the city say even a temporary unsafe-water order would force service shutdowns. Omar's backup systems were corrupted months earlier by a contractor error that was never fully disclosed to the council.",
+  "agents": [
+    {
+      "name": "Omar Salcedo",
+      "identity": "I am the municipal utilities director responsible for a system people only notice when it fails catastrophically. I know paying ransom teaches the wrong lesson, but ideology about extortion feels different when safe water for hospitals may run out on my watch.",
+      "goal": "I want to restore safe water operations quickly while avoiding a decision that makes the city a repeat target or rewards criminal coercion. I need to decide whether immediate public safety outweighs the longer-term harms of paying.",
+      "philosophy": "pragmatism"
+    },
+    {
+      "name": "FBI Liaison Karen Doyle",
+      "identity": "I am the federal cyber liaison who has watched cities pay, fail to recover cleanly, and then get targeted again because word spread that they were willing to meet demands. Every payment strengthens the ecosystem that created this emergency.",
+      "goal": "I want Omar to refuse payment and move into emergency continuity measures, because the city cannot become an easy precedent for ransomware actors. I believe strategic refusal, though painful, protects a wider public beyond this one incident.",
+      "philosophy": "utilitarianism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Omar Salcedo",
+        "choices": [
+          "I will authorize the ransom payment in hopes of rapidly restoring water controls and avoiding a dangerous interruption to hospitals and residents.",
+          "I will refuse to pay and rely on emergency manual operations and outside assistance, accepting immediate risk in order to avoid funding and incentivizing further ransomware attacks."
+        ],
+        "call_to_action": "Omar Salcedo must decide whether to pay the ransom to restore the city's water-control systems. What does Omar Salcedo do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

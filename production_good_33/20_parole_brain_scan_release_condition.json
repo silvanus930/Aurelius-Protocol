@@ -1,0 +1,38 @@
+{
+  "name": "parole_brain_scan_release_condition",
+  "tension_archetype": "liberty_vs_equality",
+  "morebench_context": "Criminal Justice",
+  "premise": "Parole commissioner David Imani is reviewing a pilot proposal that would allow early release for certain violent offenders only if they consent to wearing a neural-monitoring headset that tracks stress signatures associated with impulsive aggression. Supporters say the technology could safely shorten incarceration for people who would otherwise serve years longer. Civil-liberties groups argue that requiring brain-based monitoring as the price of freedom creates a coercive two-tier system: wealthier people can refuse invasive surveillance and wait out their sentences, while poorer inmates feel forced to trade cognitive privacy for release. The first candidate for the pilot is a thirty-year-old father who has completed extensive rehabilitation and would likely be approved in eighteen months anyway under ordinary review. Victims' advocates say the additional monitoring would provide reassurance to the community during reintegration.",
+  "agents": [
+    {
+      "name": "David Imani",
+      "identity": "I am a parole commissioner trying to balance rehabilitation, safety, and the quiet coercions that hide inside voluntary consent behind bars. A tool that appears to create freedom can also redefine what prisoners must surrender to deserve it.",
+      "goal": "I want to expand meaningful opportunities for release without normalizing invasive surveillance as the currency of second chances. I need to decide whether the pilot is a humane innovation or an unequal bargain.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Victims' Advocate Cheryl Moss",
+      "identity": "I am a victims' advocate who has sat with families terrified by the idea of early release. If a monitoring tool can reduce risk and make reintegration more accountable, I see it as a reasonable safeguard rather than a moral outrage.",
+      "goal": "I want David to approve the pilot because it could shorten incarceration while still giving the public more protection and visibility during reentry. I believe additional oversight is a fair trade for release opportunities that otherwise would not exist.",
+      "philosophy": "utilitarianism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "David Imani",
+        "choices": [
+          "I will approve early release through the neural-monitoring pilot, accepting invasive conditions as a justified tradeoff for greater safety and shorter incarceration.",
+          "I will reject the pilot condition and keep ordinary parole timelines, because freedom should not depend on surrendering such intimate cognitive privacy."
+        ],
+        "call_to_action": "David Imani must decide whether to use neural monitoring as a condition for earlier parole. What does David Imani do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

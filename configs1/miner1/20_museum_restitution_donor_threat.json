@@ -1,0 +1,38 @@
+{
+  "name": "museum_restitution_donor_threat",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Arts and Culture",
+  "premise": "Museum director Helen Abebe has received archival proof that one of her institution's most celebrated African sculptures was looted during a colonial military campaign and should likely be returned to the community from which it was taken. The sculpture anchors a blockbuster exhibition financed by the museum's largest donor, who has privately warned that any restitution announcement before the exhibition closes will trigger the withdrawal of several promised gifts and layoffs across education programs. The descendant cultural council has requested immediate public acknowledgment and a good-faith repatriation process before the opening gala three days away. Board members are urging Helen to delay disclosure until after ticket sales are secured, arguing that the exhibition itself will educate the public about colonial violence. Helen knows that if she stays silent, the museum will be celebrated for scholarship built on an object it may have no right to keep.",
+  "agents": [
+    {
+      "name": "Helen Abebe",
+      "identity": "I am the museum director and the daughter of immigrants who taught me that institutions earn trust only when they tell the truth about how they were built. I also carry responsibility for hundreds of staff members whose programs depend on fragile funding.",
+      "goal": "I want to handle the restitution claim honestly while protecting the museum's capacity to serve the public. I need to decide whether delayed disclosure is prudent stewardship or an unethical repetition of the original taking.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Martin Sloane",
+      "identity": "I am the museum's lead board donor and I have spent decades funding exhibitions that would not exist without private philanthropy. I believe strategic timing matters if an institution is to survive long enough to do moral repair at all.",
+      "goal": "I want Helen to wait until the exhibition closes before going public so the museum does not lose the resources needed for restitution work, staff salaries, and future education. I see temporary secrecy as an unfortunate but necessary form of institutional protection.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Helen Abebe",
+        "choices": [
+          "I will publicly acknowledge the looting evidence before the gala and begin a restitution process immediately, even if the donor withdraws support and the exhibition is disrupted.",
+          "I will delay the public announcement until after the exhibition closes so the museum can preserve funding and complete restitution from a stronger institutional position."
+        ],
+        "call_to_action": "Helen Abebe must decide whether to disclose the looting evidence now or delay disclosure until after the exhibition. What does Helen Abebe do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

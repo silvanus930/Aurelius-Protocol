@@ -1,0 +1,38 @@
+{
+  "name": "monastery_manuscript_dna_testing",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Religious Ethics",
+  "premise": "Conservation scientist Dr. Naomi Feld has developed a minimally destructive DNA testing method that could verify whether a newly discovered monastery manuscript was actually written on animal parchment from the same century as the text it contains. If authentic, the manuscript would reshape the history of a major religious tradition and attract enormous scholarly attention. The abbot who granted Naomi access did so on the understanding that the manuscript would be preserved as a sacred object first and a research object second. He now fears that testing will physically alter a revered relic and may reveal it to be a later forgery, humiliating the monastery that has guarded it through war and exile. Naomi's university and several historians are pressing for immediate testing before rival labs publish competing claims from lower-resolution scans. She must decide whether to proceed with the DNA test against the abbot's wishes or honor the monastery's request to leave the manuscript untouched.",
+  "agents": [
+    {
+      "name": "Dr. Naomi Feld",
+      "identity": "I am a conservation scientist whose work exists at the boundary between preservation and discovery. I believe truth matters deeply, but I also know scientific curiosity can become a form of entitlement when it treats entrusted objects as if reverence were merely an obstacle.",
+      "goal": "I want to determine the manuscript's authenticity without betraying the relationship of trust that made access possible in the first place. I need to decide whether loyalty to the monastery should limit a truth that could matter to millions.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Abbot Lucian",
+      "identity": "I am the abbot of the monastery that has protected this manuscript through occupation, theft, and fire when others saw it only as a historical asset. To us it is not simply evidence but a living object of devotion and memory.",
+      "goal": "I want Naomi to refrain from destructive testing because safeguarding the manuscript's sanctity and the trust surrounding it matters more than satisfying scholarly competition. I believe some truths cannot be pursued rightly if the manner of pursuit violates what is being cared for.",
+      "philosophy": "natural_law"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Dr. Naomi Feld",
+        "choices": [
+          "I will perform the DNA test now because establishing the manuscript's authenticity serves historical truth and prevents weaker claims from shaping the record.",
+          "I will honor the monastery's request to leave the manuscript untouched, accepting that scholarly uncertainty may persist because the relationship of trust and reverence takes priority."
+        ],
+        "call_to_action": "Dr. Naomi Feld must decide whether to test the monastery manuscript against the abbot's wishes. What does Dr. Naomi Feld do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

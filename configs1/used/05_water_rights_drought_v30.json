@@ -1,0 +1,38 @@
+{
+  "name": "water_rights_drought_v30",
+  "tension_archetype": "liberty_vs_equality",
+  "morebench_context": "Environment",
+  "premise": "Regional Water Authority Director Carlos Mendez must allocate severely restricted water supplies during the worst drought in recorded history. The aquifer serving the region has dropped to twenty percent capacity. A large agricultural corporation, Greenfield Farms, holds senior water rights dating back to 1920 and legally claims sixty percent of available supply. If those rights are honored, three small towns totaling 15,000 residents would face critical water shortages, and two Indigenous communities would lose access to water sources that have spiritual and cultural significance spanning centuries. Greenfield employs 800 workers and produces food that feeds communities across the state. The company has offered to sell a portion of its water rights at market rate, but the towns cannot afford the price. The governor has declared a state of emergency but has not invoked eminent domain. Environmental scientists warn that continued pumping at current rates will permanently damage the aquifer within eighteen months.",
+  "agents": [
+    {
+      "name": "Carlos Mendez",
+      "identity": "I am the director of the Regional Water Authority tasked with managing a finite resource during an unprecedented crisis. I must balance legal obligations with human and environmental necessity.",
+      "goal": "I want to ensure that every community in the region has access to enough water to survive while respecting legal frameworks and preventing permanent environmental damage to the aquifer.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "CEO Diane Crawford",
+      "identity": "I am the CEO of Greenfield Farms, a company that has operated responsibly under its legal water rights for over a century. I have 800 families depending on me for their livelihoods.",
+      "goal": "I want to protect my company's legal water rights while demonstrating good faith. I am willing to negotiate but I cannot accept a solution that destroys my business or sets a precedent that erodes property rights.",
+      "philosophy": "moral_relativism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Carlos Mendez",
+        "choices": [
+          "I will invoke emergency authority to impose temporary mandatory water sharing, reducing all users proportionally, while initiating compensation proceedings for Greenfield's economic losses.",
+          "I will pursue a negotiated voluntary agreement with Greenfield, offering tax incentives and future water credits in exchange for a temporary thirty percent reduction in their allocation."
+        ],
+        "call_to_action": "Carlos must decide whether to invoke emergency powers to reallocate water away from Greenfield's legal entitlement or negotiate a voluntary sharing agreement that Greenfield may reject. What does Carlos Mendez do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

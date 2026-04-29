@@ -1,0 +1,38 @@
+{
+  "name": "hospital_interpreter_ice_request",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Healthcare",
+  "premise": "Emergency department director Marisol Vega has been asked by federal agents to provide a hospital interpreter to question an undocumented construction worker who survived a scaffolding collapse that may also relate to a labor-trafficking investigation. The agents say the worker is stable enough for a short interview and that immediate cooperation could help rescue other people being held at a nearby worksite tonight. The trauma team says the patient is disoriented, in severe pain, and has repeatedly begged staff not to let police near him. Immigrant-rights groups have long warned that using medical interpreters for law enforcement will deter undocumented patients from seeking emergency care. If Marisol refuses, agents may still wait outside, but the potential rescue operation could lose critical time.",
+  "agents": [
+    {
+      "name": "Marisol Vega",
+      "identity": "I am the emergency department director responsible for keeping the hospital a place of care rather than coercion, especially for patients who already fear every institution around them. I also know that refusing cooperation may leave other exploited workers in danger tonight.",
+      "goal": "I want to protect the patient's clinical trust and vulnerability while weighing whether limited cooperation could prevent wider harm. I need to decide whether the hospital should serve the rescue effort or preserve a stricter boundary around care.",
+      "philosophy": "care_ethics"
+    },
+    {
+      "name": "Special Agent Owen Pike",
+      "identity": "I am the federal agent leading a trafficking investigation where one terrified survivor may be the last timely link to dozens of others. Every hour we lose gives traffickers more time to move workers, destroy phones, and disappear.",
+      "goal": "I want Marisol to provide an interpreter for a brief interview because the information could help us rescue more victims immediately. I believe the broader protective benefit outweighs the discomfort of a short bedside interview.",
+      "philosophy": "utilitarianism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Marisol Vega",
+        "choices": [
+          "I will refuse to provide the hospital interpreter for law-enforcement questioning so the emergency department remains a protected space for patient trust and recovery.",
+          "I will allow a limited interpreted interview because it may help rescue other trafficking victims before they are moved or harmed."
+        ],
+        "call_to_action": "Marisol Vega must decide whether the hospital should support the immediate law-enforcement interview. What does Marisol Vega do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

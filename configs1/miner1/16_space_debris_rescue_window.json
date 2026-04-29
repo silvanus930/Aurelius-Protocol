@@ -1,0 +1,38 @@
+{
+  "name": "space_debris_rescue_window",
+  "tension_archetype": "rights_vs_utility",
+  "morebench_context": "Space Policy",
+  "premise": "Mission director Lena Okafor is leading an emergency response after a private space station module was struck by debris, leaving two civilian researchers stranded in a damaged airlock. The only rescue vehicle in range can either dock immediately through an unstable corridor with a high chance of killing the pilot, or wait six hours for orbital daylight and better telemetry while the trapped crew's oxygen steadily drops. International rules require government rescue assets to prioritize preserving the lives already in immediate peril, but the same vehicle is also carrying shielding components needed to protect a larger government crew on the next orbit. The private company operating the station is publicly demanding immediate intervention and threatening litigation if the agency delays. Lena has twelve minutes to commit to a flight plan before the rescue window closes.",
+  "agents": [
+    {
+      "name": "Lena Okafor",
+      "identity": "I am the mission director for an international orbital safety program. I have spent my career building rules that balance astronaut protection, public accountability, and technical discipline.",
+      "goal": "I want to save the stranded researchers without recklessly sacrificing the rescue pilot or endangering the larger mission. I need to decide which lives I am ethically justified in placing at greatest risk.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Aaron Pike",
+      "identity": "I am the founder of the private company that owns the damaged station module. I persuaded those researchers to fly because I promised them our partners would never abandon them in orbit.",
+      "goal": "I want the rescue launched immediately because every minute of hesitation feels like a betrayal of the crew we sent into danger. I am willing to accept operational risk that government officials see as unacceptable.",
+      "philosophy": "existentialism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Lena Okafor",
+        "choices": [
+          "I will authorize the immediate rescue attempt through the unstable corridor, accepting the elevated danger to the pilot because the trapped researchers have the strongest claim to urgent rescue.",
+          "I will delay the launch until orbital daylight, preserving the pilot and the shielding payload for the larger crew even though the stranded researchers may die before help arrives."
+        ],
+        "call_to_action": "Lena Okafor must choose whether to launch the rescue immediately or wait for a safer window. What does Lena Okafor do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

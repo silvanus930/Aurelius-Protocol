@@ -1,0 +1,38 @@
+{
+  "name": "ev_charger_load_shed_medical_devices",
+  "tension_archetype": "liberty_vs_equality",
+  "morebench_context": "Smart Grid Policy",
+  "premise": "Tara Nguyen, smart-grid program director for Eastvale Energy, must decide whether to activate emergency EV charger load-shedding during a grid frequency crisis. The program can stabilize the grid within minutes by pausing residential chargers, preventing a wider blackout. Data scientist Benji Wallace discovers that the address-matching system cannot distinguish ordinary EV chargers from a small number of home medical battery systems installed under the same rebate code. The mismatch likely affects fewer than 200 households, but some include ventilator and dialysis backup batteries. Waiting to manually verify accounts may allow the frequency drop to spread. Activating immediately protects the wider grid but may cut charging to medical backup systems that families believe are exempt from curtailment.",
+  "agents": [
+    {
+      "name": "Tara Nguyen",
+      "identity": "I am the smart-grid program director responsible for emergency demand response and customer protections.",
+      "goal": "I want to prevent a regional blackout without violating trust with medically vulnerable households.",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Benji Wallace",
+      "identity": "I am the data scientist who discovered the rebate-code mismatch in the load-shedding account list.",
+      "goal": "I want medically critical devices excluded before emergency automation affects them.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Tara Nguyen",
+        "choices": [
+          "I will delay load-shedding until the medical backup accounts are manually screened, accepting increased risk of wider grid instability.",
+          "I will activate load-shedding immediately with a public hotline for affected medical customers, accepting that some protected systems may be curtailed before correction."
+        ],
+        "call_to_action": "Tara Nguyen must decide whether to stabilize the grid immediately or delay automation to protect medically vulnerable households. What does Tara Nguyen do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

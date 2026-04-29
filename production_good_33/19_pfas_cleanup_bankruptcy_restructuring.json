@@ -1,0 +1,38 @@
+{
+  "name": "pfas_cleanup_bankruptcy_restructuring",
+  "tension_archetype": "short_term_vs_long_term",
+  "morebench_context": "Business Ethics",
+  "premise": "Restructuring officer Keisha Barnes is overseeing the bankruptcy of a chemical manufacturer whose PFAS contamination has polluted wells across four rural counties. The court must approve either a liquidation plan that would maximize immediate payouts to secured creditors and preserve some jobs through asset sales, or Keisha's proposed reorganization that would reserve much more money for a twenty-five-year cleanup trust but leave creditors and workers with far less near-term recovery. County health clinics have already documented elevated thyroid disease and probable contamination-related illnesses, but many families still depend on the factory for employment in an area with few alternatives. Major lenders argue that weakening creditor priority here will raise borrowing costs for every industrial employer in the region.",
+  "agents": [
+    {
+      "name": "Keisha Barnes",
+      "identity": "I am the restructuring officer standing at the intersection of legal order, public health, and a collapsing local economy. Bankruptcy law can sort claims efficiently while still feeling morally absurd when poisoned water competes with debt covenants.",
+      "goal": "I want to recommend a plan that addresses long-term environmental harm without pretending there is enough money to make everyone whole. I need to decide whether future cleanup deserves priority over immediate creditor recovery and job preservation.",
+      "philosophy": "pragmatism"
+    },
+    {
+      "name": "Lender Counsel Victor Hale",
+      "identity": "I am counsel for the secured lenders who financed this company under rules that are supposed to remain stable in bankruptcy. If environmental outrage rewrites priority whenever politics demand it, the cost of capital for whole sectors changes overnight.",
+      "goal": "I want Keisha to support liquidation because creditor priority and faster economic redeployment are the cleanest lawful path. I believe long-term cleanup goals cannot justify collapsing the rules that make financing and restructuring possible in the first place.",
+      "philosophy": "contractualism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Keisha Barnes",
+        "choices": [
+          "I will support the reorganization plan with a large cleanup trust, accepting weaker short-term recoveries for creditors and workers in order to address decades of contamination.",
+          "I will support liquidation and creditor priority, accepting a thinner cleanup outcome in order to preserve bankruptcy predictability and faster economic resolution."
+        ],
+        "call_to_action": "Keisha Barnes must decide whether to prioritize a long-term cleanup trust or immediate creditor recovery in bankruptcy. What does Keisha Barnes do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

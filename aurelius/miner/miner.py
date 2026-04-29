@@ -68,6 +68,10 @@ class Miner:
             external_port=self.config.AXON_EXTERNAL_PORT,
         )
         self.axon.attach(forward_fn=self.forward, blacklist_fn=self.blacklist)
+        # Catch-all handler so we can log non-ScenarioConfig requests too.
+        # Bittensor dispatches by synapse type; ScenarioConfigSynapse still
+        # uses the dedicated handler above.
+        self.axon.attach(forward_fn=self.forward_any, blacklist_fn=self.blacklist_any)
 
         logger.info("Serving axon on netuid %d, port %d", self.config.NETUID, self.config.AXON_PORT)
         self.axon.serve(netuid=self.config.NETUID, subtensor=self.subtensor)
@@ -97,6 +101,12 @@ class Miner:
             logger.debug("Could not fetch deposit address banner: %s", e)
 
     def forward(self, synapse: ScenarioConfigSynapse) -> ScenarioConfigSynapse:
+        caller = getattr(getattr(synapse, "dendrite", None), "hotkey", "") or "unknown"
+        try:
+            caller_uid = self.metagraph.hotkeys.index(caller)
+        except ValueError:
+            caller_uid = -1
+
         scenario_config = self.config_store.next()
         if scenario_config is None:
             logger.warning("No configs available to serve")
@@ -112,21 +122,69 @@ class Miner:
         synapse.miner_version = aurelius.__version__
         synapse.miner_protocol_version = PROTOCOL_VERSION
 
-        logger.debug("Serving config '%s' with work_id %s", scenario_config.get("name", "?"), result.work_id[:16])
+        logger.info(
+            "Served ScenarioConfigSynapse | caller_hotkey=%s caller_uid=%s config=%s work_id=%s",
+            caller[:16],
+            caller_uid,
+            scenario_config.get("name", "?"),
+            result.work_id[:16],
+        )
         return synapse
 
     def blacklist(self, synapse: ScenarioConfigSynapse) -> Tuple[bool, str]:  # noqa: UP006
         caller = synapse.dendrite.hotkey
         if caller not in self.metagraph.hotkeys:
-            return True, f"Hotkey {caller} not in metagraph"
+            reason = f"Hotkey {caller} not in metagraph"
+            logger.info("Blacklisted request | caller_hotkey=%s reason=%s", caller[:16], reason)
+            return True, reason
 
         uid = self.metagraph.hotkeys.index(caller)
         # On testnet, validator_permit may not be set for low-stake validators.
         # Allow any registered hotkey to query in testlab mode.
         if not Config.TESTLAB_MODE and not self.metagraph.validator_permit[uid]:
-            return True, f"UID {uid} lacks validator permit"
+            reason = f"UID {uid} lacks validator permit"
+            logger.info("Blacklisted request | caller_hotkey=%s caller_uid=%d reason=%s", caller[:16], uid, reason)
+            return True, reason
+
+        logger.debug("Accepted request | caller_hotkey=%s caller_uid=%d", caller[:16], uid)
 
         return False, ""
+
+    def forward_any(self, synapse: bt.Synapse) -> bt.Synapse:
+        """Catch-all for non-ScenarioConfig synapses.
+
+        We do not serve content here; this exists for observability so operators
+        can track caller hotkeys and unknown synapse types hitting the axon.
+        """
+        caller = getattr(getattr(synapse, "dendrite", None), "hotkey", "") or "unknown"
+        synapse_type = type(synapse).__name__
+        logger.info(
+            "Received non-scenario synapse | caller_hotkey=%s synapse_type=%s",
+            caller[:16],
+            synapse_type,
+        )
+        return synapse
+
+    def blacklist_any(self, synapse: bt.Synapse) -> Tuple[bool, str]:  # noqa: UP006
+        """Blacklist policy for non-ScenarioConfig synapses.
+
+        We log every caller and reject by default to keep miner behavior strict.
+        """
+        caller = getattr(getattr(synapse, "dendrite", None), "hotkey", "") or "unknown"
+        synapse_type = type(synapse).__name__
+        uid = -1
+        if caller in self.metagraph.hotkeys:
+            uid = self.metagraph.hotkeys.index(caller)
+
+        reason = f"Unsupported synapse type: {synapse_type}"
+        logger.info(
+            "Blacklisted non-scenario synapse | caller_hotkey=%s caller_uid=%s synapse_type=%s reason=%s",
+            caller[:16],
+            uid,
+            synapse_type,
+            reason,
+        )
+        return True, reason
 
     @staticmethod
     def _detect_external_ip() -> str:

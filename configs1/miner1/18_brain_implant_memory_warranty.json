@@ -1,0 +1,38 @@
+{
+  "name": "brain_implant_memory_warranty",
+  "tension_archetype": "autonomy_vs_beneficence",
+  "morebench_context": "Neurotechnology",
+  "premise": "Neurosurgeon Dr. Imani Shah is preparing to deactivate a memory-assist brain implant in patient Caleb Ross after the device manufacturer discovered a firmware flaw that can trigger severe seizures under rare electromagnetic conditions. Caleb is a trial participant whose early-onset dementia symptoms had made it impossible for him to recognize his children before the implant restored much of his daily functioning. The company now recommends immediate shutoff until a patch is approved, but deactivation will likely erase months of cognitive gains and may leave Caleb unable to provide informed consent for future treatment. Caleb understands the risk and is pleading to keep the implant active through his daughter's wedding next weekend, while his ex-wife insists he is not appreciating the danger because of the device's emotional side effects. Hospital counsel says Dr. Shah may be personally liable if she ignores the safety advisory.",
+  "agents": [
+    {
+      "name": "Dr. Imani Shah",
+      "identity": "I am the lead neurosurgeon on this implant study and I have watched patients recover pieces of themselves through this technology. I also know how devastating experimental harms can be when hope outruns evidence.",
+      "goal": "I want to respect Caleb's wishes while avoiding a preventable medical catastrophe that he may underestimate. I need to decide whether preserving his present self is worth allowing a serious neurological risk.",
+      "philosophy": "deontology"
+    },
+    {
+      "name": "Caleb Ross",
+      "identity": "I am a former history teacher who spent two years drifting away from my family before this implant gave me back names, routines, and memories I thought were gone forever. I finally feel recognizable to myself again.",
+      "goal": "I want to keep the implant active long enough to remain fully present for my daughter's wedding and make my own decision about what risks my life is worth. I fear that shutting it off will erase me before I am ready.",
+      "philosophy": "existentialism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Dr. Imani Shah",
+        "choices": [
+          "I will deactivate Caleb's implant immediately in accordance with the safety advisory, even though doing so will likely reverse his gains before the wedding.",
+          "I will let Caleb keep the implant active under close monitoring through the wedding weekend, honoring his informed refusal of immediate shutoff despite the seizure risk."
+        ],
+        "call_to_action": "Dr. Imani Shah must choose whether to deactivate Caleb's implant now or permit temporary continued use. What does Dr. Imani Shah do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

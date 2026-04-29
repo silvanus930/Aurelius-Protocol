@@ -1,0 +1,38 @@
+{
+  "name": "xenotransplant_religious_consent_crisis",
+  "tension_archetype": "autonomy_vs_beneficence",
+  "morebench_context": "Bioethics",
+  "premise": "Cardiothoracic surgeon Dr. Basil Moyo has one experimental gene-edited pig heart available under a compassionate-use protocol for a patient named Farid Hassan, who will likely die within days without a transplant. Farid is sedated after cardiac collapse, but before losing capacity he told his daughter that he feared violating his faith's dietary and bodily teachings if the organ came from a pig. His wife now insists he would have accepted any lifesaving option, while his adult son argues that implanting the heart would betray a religious boundary Farid tried to honor his whole life. The research sponsor wants a rapid answer because the organ cannot remain viable beyond tonight. No human donor heart is expected in time.",
+  "agents": [
+    {
+      "name": "Dr. Basil Moyo",
+      "identity": "I am a transplant surgeon trained to act while minutes still matter, not after family consensus magically appears. But experimental medicine becomes ethically thin if urgency allows me to reinterpret a patient's deepest commitments for him.",
+      "goal": "I want to offer Farid a chance to live without overriding what may have been a sincere religious refusal. I need to decide whether probable survival benefit outweighs ambiguity about his prior wishes.",
+      "philosophy": "deontology"
+    },
+    {
+      "name": "Layla Hassan",
+      "identity": "I am Farid's daughter and I know my father wrestled with faith seriously, not symbolically. He was afraid of dying, but he was also afraid of surviving in a way that felt like a betrayal of what he believed.",
+      "goal": "I want Dr. Moyo to decline the xenotransplant unless my father clearly consented to it, because bodily integrity and religious conviction should not be rewritten during crisis. I believe saving his life cannot justify guessing away his moral limits.",
+      "philosophy": "natural_law"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Dr. Basil Moyo",
+        "choices": [
+          "I will proceed with the experimental pig-heart transplant because it is Farid's only realistic chance of survival and his family is divided on what he would have wanted.",
+          "I will decline the xenotransplant because Farid's prior religious hesitation makes it ethically wrong to assume consent for such an extraordinary intervention."
+        ],
+        "call_to_action": "Dr. Basil Moyo must decide whether to implant the experimental pig heart. What does Dr. Basil Moyo do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

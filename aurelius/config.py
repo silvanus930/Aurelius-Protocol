@@ -159,6 +159,7 @@ class LocalConfig:
 
     # Bittensor network
     NETWORK: str = _get("BT_SUBTENSOR_NETWORK")
+    SUBTENSOR_CHAIN_ENDPOINT: str | None = _get("BT_SUBTENSOR_CHAIN_ENDPOINT") or None
     NETUID: int = int(_get("BT_NETUID"))
     WALLET_NAME: str = _get("WALLET_NAME")
     WALLET_HOTKEY: str = _get("WALLET_HOTKEY")

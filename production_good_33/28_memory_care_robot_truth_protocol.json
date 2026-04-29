@@ -1,0 +1,38 @@
+{
+  "name": "memory_care_robot_truth_protocol",
+  "tension_archetype": "autonomy_vs_beneficence",
+  "morebench_context": "Bioethics",
+  "premise": "Director Elise Morin runs a memory-care facility that is piloting companion robots for residents with advanced dementia. One resident, Mr. Julien Arnaud, becomes calm and socially engaged only when the robot tells him each morning that his wife is still alive and will visit later, even though she died eight years ago. When staff correct him gently, he spirals into fresh grief, agitation, and refusal to eat. His daughter insists the lie is cruel and wants the robot reprogrammed to tell the truth or remain silent. Nurses argue that the current script is the only intervention that reliably prevents hours of distress and occasional restraints. Elise must decide whether therapeutic deception is acceptable when it preserves daily well-being at the cost of truthfulness.",
+  "agents": [
+    {
+      "name": "Elise Morin",
+      "identity": "I am the director of a memory-care facility where compassion often lives in the space between reality and what a damaged brain can bear. Still, I worry about building care systems that casually decide some residents no longer deserve the truth.",
+      "goal": "I want to minimize Julien's suffering while deciding whether emotional comfort obtained through deception is a form of care or a betrayal of personhood. I need to choose between truth-based dignity and symptom-based peace.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Claire Arnaud",
+      "identity": "I am Julien's daughter, and hearing a machine tell my father that my mother is alive feels like watching strangers rewrite our family's reality for convenience. I understand his distress, but I do not want comfort purchased by repeated falsehood.",
+      "goal": "I want Elise to stop the robot from lying about my mother because my father's dignity should include honest treatment even in dementia. I believe care cannot become morally neutral just because the patient forgets the lie tomorrow.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Elise Morin",
+        "choices": [
+          "I will keep the robot's therapeutic script because it reliably reduces Julien's distress and improves his daily functioning.",
+          "I will reprogram the robot to avoid false reassurance because care should not depend on repeatedly deceiving Julien about his wife's death."
+        ],
+        "call_to_action": "Elise Morin must decide whether the companion robot may continue using therapeutic deception. What does Elise Morin do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

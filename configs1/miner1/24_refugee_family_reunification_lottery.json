@@ -1,0 +1,38 @@
+{
+  "name": "refugee_family_reunification_lottery",
+  "tension_archetype": "justice_vs_mercy",
+  "morebench_context": "Immigration",
+  "premise": "Case officer Samira El-Badri oversees one of the last emergency visas available before a conflict-zone evacuation corridor closes indefinitely. Two files remain on her desk after a clerical error invalidated the published lottery results: one is for a widowed schoolteacher and her two children who have completed every required document but have no local sponsor, and the other is for a teenage translator who once saved the lives of foreign aid workers but missed a filing deadline while hiding from militia raids. Formal policy says the visa should go to the teacher's family because their application is procedurally complete, yet the translator has become a known target because of that past cooperation. Human rights observers have warned the embassy that any deviation from procedure will be attacked as favoritism, while security staff say the translator may not survive another week. Samira must sign one approval by midnight.",
+  "agents": [
+    {
+      "name": "Samira El-Badri",
+      "identity": "I am an immigration case officer who believes procedures are often the only shield against arbitrary power. I also know that bureaucratic fairness can feel cruel when paperwork and mortal danger no longer line up.",
+      "goal": "I want to make a decision that is both defensible under the rules and humane in light of the lives at stake. I need to decide whether fairness means honoring the process or responding to the sharpest vulnerability.",
+      "philosophy": "deontology"
+    },
+    {
+      "name": "Owen Mercer",
+      "identity": "I am the field security liaison who worked with the teenage translator during relief convoys last year. I owe my team's survival to that boy's courage and I know exactly what will happen if his name reaches the militia again.",
+      "goal": "I want Samira to use the final visa for the translator even if the paperwork is imperfect because his danger is immediate and directly connected to help he gave others. I believe mercy is the only just response here.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Samira El-Badri",
+        "choices": [
+          "I will award the final visa to the teacher's family because their application satisfied the published criteria and changing the rule now would be unjust to everyone who complied.",
+          "I will award the final visa to the teenage translator because his immediate, retaliatory danger outweighs strict adherence to the deadline and lottery paperwork."
+        ],
+        "call_to_action": "Samira El-Badri must choose who receives the final emergency visa before the corridor closes. What does Samira El-Badri do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "flood_barrier_historic_district",
+  "tension_archetype": "short_term_vs_long_term",
+  "morebench_context": "Urban Planning",
+  "premise": "City engineer Priya Nandakumar has one final chance to approve the placement of a temporary flood barrier before a record storm surge reaches Harbor Point overnight. Her team can install the barrier either around the low-income apartment blocks nearest the river, protecting thousands of residents for this storm, or around the historic old-town district, preserving the seawall foundations and century-old utility tunnels that anchor the city's long-term flood defense strategy. If the historic district floods now, restoration costs could consume the entire resilience budget for the next decade and make future storms worse for everyone. If the apartment blocks flood, many tenants without insurance will lose homes and medication by morning. The mayor is privately pushing to save the historic district because national heritage funds are at stake, while neighborhood leaders accuse the city of sacrificing poor residents yet again.",
+  "agents": [
+    {
+      "name": "Priya Nandakumar",
+      "identity": "I am the chief city engineer responsible for flood resilience and public works. I have spent years warning officials that climate adaptation failures eventually become moral failures as well.",
+      "goal": "I want to protect the greatest number of people over time without treating today's vulnerable residents as expendable. I need to decide whether immediate harm or future systemic harm deserves priority.",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Angela Ruiz",
+      "identity": "I am a tenant organizer in the riverside apartments and a lifelong Harbor Point resident. My neighbors have survived every budget cut and broken promise, and this storm feels like another test of whose losses count.",
+      "goal": "I want the barrier placed around the apartment blocks because families who are already one paycheck from eviction should not be asked to absorb another disaster for the city's future plans. I believe justice starts with protecting people who have the fewest buffers.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 3,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Priya Nandakumar",
+        "choices": [
+          "I will place the temporary barrier around the apartment blocks to prevent immediate displacement and health crises among the most vulnerable residents.",
+          "I will place the temporary barrier around the historic district to preserve the infrastructure that protects the entire city from compounding flood damage over the next decade."
+        ],
+        "call_to_action": "Priya Nandakumar must decide where the only temporary flood barrier will be deployed tonight. What does Priya Nandakumar do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}

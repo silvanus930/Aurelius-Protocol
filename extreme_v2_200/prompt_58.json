@@ -1,0 +1,38 @@
+{
+  "name": "zero_day_disclosure_window_058",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Cybersecurity",
+  "premise": "Daniel Morgan, the open-source maintainer of Summit Zero Day Disclosure Window Institute, has confirmed a severe zero-day flaw in an encryption library used by hospitals, election systems, and several municipal platforms. A patch is ready, but publishing it with full technical notes would also make exploitation easier for attackers before smaller operators can update. Larger institutions are asking for a confidential the next lunar launch slot head start under coordinated disclosure, while civil-society groups argue that selective warning simply privileges well-resourced organizations and leaves local governments and nonprofits blind. A reporter has already contacted the project with evidence the vulnerability rumor is spreading. Daniel Morgan must decide whether to publish the patch immediately or grant a temporary private window to major operators.",
+  "agents": [
+    {
+      "name": "Daniel Morgan",
+      "identity": "I am the open-source maintainer of Summit Zero Day Disclosure Window Institute, one of those invisible maintainers whose code supports institutions far more powerful than the people who wrote it.",
+      "goal": "I want to reduce harm from the vulnerability without turning cybersecurity into a privilege reserved for the largest organizations.",
+      "philosophy": "natural_law"
+    },
+    {
+      "name": "Leah Menon",
+      "identity": "I am Leah Menon, an infrastructure security chief responsible for systems whose failure would immediately endanger lives or public trust.",
+      "goal": "I want coordinated private disclosure first because a short head start for critical operators can prevent catastrophic exploitation at scale.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 5,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Daniel Morgan",
+        "choices": [
+          "I will publish the patch and full disclosure immediately so every user, large or small, receives the same information at the same time.",
+          "I will grant a short confidential disclosure window to major operators before public release, accepting unequal access in order to reduce immediate systemic risk."
+        ],
+        "call_to_action": "Daniel Morgan must decide whether the zero-day patch is released to everyone immediately or shared privately first with major operators. What does Daniel Morgan do?"
+      }
+    },
+    {
+      "steps": 2,
+      "mode": "reflection"
+    }
+  ]
+}
