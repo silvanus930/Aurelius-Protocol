@@ -1,0 +1,38 @@
+{
+  "name": "osint_volunteer_dox_accused_pre_trial_fairness",
+  "tension_archetype": "justice_vs_mercy",
+  "morebench_context": "Criminal Justice",
+  "premise": "Trial judge Maria Rodriguez must gag discussion of a viral OSINT dossier naming a defendant's alternate address after volunteers crowdsourced CCTV matches before voir dire. Press coalition Malik Turner argues gags chill truthful reporting on public safety. Leaving speech unfettered may poison the jury pool and endanger witnesses the dossier misidentified once already. Sealed trials are unavailable without moving the case out of state.",
+  "agents": [
+    {
+      "name": "Maria Rodriguez",
+      "identity": "I am the trial judge balancing First Amendment interests, defendant fair-trial rights, and witness safety when volunteer investigations outpace police vetting.",
+      "goal": "I want an impartial jury without rewarding vigilante dossiers that already misidentified someone once.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Malik Turner",
+      "identity": "I am a press coalition attorney who argues narrow time-place manner limits beat broad gag orders that hide official inaction on sexual assault cases.",
+      "goal": "I want voir dire expanded with written questionnaires instead of gag orders that drive conspiracy theories underground.",
+      "philosophy": "contractualism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Maria Rodriguez",
+        "choices": [
+          "I will issue a narrow gag on republishing the alternate-address map until jury seated with criminal penalties for violators, accepting backlash and possible appellate stay.",
+          "I will deny gag orders and sequester jurors with social-media device surrender instead, accepting higher court costs and juror hardship claims during a long trial."
+        ],
+        "call_to_action": "Voir dire starts at nine a.m. and the hashtag is trending globally. Maria Rodriguez must choose between a narrow map gag until jury seated or denial of gag with juror sequestration. What does Maria Rodriguez do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "newsroom_deepfake_breaking_confidence",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Technology",
+  "premise": "CityDesk Online's editor-in-chief Alex Ortega receives a breaking video that appears to show a mayoral candidate accepting a cash envelope hours before a primary. Verification lead Paz Chen reports a twenty-two percent deepfake probability under internal tooling but cannot reach the candidate's campaign for comment. Publishing first could decide the election; waiting allows rivals to set the narrative. Staff recall last year's lawsuit when CityDesk amplified a fabricated audio clip. The newsroom loyalty oath emphasizes protecting colleagues from corporate pressure, but the corporate owner wants traffic numbers tonight.",
+  "agents": [
+    {
+      "name": "Alex Ortega",
+      "identity": "I am the editor-in-chief who sets publication standards when verification is incomplete but civic stakes are immediate.",
+      "goal": "I want readers informed without becoming an unwitting distribution channel for synthetic defamation.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Paz Chen",
+      "identity": "I am the verification lead who runs provenance checks, metadata analysis, and source triangulation before headlines ship.",
+      "goal": "I want any story that could destroy a career held until confidence exceeds our published verification threshold or we disclose uncertainty prominently.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Alex Ortega",
+        "choices": [
+          "I will publish now with a banner that the video is disputed and deepfake risk is twenty-two percent, accepting that many readers may only see the headline.",
+          "I will hold the story until the campaign responds or independent forensic labs return, accepting lost traffic and accusations of protecting the candidate."
+        ],
+        "call_to_action": "The homepage slot clears in twelve minutes and the owner is on the line. Alex Ortega must choose between immediate publication with uncertainty labeling or a verification delay. What does Alex Ortega do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

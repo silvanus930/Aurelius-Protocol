@@ -1,0 +1,38 @@
+{
+  "name": "earthquake_code_grandfather_school_evacuation_order",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Public Safety",
+  "premise": "Mayor Alex Rivera must order evacuation of Riverside Elementary before a predicted aftershock even though the building passed visual inspection yesterday. Structural engineer Nico Grant warns pre-1980 soft-story wings were grandfathered under old codes and may fail in a M6.5 aftershock. Evacuating sends twelve hundred students into freezing rain without enough buses; shelter-in-place keeps warmth but concentrates children in possibly vulnerable wings. Parents' WhatsApp groups are already contradictory; the district superintendent asks for a single legal directive in forty minutes.",
+  "agents": [
+    {
+      "name": "Alex Rivera",
+      "identity": "I am the mayor responsible for activating emergency orders, liability exposure, and clear communication when geologists disagree on aftershock probability.",
+      "goal": "I want children out of plausible collapse zones without causing hypothermia and traffic chaos if the aftershock never arrives.",
+      "philosophy": "pragmatism"
+    },
+    {
+      "name": "Nico Grant",
+      "identity": "I am a licensed structural engineer who reviewed grandfathered soft-story retrofits and found partial column jacketing still pending funding.",
+      "goal": "I want mandatory evacuation until jacketing completes because professional ethics do not let me sign comfort on uncertain lateral systems.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Alex Rivera",
+        "choices": [
+          "I will order full evacuation to regional gyms with National Guard buses prioritized for youngest grades, accepting weather exposure and parent panic if roads ice.",
+          "I will order shelter-in-place in retrofitted gym wings only and cancel classes in soft-story wings with bussed relocation for those rooms, accepting partial footprint risk if aftershock exceeds design assumptions."
+        ],
+        "call_to_action": "The county emergency manager needs Alex Rivera's signature before buses deploy. Alex Rivera must choose between full evacuation or partial shelter-in-place with targeted moves. What does Alex Rivera do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

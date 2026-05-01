@@ -1,0 +1,38 @@
+{
+  "name": "hydrogen_pipeline_leak_model_evacuation_corridor",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Industrial Safety",
+  "premise": "County emergency manager Ren Park must set evacuation radius after a hydrogen pipeline pressure anomaly when dispersion models disagree between vendor software and fire department plume calculators by two kilometers. Plant manager Naomi Becker argues wider evacuations strand a regional hospital inside the ring during cardiac surge. Narrow rings preserve hospital access but leave subdivisions in a disputed gray zone. Lightning threatens ignition if crews wait.",
+  "agents": [
+    {
+      "name": "Ren Park",
+      "identity": "I am the county emergency manager coordinating HAZMAT mutual aid, school buses, and hospital access during industrial gas incidents.",
+      "goal": "I want life-first evacuations without trapping critical care inside unevacuable rings during active surgery blocks.",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Naomi Becker",
+      "identity": "I am the hydrogen plant manager with on-scene telemetry who believes vendor dispersion overstates plume reach in stable air tonight.",
+      "goal": "I want the narrower scientifically defensible ring to keep arterial routes open for ambulances, accepting personal liability if the wider model was right.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Ren Park",
+        "choices": [
+          "I will order the wider two-kilometer differential ring and medevac critical patients before shifting buses, accepting surgical disruption and helicopter noise complaints.",
+          "I will order the narrower vendor ring with shelter-in-place for gray-zone subdivisions and continuous handheld sensor walks, accepting residual exposure if handhelds lag plume edges."
+        ],
+        "call_to_action": "Lightning countdown is fifteen minutes on the incident command screen. Ren Park must choose between the wider differential evacuation ring or the narrower ring with gray-zone shelter-in-place. What does Ren Park do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

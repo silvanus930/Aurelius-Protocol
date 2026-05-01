@@ -1,0 +1,38 @@
+{
+  "name": "space_debris_removal_entangled_foreign_solar_panel",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Space Operations",
+  "premise": "Orbital safety lead Elena Varga must authorize a net-capture debris removal that may entangle a defunct but still-owned foreign research solar panel registered to an allied agency. Dr. Sameer Rao models a ninety-two percent success chance that clears a corridor for crewed station resupply. Failure could be interpreted as hostile debris tampering under tense treaty talks. Waiting forces the crew mission onto a higher-debris path with documented conjunction risk.",
+  "agents": [
+    {
+      "name": "Elena Varga",
+      "identity": "I am the orbital safety lead responsible for conjunction management, treaty-sensitive operations, and crew mission risk budgets.",
+      "goal": "I want debris cleared without triggering diplomatic incidents over allied hardware entanglement.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Dr. Sameer Rao",
+      "identity": "I am an orbital dynamics specialist modeling capture torques and tether snap scenarios for net-based removal.",
+      "goal": "I want the capture scrubbed if ownership ambiguity remains because entangling allied panels could poison cooperation on bigger debris threats.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Elena Varga",
+        "choices": [
+          "I will scrub this capture window and reroute the crew mission along the higher-debris path with extra shielding, accepting elevated micrometeoroid risk metrics.",
+          "I will proceed with capture after securing written allied waiver within six hours and attach a tether breakaway fuse, accepting diplomatic delay risk to the launch window."
+        ],
+        "call_to_action": "Launch window closes in six hours and mission control is polling go-no-go. Elena Varga must choose between scrubbing capture or proceeding with a waivered capture. What does Elena Varga do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}
