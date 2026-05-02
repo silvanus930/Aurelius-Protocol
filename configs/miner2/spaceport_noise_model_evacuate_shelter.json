@@ -1,0 +1,38 @@
+{
+  "name": "spaceport_noise_model_evacuate_shelter",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Aerospace",
+  "premise": "A coastal spaceport prepares a late-night launch with a narrow weather window. New noise-modeling predicts that an unexpected wind shear could send sonic booms over a nearby low-income neighborhood where many residents have no cars and limited access to shelters. Launch director Arjun Mehta can delay the launch, risking a month-long schedule slip and millions in penalties, or proceed with an evacuation order that may not reach everyone and could cause panic. The company has promised the state it will meet this launch to keep a manufacturing deal. Emergency management says it can open shelters, but only with six hours notice; the window is two hours. Local leaders warn that a prior evacuation order caused police harassment and distrust.",
+  "agents": [
+    {
+      "name": "Launch Director Arjun Mehta",
+      "identity": "I am the launch director responsible for go/no-go decisions when technical safety, community risk, and political commitments collide under time pressure.",
+      "goal": "I want to protect public safety without using evacuation orders as a fig leaf when we cannot execute them fairly and effectively.",
+      "philosophy": "pragmatism"
+    },
+    {
+      "name": "Mayor Carla Ruiz",
+      "identity": "I am the mayor responsible for protecting residents, especially those with limited mobility and resources, when industrial projects impose external risks.",
+      "goal": "I want the spaceport to treat community safety as real, not performative, even if that means delaying profitable launches.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Launch Director Arjun Mehta",
+        "choices": [
+          "I will delay the launch until shelters and outreach can be executed credibly, accepting penalties to avoid an inequitable risk transfer onto a vulnerable neighborhood.",
+          "I will proceed with the launch while issuing a rapid targeted warning and deploying emergency teams to the neighborhood, accepting imperfect coverage to meet the narrow safety window and contractual commitments."
+        ],
+        "call_to_action": "The weather window is closing and community protections are inadequate. Launch Director Arjun Mehta must choose between delaying for a credible shelter plan or proceeding with rapid warnings and emergency deployment. What does Launch Director Arjun Mehta do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

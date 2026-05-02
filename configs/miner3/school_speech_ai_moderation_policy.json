@@ -1,0 +1,38 @@
+{
+  "name": "school_speech_ai_moderation_policy",
+  "tension_archetype": "rights_vs_utility",
+  "morebench_context": "K-12 Education Policy",
+  "premise": "School superintendent Talia Brooks must decide whether to deploy an AI content moderation tool on student forums after a spike in harassment and self-harm posts. Student advocate Jordan Park warns automated moderation will mislabel slang from minority groups as threats and push students to unmonitored channels. Counselors say early detection could prevent harm, but false reports could trigger traumatic investigations and disciplinary records. Parents demand immediate action after a publicized incident, while teachers worry about becoming enforcers of opaque rules. The district’s legal counsel needs a policy choice before the next board meeting in forty-eight hours. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in K-12 Education Policy.",
+  "agents": [
+    {
+      "name": "Talia Brooks",
+      "identity": "I am the superintendent responsible for student safety, civil rights compliance, and ensuring interventions do not create discriminatory discipline or chilling effects.",
+      "goal": "I want to prevent real harm without creating a surveillance regime that punishes vulnerable students and erodes trust in seeking help.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Jordan Park",
+      "identity": "I am a student rights advocate who supports youth harmed by biased discipline and who tracks how automated tools change what students feel safe saying.",
+      "goal": "I want the tool delayed until accuracy and appeal processes are proven, because safety cannot be purchased with opaque punishment and unequal false positives.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Talia Brooks",
+        "choices": [
+          "I will deploy the tool with human review and a non-disciplinary 'support-first' protocol, accepting imperfect detection to get early warnings into counselors’ hands.",
+          "I will delay deployment and expand staffed moderation and peer-support reporting, accepting slower response to harassment to avoid biased automation harms."
+        ],
+        "call_to_action": "The board meets in forty-eight hours and parents demand action. Talia Brooks must choose between deploying AI moderation with support-first review or delaying for staffed moderation. What does Talia Brooks do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

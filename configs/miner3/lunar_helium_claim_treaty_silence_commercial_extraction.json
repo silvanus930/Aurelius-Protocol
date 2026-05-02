@@ -2,7 +2,7 @@
   "name": "lunar_helium_claim_treaty_silence_commercial_extraction",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Space Law",
-  "premise": "Commercial lunar ops counsel Casey Hughes must advise whether to proceed with pilot regolith processing that may extract trace helium-3 marketed to fusion investors before COPUOS clarifies non-appropriation readings. Diplomatic attach\u00e9 Ines Ashcroft warns proceeding could trigger coordinated export bans on terrestrial components. Pausing loses a launch window costing nine figures. Continuing advances science but may be framed as territorial appropriation by rival states.",
+  "premise": "Commercial lunar ops counsel Casey Hughes must advise whether to proceed with pilot regolith processing that may extract trace helium-3 marketed to fusion investors before COPUOS clarifies non-appropriation readings. Diplomatic attaché Ines Ashcroft warns proceeding could trigger coordinated export bans on terrestrial components. Pausing loses a launch window costing nine figures. Continuing advances science but may be framed as territorial appropriation by rival states. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Space Law. The dilemma is widely framed as a short term vs long term tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Casey Hughes",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Ines Ashcroft",
-      "identity": "I am a diplomatic science attach\u00e9 who tracks coalition statements and who believes quiet extraction before norms harden will poison multilateral talks.",
+      "identity": "I am a diplomatic science attaché who tracks coalition statements and who believes quiet extraction before norms harden will poison multilateral talks.",
       "goal": "I want a public pause with joint sampling transparency even if that surrenders first-mover helium narratives.",
       "philosophy": "deontology"
     }

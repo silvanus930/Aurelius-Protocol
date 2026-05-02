@@ -1,0 +1,38 @@
+{
+  "name": "foster_care_faith_placement_lgbtq_teen_identity",
+  "tension_archetype": "care_vs_fairness",
+  "morebench_context": "Social Services",
+  "premise": "County placement director Alex Walker must decide whether to prioritize a faith-affiliated foster home with open beds tonight for a sixteen-year-old LGBTQ youth who requested non-religious placement. Faith home director Mateo Kim argues the teen would be physically safe and near their school. Youth advocate Remy Jones cites prior verbal microaggressions from that home's community toward queer teens. Shelters are full; hotel vouchers expired. Choosing the faith home ends unsheltered risk but may harm identity safety. The family court has asked for a written placement rationale, and any policy that appears discriminatory could be challenged in an emergency hearing. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Social Services.",
+  "agents": [
+    {
+      "name": "Alex Walker",
+      "identity": "I am the county placement director responsible for same-day safety, expressed placement preferences, and nondiscrimination policies under state rules. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
+      "goal": "I want no child unsheltered tonight without ignoring credible identity-safety concerns raised by advocates. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "philosophy": "care_ethics"
+    },
+    {
+      "name": "Remy Jones",
+      "identity": "I am a youth advocate who documents placement outcomes and who has filed complaints about subtle hostility in certain faith networks. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
+      "goal": "I want the teen in a secular opening even if that means an overnight office cot until a better match arrives. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Alex Walker",
+        "choices": [
+          "I will place the teen in the faith home with written behavioral standards and daily check-ins, accepting risk that microaggressions persist despite monitoring.",
+          "I will keep the teen in a supervised office overnight with two staff shifts and decline the faith home, accepting sleep deprivation and liability for unsheltered hours on county property."
+        ],
+        "call_to_action": "Rain is forecast and the teen is in the lobby at nine p.m. Alex Walker must choose between faith home placement with monitoring or overnight office supervision. What does Alex Walker do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

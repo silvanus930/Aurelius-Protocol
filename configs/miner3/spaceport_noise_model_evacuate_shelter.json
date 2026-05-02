@@ -1,0 +1,38 @@
+{
+  "name": "spaceport_noise_model_evacuate_shelter",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Aerospace Operations",
+  "premise": "County emergency manager Rosa Kim must decide whether to order an evacuation of a coastal shelter zone before a night rocket launch after a noise-propagation model predicts glass-shattering overpressure in one neighborhood. The spaceport director Jonah Patel argues the model is conservative and that evacuating will cause highway gridlock that blocks ambulances and strains motel capacity. If the model is right, elderly residents and infants could be injured by debris and sudden pressure changes. If the model is wrong, a public false alarm could jeopardize the launch license and future jobs. The launch window closes in ninety minutes and weather will not permit delay. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Aerospace Operations.",
+  "agents": [
+    {
+      "name": "Rosa Kim",
+      "identity": "I am the county emergency manager responsible for public warnings, evacuation logistics, and preventing avoidable harm during time-critical launches.",
+      "goal": "I want to protect vulnerable residents without triggering a gridlock evacuation that creates secondary injuries and erodes trust in future warnings.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Jonah Patel",
+      "identity": "I am the spaceport director accountable for launch safety, regulatory compliance, and community relations when models conflict under pressure.",
+      "goal": "I want shelter-in-place guidance with targeted window reinforcement rather than evacuation, because mass movement is the larger predictable hazard tonight.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Rosa Kim",
+        "choices": [
+          "I will order a targeted evacuation of the highest-risk blocks and stage traffic control, accepting license backlash if the model overestimates the blast.",
+          "I will keep residents sheltered-in-place with rapid mitigation teams and public messaging, accepting the risk of injury if the model underestimates overpressure."
+        ],
+        "call_to_action": "The launch clock is inside ninety minutes. Rosa Kim must choose between targeted evacuation or shelter-in-place with mitigation teams. What does Rosa Kim do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

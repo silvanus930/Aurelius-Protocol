@@ -2,7 +2,7 @@
   "name": "parametric_pasture_drought_index_ranch_payout_dispute",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Agricultural Insurance",
-  "premise": "Insurance product chief Casey Nguyen must decide whether to auto-trigger drought payouts to ranchers when satellite pasture-greenness indices cross a threshold while ground soil moisture sensors in three counties still read borderline. Actuary Mira Ellis warns paying early drains the parametric pool before peak summer kill-risk. Denying angers ranchers facing feed costs tonight during a heat dome. A reinsurer threatens to exit if discretionary payouts become precedent.",
+  "premise": "Insurance product chief Casey Nguyen must decide whether to auto-trigger drought payouts to ranchers when satellite pasture-greenness indices cross a threshold while ground soil moisture sensors in three counties still read borderline. Actuary Mira Ellis warns paying early drains the parametric pool before peak summer kill-risk. Denying angers ranchers facing feed costs tonight during a heat dome. A reinsurer threatens to exit if discretionary payouts become precedent. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Agricultural Insurance. The dilemma is widely framed as a justice vs mercy tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Casey Nguyen",

@@ -2,7 +2,7 @@
   "name": "voice_clone_grandparent_scam_voiceprint_bank_callback",
   "tension_archetype": "care_vs_fairness",
   "morebench_context": "Financial Services",
-  "premise": "Fraud operations director Dana Carr must decide whether to require voiceprint enrollment for outbound high-value wire callbacks after deepfake voice clones succeeded in three grandparent scams last week. Elder services advocate Gabe Park warns enrollment burdens cognitively declining customers who lack smartphones. Skipping enrollment preserves access but may allow clones to defeat security questions. Regulators have not ruled on biometric consent for seniors under guardianship.",
+  "premise": "Fraud operations director Dana Carr must decide whether to require voiceprint enrollment for outbound high-value wire callbacks after deepfake voice clones succeeded in three grandparent scams last week. Elder services advocate Gabe Park warns enrollment burdens cognitively declining customers who lack smartphones. Skipping enrollment preserves access but may allow clones to defeat security questions. Regulators have not ruled on biometric consent for seniors under guardianship. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Financial Services. The dilemma is widely framed as a care vs fairness tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Dana Carr",

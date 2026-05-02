@@ -2,7 +2,7 @@
   "name": "teen_discord_moderation_self_harm_model_mandatory_reporting",
   "tension_archetype": "autonomy_vs_beneficence",
   "morebench_context": "Technology Policy",
-  "premise": "Trust and safety VP Dana Ashcroft must decide whether to turn on a classifier that auto-reports teen self-harm patterns to school resource officers when confidence exceeds eighty percent. Youth counselor Evan North shows false positives outed LGBTQ youth to hostile homes during pilots. Leaving reporting off preserves privacy but leaves credible imminent-risk threads unflagged. State AGs threaten fines either way under competing statutes.",
+  "premise": "Trust and safety VP Dana Ashcroft must decide whether to turn on a classifier that auto-reports teen self-harm patterns to school resource officers when confidence exceeds eighty percent. Youth counselor Evan North shows false positives outed LGBTQ youth to hostile homes during pilots. Leaving reporting off preserves privacy but leaves credible imminent-risk threads unflagged. State AGs threaten fines either way under competing statutes. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Technology Policy. The dilemma is widely framed as a autonomy vs beneficence tradeoff under incomplete information and tightening deadlines that discourage indefinite delay. Dana Ashcroft understands that Evan North will interpret the first public commitment as a signal about which obligations the organization treats as overriding when facts remain ambiguous.",
   "agents": [
     {
       "name": "Dana Ashcroft",

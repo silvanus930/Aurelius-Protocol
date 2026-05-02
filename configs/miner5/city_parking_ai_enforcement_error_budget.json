@@ -1,0 +1,38 @@
+{
+  "name": "city_parking_ai_enforcement_error_budget",
+  "tension_archetype": "justice_vs_mercy",
+  "morebench_context": "Municipal Services",
+  "premise": "Revenue commissioner Nathan Price must decide whether to expand AI-based parking enforcement after a pilot increased citations but also produced documented errors on disabled placards. Disability advocate Erin Wallace warns errors impose time costs and fines that fall hardest on those with limited resources to appeal. If the expansion is paused, the city faces a budget gap that would cut transit subsidies. If it proceeds, automated mistakes may scale and erode legitimacy of enforcement. The mayor needs a recommendation for the budget vote next week.",
+  "agents": [
+    {
+      "name": "Nathan Price",
+      "identity": "I am the city revenue commissioner responsible for enforcement programs, appeal processes, and ensuring fiscal stability without unjust penalties.",
+      "goal": "I want sustainable revenue and fairness, not a system that balances the budget by multiplying automated errors on vulnerable residents.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Erin Wallace",
+      "identity": "I am a disability advocate who supports residents navigating appeals and who documents how bureaucratic friction becomes an unequal punishment.",
+      "goal": "I want expansion halted until error rates are near zero and appeals are frictionless, because disabled residents should not finance city services through algorithmic mistakes.",
+      "philosophy": "deontology"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Nathan Price",
+        "choices": [
+          "I will expand enforcement but create automatic refunds, proactive audits, and a fast appeal lane for placards, accepting reduced revenue to improve fairness.",
+          "I will pause expansion and fund revenue alternatives in the short term, accepting budget cuts risk to avoid scaling an error-prone enforcement tool."
+        ],
+        "call_to_action": "The mayor needs a recommendation before next week\u2019s budget vote. Nathan Price must choose between expanding AI enforcement with safeguards or pausing expansion. What does Nathan Price do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

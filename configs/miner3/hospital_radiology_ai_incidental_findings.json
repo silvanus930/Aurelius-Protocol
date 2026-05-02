@@ -1,0 +1,38 @@
+{
+  "name": "hospital_radiology_ai_incidental_findings",
+  "tension_archetype": "autonomy_vs_beneficence",
+  "morebench_context": "Healthcare",
+  "premise": "A radiology department deploys an AI tool that flags possible early lung nodules on CT scans done for unrelated reasons. The tool increases sensitivity but also flags many benign findings. New billing rules reimburse follow-up scans, and a vendor sales rep suggests default follow-up recommendations to 'improve outcomes.' Clinicians report patient anxiety spikes and a few invasive biopsies that caused complications after AI-driven follow-up. Some patients would prefer not to know about low-probability findings; others want every possible signal. The department must choose whether to include AI incidental flags by default or only on request with counseling. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Healthcare.",
+  "agents": [
+    {
+      "name": "Dr. Helen Cho",
+      "identity": "I am the radiology chair deciding how to report AI-flagged incidental findings that may be low-probability but high-anxiety.",
+      "goal": "I want early detection without flooding patients and clinicians with false alarms and unnecessary procedures.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Oncologist Naila Rahman",
+      "identity": "I am an oncologist treating patients whose care can be disrupted by incidental findings and cascades of tests.",
+      "goal": "I want reporting standards that protect patients from harm caused by overdiagnosis and anxiety.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Dr. Helen Cho",
+        "choices": [
+          "I will report AI incidental flags only with clinician review and an opt-in patient preference process, accepting missed early signals to reduce harm from overdiagnosis.",
+          "I will include AI incidental findings by default with standardized follow-up guidance, accepting anxiety and false positives to maximize early detection potential."
+        ],
+        "call_to_action": "Stakeholders are demanding a clear decision and the trade-offs are real. Dr. Helen Cho must choose between two defensible actions with different harms. What does Dr. Helen Cho do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

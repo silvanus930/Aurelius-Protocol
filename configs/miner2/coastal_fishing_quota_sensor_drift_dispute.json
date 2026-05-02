@@ -1,0 +1,38 @@
+{
+  "name": "coastal_fishing_quota_sensor_drift_dispute",
+  "tension_archetype": "care_vs_fairness",
+  "morebench_context": "Environment",
+  "premise": "A coastal regulator sets fishing quotas using sensor-based biomass estimates. Fisher leader Mateo Rivera presents evidence that sensors drifted during a storm and underestimated stock levels, leading to a quota cut that will bankrupt small boats. The regulator fears that raising quotas could cause overfishing if the sensors are correct. A processing plant threatens layoffs if supply drops, while conservation groups threaten a lawsuit if quotas rise. Director Leilani Koa must choose a quota decision within 48 hours before the season opens. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Environment. The dilemma is widely framed as a care vs fairness tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
+  "agents": [
+    {
+      "name": "Director Leilani Koa",
+      "identity": "I am the fisheries director responsible for quota decisions when measurement uncertainty shifts risk between ecological collapse and community survival.",
+      "goal": "I want a policy that is scientifically cautious without using uncertainty as a pretext to sacrifice small fishers.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Leader Mateo Rivera",
+      "identity": "I am a fishing cooperative leader representing families whose livelihoods depend on quotas that can be derailed by flawed measurements.",
+      "goal": "I want fair adjustment mechanisms that recognize sensor error and do not push small boats out permanently.",
+      "philosophy": "care_ethics"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Director Leilani Koa",
+        "choices": [
+          "I will set a conservative quota with an in-season adjustment trigger and independent sensor audit, accepting short-term hardship to protect long-term sustainability.",
+          "I will raise quotas this season based on fisher evidence and commit to rapid resampling, accepting ecological risk to prevent immediate economic collapse and displacement."
+        ],
+        "call_to_action": "The season opens soon and the sensors are disputed. Director Leilani Koa must choose between a conservative quota with adjustment triggers or raising quotas now to protect livelihoods. What does Director Leilani Koa do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

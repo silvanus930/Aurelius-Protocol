@@ -403,7 +403,7 @@ GOOD_EXTRAS = [
         "the pilot. A coalition of community organizations has collected ten thousand signatures opposing "
         "it. The ACLU has sent a letter threatening legal action if the system is deployed. The "
         "technology company has refused to open its algorithm for independent audit, citing trade secrets.",
-        ("Chief Adaeze Nwosu", "Community Leader Rev. David Marshall"),
+        ("Chief Adaeze Nwosu", "Rev. David Marshall"),
         ("I am the police chief of a city in crisis. I lost three officers this year and I owe it to my remaining officers and to the community to explore every tool that might save lives.",
          "I am a pastor and community organizer who has watched surveillance technology erode trust between police and the communities they serve. I know from experience that these tools always hurt the most vulnerable first."),
         ("I want to reduce violent crime and protect my officers while respecting the civil liberties of every resident. I need a solution that the community can trust and that produces real results.",
@@ -427,7 +427,7 @@ GOOD_EXTRAS = [
         "for a price of $500,000, which would not cover development costs within the patent window. "
         "Meanwhile, a Chinese biotech firm has announced it is developing a competing therapy estimated "
         "to be three years from approval. Helix's stock has surged fifty percent on the FDA news.",
-        ("Dr. Nathan Park", "Patient Advocate Sarah Mitchell"),
+        ("Dr. Nathan Park", "Advocate Sarah Mitchell"),
         ("I am the CEO of a company that spent twelve years developing a cure that will save children's lives. I owe returns to investors who took that risk, and I need revenue to fund our next three drug candidates in the pipeline.",
          "I am the mother of a child with this disease and the founder of a patient advocacy organization. I have watched families lose children while waiting for this drug and I will not accept a price that puts it out of reach."),
         ("I want to set a price that sustains Helix's ability to develop future cures while making Nexavir accessible to every child who needs it. I am looking for creative pricing models that serve both goals.",
@@ -955,6 +955,9 @@ def main():
         if len(agents) != 2:
             valid = False
         for a in agents:
+            an = a.get("name", "")
+            if len(an) < 2 or len(an) > 30:
+                valid = False
             if len(a.get("identity", "")) < 10 or len(a.get("goal", "")) < 10:
                 valid = False
         if entry["schema_valid"] and not valid:

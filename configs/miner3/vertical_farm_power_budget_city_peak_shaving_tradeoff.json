@@ -2,7 +2,7 @@
   "name": "vertical_farm_power_budget_city_peak_shaving_tradeoff",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Urban Agriculture",
-  "premise": "City sustainability director Dana Bennet must decide whether to cut vertical farm LED schedules during summer peak hours after the ISO requests emergency load shedding. Farm CEO Fara Ortega argues cutting twelve hours collapses lettuce contracts feeding school lunch programs. Shedding may prevent rotating blackouts in low-income neighborhoods without AC. The mayor promised both food security and no summer blackouts in the same speech.",
+  "premise": "City sustainability director Dana Bennet must decide whether to cut vertical farm LED schedules during summer peak hours after the ISO requests emergency load shedding. Farm CEO Fara Ortega argues cutting twelve hours collapses lettuce contracts feeding school lunch programs. Shedding may prevent rotating blackouts in low-income neighborhoods without AC. The mayor promised both food security and no summer blackouts in the same speech. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Urban Agriculture. The dilemma is widely framed as a short term vs long term tradeoff under incomplete information and tightening deadlines that discourage indefinite delay. Dana Bennet understands that Fara Ortega will interpret the first public commitment as a signal about which obligations the organization treats as overriding when facts remain ambiguous.",
   "agents": [
     {
       "name": "Dana Bennet",

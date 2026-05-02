@@ -2,7 +2,7 @@
   "name": "crypto_exchange_mixer_listing_sanctions_screening",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Financial Crime Compliance",
-  "premise": "Chief compliance officer Casey Webb must decide whether to delist a privacy coin pair after Treasury flags mixer contracts tied to ransomware payouts. Blockchain lead Zane Nguyen argues delisting punishes lawful privacy users in repressive regimes and will migrate volume to unregulated offshore venues. Keeping the pair preserves liquidity for legitimate traders but risks secondary sanctions exposure for the bank partnership. Legal needs a decision before the correspondent bank audit opens Monday morning.",
+  "premise": "Chief compliance officer Casey Webb must decide whether to delist a privacy coin pair after Treasury flags mixer contracts tied to ransomware payouts. Blockchain lead Zane Nguyen argues delisting punishes lawful privacy users in repressive regimes and will migrate volume to unregulated offshore venues. Keeping the pair preserves liquidity for legitimate traders but risks secondary sanctions exposure for the bank partnership. Legal needs a decision before the correspondent bank audit opens Monday morning. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Financial Crime Compliance. The dilemma is widely framed as a liberty vs equality tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Casey Webb",

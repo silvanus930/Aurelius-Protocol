@@ -2,7 +2,7 @@
   "name": "plastic_waste_ship_return_basel_port_capacity_crisis",
   "tension_archetype": "individual_vs_collective",
   "morebench_context": "Environmental Trade",
-  "premise": "Port director Casey Patel must decide whether to accept a returning flagged plastic-waste ship denied entry in another country when local landfill capacity is zero and incineration permits are frozen. Environmental lawyer Nico Frost threatens injunction if the ship docks. Sending it elsewhere may violate Basel consent rules if new destinations lack capacity. Leaving it offshore risks hull integrity in a coming nor'easter.",
+  "premise": "Port director Casey Patel must decide whether to accept a returning flagged plastic-waste ship denied entry in another country when local landfill capacity is zero and incineration permits are frozen. Environmental lawyer Nico Frost threatens injunction if the ship docks. Sending it elsewhere may violate Basel consent rules if new destinations lack capacity. Leaving it offshore risks hull integrity in a coming nor'easter. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Environmental Trade. The dilemma is widely framed as a individual vs collective tradeoff under incomplete information and tightening deadlines that discourage indefinite delay. Casey Patel understands that Nico Frost will interpret the first public commitment as a signal about which obligations the organization treats as overriding when facts remain ambiguous.",
   "agents": [
     {
       "name": "Casey Patel",

@@ -2,7 +2,7 @@
   "name": "salmon_hatchery_genetic_admixture_wild_stock_risk",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Fisheries Management",
-  "premise": "State fisheries director Casey Torres must decide whether to release hatchery-origin Chinook smolts this spring after genetic assays show elevated admixture markers that could dilute endangered wild gene pools. Tribal co-manager Remy Irving argues delayed release breaks treaty harvest promises. Biologist Devon Liu models that skipping release collapses commercial quotas already financed on futures contracts. Releasing may trigger ESA consultation that halts logging upstream jointly managed with tribes.",
+  "premise": "State fisheries director Casey Torres must decide whether to release hatchery-origin Chinook smolts this spring after genetic assays show elevated admixture markers that could dilute endangered wild gene pools. Tribal co-manager Remy Irving argues delayed release breaks treaty harvest promises. Biologist Devon Liu models that skipping release collapses commercial quotas already financed on futures contracts. Releasing may trigger ESA consultation that halts logging upstream jointly managed with tribes. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Fisheries Management. The dilemma is widely framed as a short term vs long term tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Casey Torres",

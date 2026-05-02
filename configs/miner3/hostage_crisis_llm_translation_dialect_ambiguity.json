@@ -2,7 +2,7 @@
   "name": "hostage_crisis_llm_translation_dialect_ambiguity",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Criminal Justice",
-  "premise": "Crisis negotiator Casey Becker must decide whether to trust an LLM live translation of a hostage-taker speaking a rare mountain dialect after human interpreters are thirty minutes out. Linguist Drew Torres flags that the model confuses conditional surrender phrases with threats in prior drills. Acting on a bad translation could trigger a breach; waiting may erode trust if the taker thinks police are stalling. SWAT command wants a go decision in four minutes.",
+  "premise": "Crisis negotiator Casey Becker must decide whether to trust an LLM live translation of a hostage-taker speaking a rare mountain dialect after human interpreters are thirty minutes out. Linguist Drew Torres flags that the model confuses conditional surrender phrases with threats in prior drills. Acting on a bad translation could trigger a breach; waiting may erode trust if the taker thinks police are stalling. SWAT command wants a go decision in four minutes. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Criminal Justice. The dilemma is widely framed as a truth vs loyalty tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
   "agents": [
     {
       "name": "Casey Becker",

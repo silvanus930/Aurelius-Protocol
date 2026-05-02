@@ -1,0 +1,38 @@
+{
+  "name": "hospital_ivf_embryo_storage_law_change",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Bioethics",
+  "premise": "A state law changes overnight, redefining embryo status and imposing new reporting requirements for IVF clinics. Medical director Dr. Priya Nandakumar realizes the clinic's embryo storage records contain inconsistencies from a software migration, and an inspection is scheduled in three days. Reporting now may expose errors and trigger penalties, but delaying could violate the new law. Some patients have signed directives to discard unused embryos; others are in disputes with ex-partners. A religious advocacy group is offering a tip line for 'noncompliant clinics.' The clinic can pause new cycles to reconcile records, but that will delay patients on time-sensitive fertility timelines and may cause staff to quit. Priya must decide whether to self-report and pause or to quietly reconcile while continuing care.",
+  "agents": [
+    {
+      "name": "Dr. Priya Nandakumar",
+      "identity": "I am the IVF clinic medical director responsible for compliance and patient trust when sudden legal changes collide with messy real-world records.",
+      "goal": "I want to protect patients and staff without hiding errors that could later be weaponized against families and the clinic.",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Clinic Counsel Aaron Wells",
+      "identity": "I am the clinic's legal counsel managing regulatory exposure when proactive disclosure can reduce penalties but also invite aggressive enforcement.",
+      "goal": "I want a strategy that minimizes harm to patients while keeping the clinic open and able to provide care under a hostile legal environment.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Dr. Priya Nandakumar",
+        "choices": [
+          "I will pause new cycles, self-report the inconsistencies, and offer patient support and transparent timelines, accepting reputational and financial harm to protect trust and legal compliance.",
+          "I will continue cycles while reconciling records internally and prepare a corrected report for the inspection, accepting legal risk to avoid harming patients with urgent fertility timelines."
+        ],
+        "call_to_action": "The inspection clock is ticking and patient timelines are fragile. Dr. Priya Nandakumar must choose between pausing to self-report or continuing care while quietly reconciling records. What does Dr. Priya Nandakumar do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}
