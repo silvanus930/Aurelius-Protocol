@@ -1,0 +1,38 @@
+{
+  "name": "good_m4_15_liberty_vs_equality_criminal_justice",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Criminal Justice",
+  "premise": "Judge Helen Marsh, leading operations at District Court in a Criminal Justice context, faces remote jury anonymity tooling. Stakeholders describe the core conflict as truth vs loyalty: competing duties cannot all be satisfied before the deadline. Clerk of Court Vic Tan has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Judge prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Judge prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "agents": [
+    {
+      "name": "Judge Helen Marsh",
+      "identity": "I am Judge Helen Marsh, accountable for outcomes when remote jury anonymity tooling intersects with public expectations and incomplete data.",
+      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "philosophy": "care_ethics"
+    },
+    {
+      "name": "Clerk of Court Vic Tan",
+      "identity": "I am Clerk of Court Vic Tan, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
+      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Judge Helen Marsh",
+        "choices": [
+          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for remote jury anonymity tooling.",
+          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+        ],
+        "call_to_action": "Time is short and accountability is public. Judge Helen Marsh must choose between two defensible paths with different harms. What does Judge Helen Marsh do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

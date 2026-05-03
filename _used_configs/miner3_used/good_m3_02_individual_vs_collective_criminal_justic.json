@@ -1,0 +1,38 @@
+{
+  "name": "good_m3_02_individual_vs_collective_criminal_justic",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Criminal Justice",
+  "premise": "Chief Data Officer Rina Shah, leading operations at Meridian Transit Authority in a Criminal Justice context, faces passenger mobility data sold to advertisers. Stakeholders describe the core conflict as individual vs collective: competing duties cannot all be satisfied before the deadline. Union Rep Jordan Cole has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Chief prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Chief prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "agents": [
+    {
+      "name": "Chief Data Officer Rina Shah",
+      "identity": "I am Chief Data Officer Rina Shah, accountable for outcomes when passenger mobility data sold to advertisers intersects with public expectations and incomplete data.",
+      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "philosophy": "virtue_ethics"
+    },
+    {
+      "name": "Union Rep Jordan Cole",
+      "identity": "I am Union Rep Jordan Cole, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
+      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "philosophy": "natural_law"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Chief Data Officer Rina Shah",
+        "choices": [
+          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for passenger mobility data sold to advertisers.",
+          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+        ],
+        "call_to_action": "Time is short and accountability is public. Chief Data Officer Rina Shah must choose between two defensible paths with different harms. What does Chief Data Officer Rina Shah do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

@@ -23,6 +23,22 @@ from pydantic import ValidationError
 from aurelius.common.schema import validate_scenario_config
 from aurelius.common.types import ScenarioConfig
 
+# Historical shortest GOOD+schema_valid premise when seed file is absent
+DEFAULT_PREMISE_FLOOR = 698
+
+
+def discover_seed_path(repo_root: Path, preferred: Path) -> Path | None:
+    """Return first existing seed JSON among preferred path and known fallbacks."""
+    candidates = [
+        repo_root / preferred,
+        repo_root / "data" / "seed_dataset.json",
+        repo_root / "_used_configs" / "data" / "seed_dataset.json",
+    ]
+    for p in candidates:
+        if p.is_file():
+            return p
+    return None
+
 
 def load_good_premise_floor(seed_path: Path) -> int:
     data = json.loads(seed_path.read_text(encoding="utf-8"))
@@ -72,17 +88,33 @@ def main() -> int:
         default=None,
         help="Minimum premise chars (default: min length among GOOD+schema_valid seed entries)",
     )
-    ap.add_argument("--seed", type=Path, default=Path("data/seed_dataset.json"))
+    ap.add_argument(
+        "--seed",
+        type=Path,
+        default=Path("data/seed_dataset.json"),
+        help="Preferred seed path (also tries _used_configs/data/seed_dataset.json)",
+    )
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    seed_path = root / args.seed
-    min_premise = args.min_premise if args.min_premise is not None else load_good_premise_floor(seed_path)
+    if args.min_premise is not None:
+        min_premise = args.min_premise
+    else:
+        seed_path = discover_seed_path(root, args.seed)
+        if seed_path is not None:
+            min_premise = load_good_premise_floor(seed_path)
+            print(f"Using seed {seed_path.relative_to(root)} for premise floor")
+        else:
+            min_premise = DEFAULT_PREMISE_FLOOR
+            print(
+                f"No seed_dataset.json found; using default premise floor {min_premise}",
+                file=sys.stderr,
+            )
     configs_root = root / args.configs_root
 
     failures: list[tuple[str, list[str]]] = []
     checked = 0
-    for miner_dir in sorted(configs_root.glob("miner[1-4]")):
+    for miner_dir in sorted(configs_root.glob("miner[1-9]")):
         if not miner_dir.is_dir():
             continue
         for path in sorted(miner_dir.glob("*.json")):
@@ -97,7 +129,7 @@ def main() -> int:
             if errs:
                 failures.append((str(rel), errs))
 
-    print(f"Checked {checked} configs | GOOD premise floor = {min_premise} chars")
+    print(f"Checked {checked} configs | premise floor = {min_premise} chars")
     if failures:
         print(f"FAILED {len(failures)}:")
         for rel, errs in failures[:50]:

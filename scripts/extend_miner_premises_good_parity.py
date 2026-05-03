@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Extend miner scenario premises to meet GOOD-seed minimum length.
 
-Reads each configs/miner[1-4]/*.json; if premise is shorter than the shortest
+Reads each configs/miner[1-9]/*.json; if premise is shorter than the shortest
 GOOD+schema_valid premise in data/seed_dataset.json, appends contextual sentences
 (built from morebench_context, tension_archetype, agent names) until the floor is
 met, without exceeding schema max premise length (2000).
@@ -25,6 +25,19 @@ from aurelius.common.types import ScenarioConfig
 
 
 PREMISE_MAX = 2000
+DEFAULT_PREMISE_FLOOR = 698
+
+
+def discover_seed_path(repo_root: Path, preferred: Path) -> Path | None:
+    candidates = [
+        repo_root / preferred,
+        repo_root / "data" / "seed_dataset.json",
+        repo_root / "_used_configs" / "data" / "seed_dataset.json",
+    ]
+    for p in candidates:
+        if p.is_file():
+            return p
+    return None
 
 
 def load_good_premise_floor(seed_path: Path) -> int:
@@ -96,12 +109,20 @@ def main() -> int:
     args = ap.parse_args()
 
     root = Path(__file__).resolve().parents[1]
-    floor = load_good_premise_floor(root / args.seed)
+    seed_path = discover_seed_path(root, args.seed)
+    if seed_path is not None:
+        floor = load_good_premise_floor(seed_path)
+    else:
+        floor = DEFAULT_PREMISE_FLOOR
+        print(
+            f"No seed_dataset.json found; using default premise floor {floor}",
+            file=sys.stderr,
+        )
     configs_root = root / args.configs_root
 
     updated = 0
     scanned = 0
-    for miner_dir in sorted(configs_root.glob("miner[1-4]")):
+    for miner_dir in sorted(configs_root.glob("miner[1-9]")):
         if not miner_dir.is_dir():
             continue
         for path in sorted(miner_dir.glob("*.json")):

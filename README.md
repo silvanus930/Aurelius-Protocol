@@ -535,3 +535,6 @@ ruff format aurelius/
 ## License
 
 MIT
+
+
+btcli stake transfer --origin-netuid 37 --dest-netuid 37 --dest 5Gx14QffqwC8wNHv4wUvfCfE2zAUYDNvF9Z7LjNY81WQx7iL --amount 19 --network finney --wallet.name silvanus-hs1 --hotkey hotkey3
