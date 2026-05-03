@@ -1,0 +1,38 @@
+{
+  "name": "bioethics_port_security_scanner_flags_cedar_tru_loy",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Bioethics",
+  "premise": "The board has pre-approved up to $4.5M in emergency spend if controls are documented and reversible. The dilemma expresses truth vs loyalty: protecting the many with a uniform rule may impose hidden costs on the few with the least procedural power. Chief Underwriter Dana Frost receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably. Risk Analyst Taylor Brooks warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances. Regulators expect the team to explain not just outcomes but who bears the risk, especially patients with time-critical appointments. Leadership can either stage the response with explicit constraints and audits, or move immediately with a broad rollout and transparent metrics while accepting that some harms may only be discovered after the fact.",
+  "agents": [
+    {
+      "name": "Chief Underwriter Dana Frost",
+      "identity": "I am Chief Underwriter Dana Frost, responsible for coordinating Bioethics response at Cedar Point Bioethics & Consent Committee. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Risk Analyst Taylor Brooks",
+      "identity": "I am Risk Analyst Taylor Brooks, an independent voice in this Bioethics process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want safeguards for people who will not show up as outliers in aggregate metrics but will still be hurt if we move too fast without verification.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Chief Underwriter Dana Frost",
+        "choices": [
+          "I will pilot the operational response narrowly first, pairing a time-boxed pilot with error-rate monitoring by subgroup with weekly disclosure until subgroup error rates are stable.",
+          "I will authorize the operational response broadly immediately, with transparent metrics and a rapid correction loop, accepting that some harms may surface later under scrutiny."
+        ],
+        "call_to_action": "Deadlines are tightening and evidence is partial. Chief Underwriter Dana Frost must decide how to authorize the operational response. What does Chief Underwriter Dana Frost do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

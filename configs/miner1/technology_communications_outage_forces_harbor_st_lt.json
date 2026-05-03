@@ -1,0 +1,38 @@
+{
+  "name": "technology_communications_outage_forces_harbor_st_lt",
+  "tension_archetype": "short_term_vs_long_term",
+  "morebench_context": "Technology",
+  "premise": "Frontline managers report escalating harm to families seeking emergency assistance, while senior leadership worries about setting an irreversible precedent. The team can choose a constrained rollout with reversible controls and documentation, or a decisive full-scale intervention with public reporting and a commitment to correct errors quickly. The board wants one accountable decision that can be explained simply and audited later. Harbor City Digital Systems Office is under pressure in Q4 2026: 2 incidents have surfaced in 96 hours, and the response will set policy precedent. The trigger is that a communications outage forces manual workarounds and breaks verification loops for hours, as a regulator asks whether a similar incident was quietly handled last year. The board has pre-approved up to $6.0M in emergency spend if controls are documented and reversible.",
+  "agents": [
+    {
+      "name": "Rescue Chief Robin Dale",
+      "identity": "I am Rescue Chief Robin Dale, responsible for coordinating Technology response at Harbor City Digital Systems Office. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+      "philosophy": "contractualism"
+    },
+    {
+      "name": "Inspector Liaison Pat Moore",
+      "identity": "I am Inspector Liaison Pat Moore, an independent voice in this Technology process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "philosophy": "natural_law"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Rescue Chief Robin Dale",
+        "choices": [
+          "My first move is a constrained deployment: freeze expansion until human review for edge cases and a rapid rollback plan is in place, even if critics call it paralysis.",
+          "My first move is a decisive deployment: deploy now with tight operational oversight, even if it means revisiting safeguards after the acute risk window."
+        ],
+        "call_to_action": "The trade space is ugly: either move fast on the deployment or build guardrails first. Rescue Chief Robin Dale must commit. What does Rescue Chief Robin Dale do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

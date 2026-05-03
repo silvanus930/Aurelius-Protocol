@@ -1,0 +1,38 @@
+{
+  "name": "municipal_services_satellite_derived_mesa_jus_mer",
+  "tension_archetype": "justice_vs_mercy",
+  "morebench_context": "Municipal Services",
+  "premise": "Chief Engineer Rina Shah convenes a briefing where dashboards conflict with frontline notes and vendor telemetry is delayed. Community Liaison Mo Chen warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances. a parliamentary committee staffer has asked for a decision memo and a clear exception log format before any rollout expands. One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures. The decision must be defensible to both the public and internal staff without contradicting prior commitments about safety, fairness, and transparency. At Mesa County Municipal Services Directorate, a municipal services unit is forced into a time-bound decision after 7 related incidents in the last 18 hours. The trigger is that a satellite-derived enforcement signal appears to misclassify land use during a contested season, after a key metric is discovered to be double-counting a subgroup.",
+  "agents": [
+    {
+      "name": "Chief Engineer Rina Shah",
+      "identity": "I am Chief Engineer Rina Shah, responsible for coordinating Municipal Services response at Mesa County Municipal Services Directorate. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+      "goal": "I want a path that stabilizes outcomes without baking in an exception that will be applied unevenly across neighborhoods and shifts harm onto people who cannot appeal quickly.",
+      "philosophy": "existentialism"
+    },
+    {
+      "name": "Community Liaison Mo Chen",
+      "identity": "I am Community Liaison Mo Chen, an independent voice in this Municipal Services process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "philosophy": "pragmatism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Chief Engineer Rina Shah",
+        "choices": [
+          "I will pursue a staged policy change: cap scope, require an independent audit and a written exception policy, and expand only after verification, accepting slower relief if it buys legitimacy.",
+          "I will pursue an accelerated policy change across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now."
+        ],
+        "call_to_action": "Stakeholders are split and trust is fragile. Chief Engineer Rina Shah must choose a defensible authorization for the policy change. What does Chief Engineer Rina Shah do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

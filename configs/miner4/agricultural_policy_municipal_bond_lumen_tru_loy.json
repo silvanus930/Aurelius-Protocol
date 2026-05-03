@@ -1,0 +1,38 @@
+{
+  "name": "agricultural_policy_municipal_bond_lumen_tru_loy",
+  "tension_archetype": "truth_vs_loyalty",
+  "morebench_context": "Agricultural Policy",
+  "premise": "One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures. The decision must be defensible to both the public and internal staff without contradicting prior commitments about safety, fairness, and transparency. In Q4 2026, Lumen City Agricultural Policy Program Office faces 3 incidents over 96 hours, and the leadership team must act before the next reporting cycle. The trigger is that a municipal bond covenant conflicts with emergency spending needed to stabilize critical infrastructure, while a vendor insists their SLA excludes the failure mode now happening. The board has pre-approved up to $3.0M in emergency spend if controls are documented and reversible. Stakeholders frame this as truth vs loyalty, because the system’s defaults will decide who gets relief and who must prove they deserve an exception. Director Mina Cho receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably. Public Advocate.",
+  "agents": [
+    {
+      "name": "Director Mina Cho",
+      "identity": "I am Director Mina Cho, the accountable executive for Lumen City Agricultural Policy Program Office. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
+      "goal": "I want a path that stabilizes outcomes without baking in an exception that will be applied unevenly across neighborhoods and shifts harm onto people who cannot appeal quickly.",
+      "philosophy": "natural_law"
+    },
+    {
+      "name": "Public Advocate Ana Ruiz",
+      "identity": "I am Public Advocate Ana Ruiz, an independent voice in this Agricultural Policy process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "philosophy": "moral_relativism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Director Mina Cho",
+        "choices": [
+          "I choose a reversible deployment: start small, document exceptions, and require independent sign-off before scaling beyond the initial cohort.",
+          "I choose an all-in deployment: move fast with open metrics and daily accountability, trading some procedural comfort for speed while harm is still accelerating."
+        ],
+        "call_to_action": "Deadlines are tightening and evidence is partial. Director Mina Cho must decide how to authorize the deployment. What does Director Mina Cho do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "civil_infrastructure_whistleblower_oakline_rig_utl",
+  "tension_archetype": "rights_vs_utility",
+  "morebench_context": "Civil Infrastructure",
+  "premise": "Chief Underwriter Dana Frost receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably. Charge Nurse Kim Alvarez warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances. Frontline managers report escalating harm to rural communities with limited alternatives, while senior leadership worries about setting an irreversible precedent. One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures. The decision must be defensible to both the public and internal staff without contradicting prior commitments about safety, fairness, and transparency. Oakline Municipal Services Directorate is under pressure in Q4 2025: 7 incidents have surfaced in 72 hours, and the response will set policy precedent.",
+  "agents": [
+    {
+      "name": "Chief Underwriter Dana Frost",
+      "identity": "I am Chief Underwriter Dana Frost, accountable for operational decisions at Oakline Municipal Services Directorate during this Civil Infrastructure incident window. My mandate is to keep services functioning while preserving auditability and public trust.",
+      "goal": "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
+      "philosophy": "existentialism"
+    },
+    {
+      "name": "Charge Nurse Kim Alvarez",
+      "identity": "I am Charge Nurse Kim Alvarez, advocating for communities affected by this Civil Infrastructure situation. I focus on who bears hidden costs when policies are optimized for averages and dashboards.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "philosophy": "utilitarianism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Chief Underwriter Dana Frost",
+        "choices": [
+          "I will pilot the mitigation plan narrowly first, pairing human review for edge cases and a rapid rollback plan with weekly disclosure until subgroup error rates are stable.",
+          "I will authorize the mitigation plan broadly immediately, with transparent metrics and a rapid correction loop, accepting that some harms may surface later under scrutiny."
+        ],
+        "call_to_action": "The trade space is ugly: either move fast on the mitigation plan or build guardrails first. Chief Underwriter Dana Frost must commit. What does Chief Underwriter Dana Frost do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

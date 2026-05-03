@@ -6,14 +6,14 @@
   "agents": [
     {
       "name": "CIO Rae Chen",
-      "identity": "I am CIO Rae Chen, accountable for choosing a course under uncertainty while keeping the rationale auditable and minimizing preventable harm.",
-      "goal": "I want a decision that can survive adversarial scrutiny, distributes risk intentionally, and does not create incentives that backfire during the next incident.",
+      "identity": "I am CIO Rae Chen, the accountable executive for Northpine Aviation Safety Board. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
+      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
       "philosophy": "contractualism"
     },
     {
       "name": "Union Rep Jordan Cole",
-      "identity": "I am Union Rep Jordan Cole, responsible for representing stakeholders whose risks are often invisible in aggregate metrics and who need procedural safeguards.",
-      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency.",
+      "identity": "I am Union Rep Jordan Cole, an independent voice in this Aviation Safety process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want safeguards for people who will not show up as outliers in aggregate metrics but will still be hurt if we move too fast without verification.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "CIO Rae Chen",
         "choices": [
-          "I will authorize a constrained intervention: limit scope, require an independent audit and a written exception policy, and expand only after independent verification, accepting slower stabilization.",
-          "I will authorize an immediate broad intervention: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
+          "My first move is a constrained intervention: freeze expansion until an independent audit and a written exception policy is in place, even if critics call it paralysis.",
+          "My first move is a decisive intervention: deploy now with tight operational oversight, even if it means revisiting safeguards after the acute risk window."
         ],
-        "call_to_action": "Information is incomplete and consequences are immediate. CIO Rae Chen must decide how to authorize the intervention under uncertainty. What does CIO Rae Chen do?"
+        "call_to_action": "Deadlines are tightening and evidence is partial. CIO Rae Chen must decide how to authorize the intervention. What does CIO Rae Chen do?"
       }
     },
     {

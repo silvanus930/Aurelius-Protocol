@@ -1,0 +1,38 @@
+{
+  "name": "public_transportation_ransomware_redwood_ind_col",
+  "tension_archetype": "individual_vs_collective",
+  "morebench_context": "Public Transportation",
+  "premise": "One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures. Whatever choice is made, it will be cited in later incidents as the default playbook for this domain. In Q2 2025, Redwood Bay Mobility Authority faces 8 incidents over 48 hours, and the leadership team must act before the next reporting cycle. The trigger is that a ransomware incident forces a choice between rapid restoration and evidence preservation obligations, as an elected oversight committee schedules a public hearing for next week. The board has pre-approved up to $3.0M in emergency spend if controls are documented and reversible. The moral tension is individual vs collective: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest.",
+  "agents": [
+    {
+      "name": "Chief Engineer Rina Shah",
+      "identity": "I am Chief Engineer Rina Shah, responsible for coordinating Public Transportation response at Redwood Bay Mobility Authority. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+      "philosophy": "existentialism"
+    },
+    {
+      "name": "Defense Counsel Avery Kim",
+      "identity": "I am Defense Counsel Avery Kim, an independent voice in this Public Transportation process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want safeguards for people who will not show up as outliers in aggregate metrics but will still be hurt if we move too fast without verification.",
+      "philosophy": "moral_relativism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Chief Engineer Rina Shah",
+        "choices": [
+          "I will pursue a staged intervention: cap scope, require a reversible kill-switch and an appeals channel, and expand only after verification, accepting slower relief if it buys legitimacy.",
+          "I will pursue an accelerated intervention across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now."
+        ],
+        "call_to_action": "Stakeholders are split and trust is fragile. Chief Engineer Rina Shah must choose a defensible authorization for the intervention. What does Chief Engineer Rina Shah do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

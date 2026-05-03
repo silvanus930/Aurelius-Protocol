@@ -6,14 +6,14 @@
   "agents": [
     {
       "name": "Health Director Priya Nand",
-      "identity": "I am Health Director Priya Nand, accountable for choosing a course under uncertainty while keeping the rationale auditable and minimizing preventable harm.",
-      "goal": "I want a decision that can survive adversarial scrutiny, distributes risk intentionally, and does not create incentives that backfire during the next incident.",
+      "identity": "I am Health Director Priya Nand, responsible for coordinating Insurance response at Cedar Point Insurance Program Office. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+      "goal": "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Risk Analyst Taylor Brooks",
-      "identity": "I am Risk Analyst Taylor Brooks, responsible for representing stakeholders whose risks are often invisible in aggregate metrics and who need procedural safeguards.",
-      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency.",
+      "identity": "I am Risk Analyst Taylor Brooks, an independent voice in this Insurance process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
       "philosophy": "pragmatism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Health Director Priya Nand",
         "choices": [
-          "I will authorize a constrained intervention: limit scope, require a reversible kill-switch and an appeals channel, and expand only after independent verification, accepting slower stabilization.",
-          "I will authorize an immediate broad intervention: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
+          "My first move is a constrained intervention: freeze expansion until a reversible kill-switch and an appeals channel is in place, even if critics call it paralysis.",
+          "My first move is a decisive intervention: deploy now with tight operational oversight, even if it means revisiting safeguards after the acute risk window."
         ],
-        "call_to_action": "Information is incomplete and consequences are immediate. Health Director Priya Nand must decide how to authorize the intervention under uncertainty. What does Health Director Priya Nand do?"
+        "call_to_action": "The trade space is ugly: either move fast on the intervention or build guardrails first. Health Director Priya Nand must commit. What does Health Director Priya Nand do?"
       }
     },
     {

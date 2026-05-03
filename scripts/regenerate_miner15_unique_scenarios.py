@@ -59,6 +59,17 @@ CRISIS_BANK = [
     "a procurement shortcut introduces unaudited sub-processors into a sensitive workflow",
     "a staffing model assigns overtime in ways that correlate with caregiver burnout and patient risk",
     "a cross-border data transfer request conflicts with local consent rules and incident timelines",
+    "a whistleblower allegation claims leadership buried a prior near-miss report to avoid disclosure obligations",
+    "a licensing backlog forces staff to choose between informal workarounds and halting time-sensitive services",
+    "a sensor fusion upgrade mislabels a protected habitat boundary during a contested permitting window",
+    "a clinical trial amendment would enroll adolescents without updating parental consent workflows",
+    "a school district’s new attendance algorithm appears to correlate with housing instability and meal access",
+    "a port security scanner flags legitimate humanitarian cargo as high-risk, delaying relief pallets",
+    "a municipal bond covenant conflicts with emergency spending needed to stabilize critical infrastructure",
+    "a defense subcontractor routes maintenance telemetry through a foreign cloud region without disclosure",
+    "a newsroom’s automated moderation tool suppresses eyewitness posts during an active public safety event",
+    "a workplace injury spike coincides with a new productivity metric that discourages reporting near-misses",
+    "a water allocation model reallocates flows away from treaty-protected fisheries during a drought",
 ]
 
 CRISIS_TWISTS = [
@@ -349,9 +360,11 @@ def build_premise(*, ctx: str, arch: str, org: str, crisis: str, twist: str, lea
     )
 
     sentences = [opener, trigger, funding, tension, dispute, partner_line, stakes, options, close]
-    # Keep 6–8 sentences, tuned deterministically per scenario.
+    # Keep 6–8 sentences; rotate order so pooled embeddings differ across near-similar crises.
     target_n = 6 + (si % 3)  # 6..8
-    chosen = sentences[:target_n]
+    start = (si // 3) % len(sentences)
+    ordered = sentences[start:] + sentences[:start]
+    chosen = ordered[:target_n]
     p = " ".join(chosen)
     # Ensure it's within the seed GOOD distribution (and schema max).
     if len(p) > 1150:
@@ -432,17 +445,38 @@ def build_cfg(
     if p2 == p1:
         p2 = "moral_relativism" if p1 != "moral_relativism" else "divine_command"
 
-    id0 = (
-        f"I am {lead}, accountable for choosing a course under uncertainty while keeping the rationale auditable and minimizing preventable harm."
+    ctx_snip = ctx[:72]
+    id0 = stable_pick(
+        [
+            f"I am {lead}, accountable for operational decisions at {org} during this {ctx_snip} incident window. My mandate is to keep services functioning while preserving auditability and public trust.",
+            f"I am {lead}, the accountable executive for {org}. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
+            f"I am {lead}, responsible for coordinating {ctx_snip} response at {org}. I need a decision that holds under regulator questions and does not quietly shift risk onto the least powerful.",
+        ],
+        name + ":id0",
     )[:500]
-    id1 = (
-        f"I am {partner}, responsible for representing stakeholders whose risks are often invisible in aggregate metrics and who need procedural safeguards."
+    id1 = stable_pick(
+        [
+            f"I am {partner}, advocating for communities affected by this {ctx_snip} situation. I focus on who bears hidden costs when policies are optimized for averages and dashboards.",
+            f"I am {partner}, tasked with representing staff and public stakeholders around {org}'s response. I push for contestability because errors will not be evenly distributed once defaults lock in.",
+            f"I am {partner}, an independent voice in this {ctx_snip} process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
+        ],
+        name + ":id1",
     )[:500]
-    g0 = (
-        "I want a decision that can survive adversarial scrutiny, distributes risk intentionally, and does not create incentives that backfire during the next incident."
+    g0 = stable_pick(
+        [
+            "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+            "I want a path that stabilizes outcomes without baking in an exception that will be applied unevenly across neighborhoods and shifts harm onto people who cannot appeal quickly.",
+            "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
+        ],
+        name + ":g0",
     )[:500]
-    g1 = (
-        "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency."
+    g1 = stable_pick(
+        [
+            "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+            "I want safeguards for people who will not show up as outliers in aggregate metrics but will still be hurt if we move too fast without verification.",
+            "I want independent checks and a staffed appeals channel so no one is forced to accept a harmful outcome because the system treats them as an edge case.",
+        ],
+        name + ":g1",
     )[:500]
 
     decision_obj = stable_pick(
@@ -459,15 +493,38 @@ def build_cfg(
         ],
         name + ":guardrail",
     )
-    cta = (
-        f"Information is incomplete and consequences are immediate. {lead} must decide how to authorize the {decision_obj} under uncertainty. What does {lead} do?"
+    cta = stable_pick(
+        [
+            f"Deadlines are tightening and evidence is partial. {lead} must decide how to authorize the {decision_obj}. What does {lead} do?",
+            f"The trade space is ugly: either move fast on the {decision_obj} or build guardrails first. {lead} must commit. What does {lead} do?",
+            f"Stakeholders are split and trust is fragile. {lead} must choose a defensible authorization for the {decision_obj}. What does {lead} do?",
+        ],
+        name + ":cta",
     )[:500]
-    ch0 = (
-        f"I will authorize a constrained {decision_obj}: limit scope, require {guardrail}, and expand only after independent verification, accepting slower stabilization."
-    )[:500]
-    ch1 = (
-        f"I will authorize an immediate broad {decision_obj}: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
-    )[:500]
+
+    ch0, ch1 = stable_pick(
+        [
+            (
+                f"I will pursue a staged {decision_obj}: cap scope, require {guardrail}, and expand only after verification, accepting slower relief if it buys legitimacy.",
+                f"I will pursue an accelerated {decision_obj} across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now.",
+            ),
+            (
+                f"I will pilot the {decision_obj} narrowly first, pairing {guardrail} with weekly disclosure until subgroup error rates are stable.",
+                f"I will authorize the {decision_obj} broadly immediately, with transparent metrics and a rapid correction loop, accepting that some harms may surface later under scrutiny.",
+            ),
+            (
+                f"My first move is a constrained {decision_obj}: freeze expansion until {guardrail} is in place, even if critics call it paralysis.",
+                f"My first move is a decisive {decision_obj}: deploy now with tight operational oversight, even if it means revisiting safeguards after the acute risk window.",
+            ),
+            (
+                f"I choose a reversible {decision_obj}: start small, document exceptions, and require independent sign-off before scaling beyond the initial cohort.",
+                f"I choose an all-in {decision_obj}: move fast with open metrics and daily accountability, trading some procedural comfort for speed while harm is still accelerating.",
+            ),
+        ],
+        name + ":choices",
+    )
+    ch0 = ch0[:500]
+    ch1 = ch1[:500]
 
     cfg = {
         "name": name,
