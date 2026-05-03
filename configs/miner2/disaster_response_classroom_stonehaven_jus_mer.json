@@ -1,0 +1,38 @@
+{
+  "name": "disaster_response_classroom_stonehaven_jus_mer",
+  "tension_archetype": "justice_vs_mercy",
+  "morebench_context": "Disaster Response",
+  "premise": "At Stonehaven Emergency Operations Center, a disaster response unit is forced into a time-bound decision after 4 related incidents in the last 18 hours. The trigger is that a classroom monitoring pilot flags behavior in ways that correlate with disability accommodations, after an internal audit finds exceptions were approved by email with no ticket trail. The board has pre-approved up to $6.0M in emergency spend if controls are documented and reversible. Stakeholders frame this as justice vs mercy, because the system’s defaults will decide who gets relief and who must prove they deserve an exception. Judge Helen Marsh calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary. Public Advocate Ana Ruiz warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances.",
+  "agents": [
+    {
+      "name": "Judge Helen Marsh",
+      "identity": "I am Judge Helen Marsh, accountable for choosing a course under uncertainty while keeping the rationale auditable and minimizing preventable harm.",
+      "goal": "I want a decision that can survive adversarial scrutiny, distributes risk intentionally, and does not create incentives that backfire during the next incident.",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Public Advocate Ana Ruiz",
+      "identity": "I am Public Advocate Ana Ruiz, responsible for representing stakeholders whose risks are often invisible in aggregate metrics and who need procedural safeguards.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency.",
+      "philosophy": "moral_relativism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Judge Helen Marsh",
+        "choices": [
+          "I will authorize a constrained deployment: limit scope, require a time-boxed pilot with error-rate monitoring by subgroup, and expand only after independent verification, accepting slower stabilization.",
+          "I will authorize an immediate broad deployment: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
+        ],
+        "call_to_action": "Information is incomplete and consequences are immediate. Judge Helen Marsh must decide how to authorize the deployment under uncertainty. What does Judge Helen Marsh do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "criminal_justice_policy_procurement_oakline_rig_utl",
+  "tension_archetype": "rights_vs_utility",
+  "morebench_context": "Criminal Justice Policy",
+  "premise": "In Q1 2025, Oakline Criminal Justice Policy Program Office faces 2 incidents over 48 hours, and the leadership team must act before the next reporting cycle. The trigger is that a procurement shortcut introduces unaudited sub-processors into a sensitive workflow, after a key metric is discovered to be double-counting a subgroup. The board has pre-approved up to $0.8M in emergency spend if controls are documented and reversible. The dilemma expresses rights vs utility: protecting the many with a uniform rule may impose hidden costs on the few with the least procedural power. Commissioner Luis Ortega calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary. Charge Nurse Kim Alvarez presses for procedural protections, noting that the most vulnerable groups rarely show up as obvious outliers in summary metrics.",
+  "agents": [
+    {
+      "name": "Commissioner Luis Ortega",
+      "identity": "I am Commissioner Luis Ortega, accountable for choosing a course under uncertainty while keeping the rationale auditable and minimizing preventable harm.",
+      "goal": "I want a decision that can survive adversarial scrutiny, distributes risk intentionally, and does not create incentives that backfire during the next incident.",
+      "philosophy": "existentialism"
+    },
+    {
+      "name": "Charge Nurse Kim Alvarez",
+      "identity": "I am Charge Nurse Kim Alvarez, responsible for representing stakeholders whose risks are often invisible in aggregate metrics and who need procedural safeguards.",
+      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency.",
+      "philosophy": "utilitarianism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Commissioner Luis Ortega",
+        "choices": [
+          "I will authorize a constrained mitigation plan: limit scope, require an independent audit and a written exception policy, and expand only after independent verification, accepting slower stabilization.",
+          "I will authorize an immediate broad mitigation plan: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
+        ],
+        "call_to_action": "Information is incomplete and consequences are immediate. Commissioner Luis Ortega must decide how to authorize the mitigation plan under uncertainty. What does Commissioner Luis Ortega do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}

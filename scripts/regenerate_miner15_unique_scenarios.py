@@ -287,27 +287,82 @@ def build_premise(*, ctx: str, arch: str, org: str, crisis: str, twist: str, lea
         name + ":affected",
     )
 
-    p = (
-        f"At {org}, a {ctx.lower()} leadership team confronts a decision window where incomplete information "
-        f"still forces a commitment that will be cited as precedent. In the last {window_hours} hours there have been {incident_count} related incidents, "
-        f"and the board has pre-approved up to ${budget_m:.1f}M in emergency spend for {quarter} {year} if controls are documented. "
-        f"The operational trigger is that {crisis}, {twist}. "
-        f"Stakeholders describe the moral tension as {arch_h}, because the first operational choice will harden into default practice "
-        f"for staff who must execute under stress and for communities who cannot realistically appeal exceptions once systems lock in. "
-        f"{lead} has convened a cross-functional briefing, but dashboards disagree with frontline notes and vendor telemetry is delayed. "
-        f"{partner} argues that any path that looks efficient in aggregate metrics can still shift harm onto people without procedural power to contest it. "
-        f"Option A would prioritize immediate stabilization and throughput, but it risks normalizing an exception that will later be applied unevenly across neighborhoods. "
-        f"Option B would prioritize explicit constraints and disclosure up front, but it risks missing a narrow window to prevent cascading secondary failures. "
-        f"Regulators have warned that selective disclosure will be treated as bad faith if outcomes deteriorate. "
-        f"Internal counsel emphasizes that rollback would itself alter logs and incentives, making later accountability harder. "
-        f"{oversight} has requested the decision memo and the exception log format in advance. "
-        f"Frontline managers report that the burden is already landing on {affected}. "
-        f"The board demands one accountable choice that can be defended publicly without contradicting prior commitments about safety, fairness, and transparency."
+    # Target the GOOD seed distribution (roughly 700–1100 chars) and avoid
+    # repeating the same boilerplate sentences across all configs.
+    opener = stable_pick(
+        [
+            f"At {org}, a {ctx.lower()} unit is forced into a time-bound decision after {incident_count} related incidents in the last {window_hours} hours.",
+            f"{org} is under pressure in {quarter} {year}: {incident_count} incidents have surfaced in {window_hours} hours, and the response will set policy precedent.",
+            f"In {quarter} {year}, {org} faces {incident_count} incidents over {window_hours} hours, and the leadership team must act before the next reporting cycle.",
+        ],
+        name + ":opener",
     )
-    while len(p) < 920:
-        p += (
-            " Additional contemporaneous notes document dissenting staff memos, unresolved edge cases, "
-            f"and the expected downstream effects on appeals, oversight, and public trust in {ctx.lower()} institutions."
+    trigger = f"The trigger is that {crisis}, {twist}."
+    funding = f"The board has pre-approved up to ${budget_m:.1f}M in emergency spend if controls are documented and reversible."
+    stakes = stable_pick(
+        [
+            f"{oversight} has asked for a decision memo and a clear exception log format before any rollout expands.",
+            f"Regulators expect the team to explain not just outcomes but who bears the risk, especially {affected}.",
+            f"Frontline managers report escalating harm to {affected}, while senior leadership worries about setting an irreversible precedent.",
+        ],
+        name + ":stakes",
+    )
+    tension = stable_pick(
+        [
+            f"The moral tension is {arch_h}: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest.",
+            f"Stakeholders frame this as {arch_h}, because the system’s defaults will decide who gets relief and who must prove they deserve an exception.",
+            f"The dilemma expresses {arch_h}: protecting the many with a uniform rule may impose hidden costs on the few with the least procedural power.",
+        ],
+        name + ":tension",
+    )
+    dispute = stable_pick(
+        [
+            f"{lead} convenes a briefing where dashboards conflict with frontline notes and vendor telemetry is delayed.",
+            f"{lead} calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary.",
+            f"{lead} receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably.",
+        ],
+        name + ":dispute",
+    )
+    partner_line = stable_pick(
+        [
+            f"{partner} warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances.",
+            f"{partner} argues that any plan must include a credible appeals channel and a way to detect uneven error rates before they harden into routine.",
+            f"{partner} presses for procedural protections, noting that the most vulnerable groups rarely show up as obvious outliers in summary metrics.",
+        ],
+        name + ":partner",
+    )
+    options = stable_pick(
+        [
+            "One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures.",
+            "Leadership can either stage the response with explicit constraints and audits, or move immediately with a broad rollout and transparent metrics while accepting that some harms may only be discovered after the fact.",
+            "The team can choose a constrained rollout with reversible controls and documentation, or a decisive full-scale intervention with public reporting and a commitment to correct errors quickly.",
+        ],
+        name + ":options",
+    )
+    close = stable_pick(
+        [
+            "The decision must be defensible to both the public and internal staff without contradicting prior commitments about safety, fairness, and transparency.",
+            "Whatever choice is made, it will be cited in later incidents as the default playbook for this domain.",
+            "The board wants one accountable decision that can be explained simply and audited later.",
+        ],
+        name + ":close",
+    )
+
+    sentences = [opener, trigger, funding, tension, dispute, partner_line, stakes, options, close]
+    # Keep 6–8 sentences, tuned deterministically per scenario.
+    target_n = 6 + (si % 3)  # 6..8
+    chosen = sentences[:target_n]
+    p = " ".join(chosen)
+    # Ensure it's within the seed GOOD distribution (and schema max).
+    if len(p) > 1150:
+        p = p[:1150].rsplit(" ", 1)[0].rstrip(".") + "."
+    while len(p) < 720:
+        p += " " + stable_pick(
+            [
+                f"Documentation will need to explain how errors are detected, how exceptions are handled, and how {ctx.lower()} staff can escalate edge cases without retaliation.",
+                "Leaders agree that uncertainty is unavoidable, but disagreement persists about whether legitimacy comes from speed or from constraints and contestability.",
+            ],
+            name + ":pad",
         )
     return p[:2000]
 
@@ -390,14 +445,28 @@ def build_cfg(
         "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency."
     )[:500]
 
+    decision_obj = stable_pick(
+        ["deployment", "rollout", "intervention", "policy change", "operational response", "mitigation plan"],
+        name + ":decision_obj",
+    )
+    guardrail = stable_pick(
+        [
+            "an independent audit and a written exception policy",
+            "a reversible kill-switch and an appeals channel",
+            "documented criteria and a public incident dashboard",
+            "human review for edge cases and a rapid rollback plan",
+            "a time-boxed pilot with error-rate monitoring by subgroup",
+        ],
+        name + ":guardrail",
+    )
     cta = (
-        f"Information is incomplete and consequences are immediate. {lead} must choose between two defensible paths with different risks. What does {lead} do?"
+        f"Information is incomplete and consequences are immediate. {lead} must decide how to authorize the {decision_obj} under uncertainty. What does {lead} do?"
     )[:500]
     ch0 = (
-        "I will pursue a constrained path: narrower scope, documented exceptions, independent verification, and a staffed appeals channel, accepting slower relief."
+        f"I will authorize a constrained {decision_obj}: limit scope, require {guardrail}, and expand only after independent verification, accepting slower stabilization."
     )[:500]
     ch1 = (
-        "I will pursue a decisive path: immediate broad action with transparent metrics and daily oversight, accepting higher overreach risk to reduce imminent harm."
+        f"I will authorize an immediate broad {decision_obj}: act now with transparent metrics and daily oversight, accepting a higher risk of overreach to reduce imminent harm."
     )[:500]
 
     cfg = {
