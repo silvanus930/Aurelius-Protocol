@@ -1,19 +1,19 @@
 {
-  "name": "bioethics_cross_border_data_transfer_stonehaven_auto_ben",
+  "name": "scenario_a98a66_bioethics_cross_border_data_transfer_stonehaven_auto_ben",
   "tension_archetype": "autonomy_vs_beneficence",
   "morebench_context": "Bioethics",
-  "premise": "The board has pre-approved up to $8.0M in emergency spend if controls are documented and reversible. The moral tension is autonomy vs beneficence: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest. Commissioner Luis Ortega receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably. Public Advocate Ana Ruiz warns that optimizing for aggregate throughput can shift harm onto people who cannot realistically appeal or document their circumstances. Frontline managers report escalating harm to patients with time-critical appointments, while senior leadership worries about setting an irreversible precedent. One path would narrow scope, publish criteria, and require independent verification before scaling. The other would deploy broadly now with daily oversight and accept a higher risk of overreach to prevent immediate failures. The board wants one accountable decision that can be explained simply and audited later. In Q3 2025, Stonehaven Bioethics & Consent Committee faces 3 incidents over 6 hours, and the.",
+  "premise": "the incident command structure is under pressure in Q1 2026: 7 critical issues have surfaced over 24 hours, and the response will set a policy precedent for Bioethics. The immediate incident is a cross-border data transfer dispute. The trigger is that cross-border data transfer is contested, and a pause could break critical services while proceeding could breach legal commitments. The board has pre-approved up to $2.0M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as autonomy vs beneficence: the choice will set a precedent under pressure and incomplete evidence. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 4-hour regulator call. Boundaries: No new data sources may be added during the incident window. Public communications must distinguish verified facts from hypotheses. The response must include an appeals path usable without legal counsel. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "Commissioner Luis Ortega",
-      "identity": "I am Commissioner Luis Ortega, the accountable executive for Stonehaven Bioethics & Consent Committee. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
-      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+      "name": "Duty Executive Keisha Sato",
+      "identity": "I am Duty Executive Keisha Sato, coordinating the Bioethics response at Stonehaven Bioethics Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want an operational memo that withstands regulator questioning: assumptions stated, risks assigned, rollback triggers defined.",
       "philosophy": "utilitarianism"
     },
     {
-      "name": "Public Advocate Ana Ruiz",
-      "identity": "I am Public Advocate Ana Ruiz, tasked with representing staff and public stakeholders around Stonehaven Bioethics & Consent Committee's response. I push for contestability because errors will not be evenly distributed once defaults lock in.",
-      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "name": "Patient Safety Liaison Ansel Bennett",
+      "identity": "I am Patient Safety Liaison Ansel Bennett, coordinating the Bioethics response at Stonehaven Bioethics Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want transparency that separates verified facts from guesses and forces equitable review of who is harmed by defaults.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "Commissioner Luis Ortega",
+        "agent_name": "Duty Executive Keisha Sato",
         "choices": [
-          "I will pursue a staged intervention: cap scope, require a reversible kill-switch and an appeals channel, and expand only after verification, accepting slower relief if it buys legitimacy.",
-          "I will pursue an accelerated intervention across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now."
+          "I will authorize a narrow, time-boxed pilot first, with independent log capture, a reversible kill-switch, and two-person sign-off for overrides; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Stakeholders are split and trust is fragile. Commissioner Luis Ortega must choose a defensible authorization for the intervention. What does Commissioner Luis Ortega do?"
+        "call_to_action": "The window for a controlled decision is closing. Duty Executive Keisha Sato must choose an authorization approach for this Bioethics decision. What does Duty Executive Keisha Sato do?"
       }
     },
     {

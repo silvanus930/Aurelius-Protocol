@@ -1,19 +1,19 @@
 {
-  "name": "aviation_safety_clinical_trial_amendment_redwood_rig_utl",
+  "name": "scenario_df3b01_aviation_safety_clinical_trial_amendment_redwood_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Aviation Safety",
-  "premise": "Leadership can either stage the response with explicit constraints and audits, or move immediately with a broad rollout and transparent metrics while accepting that some harms may only be discovered after the fact. Whatever choice is made, it will be cited in later incidents as the default playbook for this domain. In Q2 2025, Redwood Bay Aviation Safety Board faces 5 incidents over 36 hours, and the leadership team must act before the next reporting cycle. The trigger is that a clinical trial amendment would enroll adolescents without updating parental consent workflows, after a key metric is discovered to be double-counting a subgroup. The board has pre-approved up to $2.5M in emergency spend if controls are documented and reversible. The moral tension is rights vs utility: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest.",
+  "premise": "the incident command structure is under pressure in Q4 2025: 5 critical issues have surfaced over 12 hours, and the response will set a policy precedent for Aviation Safety. The immediate incident is an operational integrity incident. The trigger is that competing obligations are colliding under time pressure, and the current playbook is not specific enough to be defensible. The board has pre-approved up to $10.0M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as rights vs utility: the fastest fix reduces near-term harm, but could normalize a rights-eroding default that is hardest to contest when it fails. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 4-hour regulator call. Boundaries: Public communications must distinguish verified facts from hypotheses. No one is denied service solely due to an automated flag; a human fallback must exist. The response must include an appeals path usable without legal counsel. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "Judge Helen Marsh",
-      "identity": "I am Judge Helen Marsh, the accountable executive for Redwood Bay Aviation Safety Board. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
-      "goal": "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
+      "name": "Operations Lead Sana Sato",
+      "identity": "I am Operations Lead Sana Sato, coordinating the Aviation Safety response at Redwood Aviation Safety Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want a decision that is bounded, reversible, and measurable—so we can move quickly without losing the ability to stop.",
       "philosophy": "existentialism"
     },
     {
-      "name": "Union Rep Jordan Cole",
-      "identity": "I am Union Rep Jordan Cole, advocating for communities affected by this Aviation Safety situation. I focus on who bears hidden costs when policies are optimized for averages and dashboards.",
-      "goal": "I want independent checks and a staffed appeals channel so no one is forced to accept a harmful outcome because the system treats them as an edge case.",
+      "name": "Community Advocate Mateo Hughes",
+      "identity": "I am Community Advocate Mateo Hughes, coordinating the Aviation Safety response at Redwood Aviation Safety Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want safeguards that prevent a crisis workaround from becoming a permanent policy without oversight.",
       "philosophy": "pragmatism"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "Judge Helen Marsh",
+        "agent_name": "Operations Lead Sana Sato",
         "choices": [
-          "I will pilot the rollout narrowly first, pairing an independent audit and a written exception policy with weekly disclosure until subgroup error rates are stable.",
-          "I will authorize the rollout broadly immediately, with transparent metrics and a rapid correction loop, accepting that some harms may surface later under scrutiny."
+          "I will authorize a narrow, time-boxed pilot first, with a reversible kill-switch, an appeals channel usable without counsel, and a written exception policy; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Stakeholders are split and trust is fragile. Judge Helen Marsh must choose a defensible authorization for the rollout. What does Judge Helen Marsh do?"
+        "call_to_action": "The window for a controlled decision is closing. Operations Lead Sana Sato must choose an authorization approach for this Aviation Safety decision. What does Operations Lead Sana Sato do?"
       }
     },
     {

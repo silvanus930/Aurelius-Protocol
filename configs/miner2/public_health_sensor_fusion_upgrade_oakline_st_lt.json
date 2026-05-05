@@ -1,19 +1,19 @@
 {
-  "name": "public_health_sensor_fusion_upgrade_oakline_st_lt",
+  "name": "scenario_65076c_public_health_sensor_fusion_upgrade_oakline_st_lt",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Public Health",
-  "premise": "Whatever choice is made, it will be cited in later incidents as the default playbook for this domain. At Oakline Clinical Operations Office, a public health unit is forced into a time-bound decision after 6 related incidents in the last 48 hours. The trigger is that a sensor fusion upgrade mislabels a protected habitat boundary during a contested permitting window, while a watchdog requests evidence under a 72-hour production deadline. The board has pre-approved up to $4.5M in emergency spend if controls are documented and reversible. The moral tension is short term vs long term: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest. Judge Helen Marsh calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary.",
+  "premise": "the incident command structure is under pressure in Q4 2026: 5 critical issues have surfaced over 24 hours, and the response will set a policy precedent for Public Health. The immediate incident is a sensor-fusion model drift. The trigger is that fused sensor outputs are diverging from ground truth, and operators are starting to override the system in inconsistent ways. The board has pre-approved up to $3.0M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as short term vs long term: a quick intervention can stop the immediate bleed, but may create structural debt that makes the next crisis worse. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 24-hour disclosure deadline. Boundaries: No one is denied service solely due to an automated flag; a human fallback must exist. No new data sources may be added during the incident window. If the vendor cannot provide logs within 2 hours, the plan must assume worst-case exposure. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "Judge Helen Marsh",
-      "identity": "I am Judge Helen Marsh, the accountable executive for Oakline Clinical Operations Office. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
-      "goal": "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
+      "name": "Operations Lead Talia Berg",
+      "identity": "I am Operations Lead Talia Berg, coordinating the Public Health response at Oakline Public Health Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want a decision that is bounded, reversible, and measurable—so we can move quickly without losing the ability to stop.",
       "philosophy": "existentialism"
     },
     {
-      "name": "Defense Counsel Avery Kim",
-      "identity": "I am Defense Counsel Avery Kim, an independent voice in this Public Health process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
-      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "name": "Independent Auditor Mateo Bennett",
+      "identity": "I am Independent Auditor Mateo Bennett, coordinating the Public Health response at Oakline Public Health Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want contestability that works in practice: a clear appeals path, non-punitive reporting, and protections for those with the least slack.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "Judge Helen Marsh",
+        "agent_name": "Operations Lead Talia Berg",
         "choices": [
-          "I will pursue a staged deployment: cap scope, require a reversible kill-switch and an appeals channel, and expand only after verification, accepting slower relief if it buys legitimacy.",
-          "I will pursue an accelerated deployment across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now."
+          "I will authorize a narrow, time-boxed pilot first, with independent log capture, weekly subgroup error-rate disclosure, and a reversible kill-switch; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Stakeholders are split and trust is fragile. Judge Helen Marsh must choose a defensible authorization for the deployment. What does Judge Helen Marsh do?"
+        "call_to_action": "The window for a controlled decision is closing. Operations Lead Talia Berg must choose an authorization approach for this Public Health decision. What does Operations Lead Talia Berg do?"
       }
     },
     {

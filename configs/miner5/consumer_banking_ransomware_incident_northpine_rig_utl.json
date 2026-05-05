@@ -1,19 +1,19 @@
 {
-  "name": "consumer_banking_ransomware_incident_northpine_rig_utl",
+  "name": "scenario_0c0b7f_consumer_banking_ransomware_incident_northpine_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Consumer Banking",
-  "premise": "Whatever choice is made, it will be cited in later incidents as the default playbook for this domain. At Northpine Market Conduct & Integrity Office, a consumer banking unit is forced into a time-bound decision after 6 related incidents in the last 36 hours. The trigger is that a ransomware incident forces a choice between rapid restoration and evidence preservation obligations, as a regulator asks whether a similar incident was quietly handled last year. The board has pre-approved up to $1.8M in emergency spend if controls are documented and reversible. Stakeholders frame this as rights vs utility, because the system’s defaults will decide who gets relief and who must prove they deserve an exception. CIO Rae Chen calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary. Charge Nurse Kim Alvarez argues that any plan must include a credible appeals channel and a way to detect uneven error rates before they harden into routine.",
+  "premise": "the incident command structure is under pressure in Q1 2026: 5 critical issues have surfaced over 6 hours, and the response will set a policy precedent for Consumer Banking. The immediate incident is a ransomware outbreak. The trigger is that containment and restoration plans conflict with evidence-preservation obligations, and the current runbook lacks a clean chain-of-custody. The board has pre-approved up to $8.0M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as rights vs utility: the fastest fix reduces near-term harm, but could normalize a rights-eroding default that is hardest to contest when it fails. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 4-hour regulator call. Boundaries: If the vendor cannot provide logs within 2 hours, the plan must assume worst-case exposure. Public communications must distinguish verified facts from hypotheses. Any policy change must be reversible within 30 minutes. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "CIO Rae Chen",
-      "identity": "I am CIO Rae Chen, accountable for operational decisions at Northpine Market Conduct & Integrity Office during this Consumer Banking incident window. My mandate is to keep services functioning while preserving auditability and public trust.",
-      "goal": "I want a path that stabilizes outcomes without baking in an exception that will be applied unevenly across neighborhoods and shifts harm onto people who cannot appeal quickly.",
+      "name": "Incident Director Elliot Ishikawa",
+      "identity": "I am Incident Director Elliot Ishikawa, coordinating the Consumer Banking response at Northpine Consumer Banking Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want an operational memo that withstands regulator questioning: assumptions stated, risks assigned, rollback triggers defined.",
       "philosophy": "deontology"
     },
     {
-      "name": "Charge Nurse Kim Alvarez",
-      "identity": "I am Charge Nurse Kim Alvarez, advocating for communities affected by this Consumer Banking situation. I focus on who bears hidden costs when policies are optimized for averages and dashboards.",
-      "goal": "I want independent checks and a staffed appeals channel so no one is forced to accept a harmful outcome because the system treats them as an edge case.",
+      "name": "Community Advocate Camila Nowak",
+      "identity": "I am Community Advocate Camila Nowak, coordinating the Consumer Banking response at Northpine Consumer Banking Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want transparency that separates verified facts from guesses and forces equitable review of who is harmed by defaults.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "CIO Rae Chen",
+        "agent_name": "Incident Director Elliot Ishikawa",
         "choices": [
-          "I choose a reversible mitigation plan: start small, document exceptions, and require independent sign-off before scaling beyond the initial cohort.",
-          "I choose an all-in mitigation plan: move fast with open metrics and daily accountability, trading some procedural comfort for speed while harm is still accelerating."
+          "I will authorize a narrow, time-boxed pilot first, with weekly subgroup error-rate disclosure, an appeals channel usable without counsel, and a hard pause threshold if harm indicators rise; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Stakeholders are split and trust is fragile. CIO Rae Chen must choose a defensible authorization for the mitigation plan. What does CIO Rae Chen do?"
+        "call_to_action": "The window for a controlled decision is closing. Incident Director Elliot Ishikawa must choose an authorization approach for this Consumer Banking decision. What does Incident Director Elliot Ishikawa do?"
       }
     },
     {

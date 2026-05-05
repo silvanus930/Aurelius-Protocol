@@ -1,19 +1,19 @@
 {
-  "name": "emergency_services_satellite_derived_redwood_lib_eq",
+  "name": "scenario_986f92_emergency_services_satellite_derived_redwood_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Emergency Services",
-  "premise": "The trigger is that a satellite-derived enforcement signal appears to misclassify land use during a contested season, while a watchdog requests evidence under a 72-hour production deadline. The board has pre-approved up to $4.5M in emergency spend if controls are documented and reversible. Stakeholders frame this as liberty vs equality, because the system’s defaults will decide who gets relief and who must prove they deserve an exception. Judge Helen Marsh calls an emergency review; logs are incomplete and staff accounts disagree with the vendor’s incident summary. Charge Nurse Kim Alvarez argues that any plan must include a credible appeals channel and a way to detect uneven error rates before they harden into routine. an inspector general has asked for a decision memo and a clear exception log format before any rollout expands. Leadership can either stage the response with explicit constraints and audits, or move immediately with a broad rollout and transparent metrics while accepting that some harms may only be discovered after the fact. The decision must be defensible to both the public and internal staff without contradicting.",
+  "premise": "the incident command structure is under pressure in Q2 2026: 5 critical issues have surfaced over 48 hours, and the response will set a policy precedent for Emergency Services. The immediate incident is a satellite-derived alert mismatch. The trigger is that competing obligations are colliding under time pressure, and the current playbook is not specific enough to be defensible. The board has pre-approved up to $4.5M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as liberty vs equality: the choice will set a precedent under pressure and incomplete evidence. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 72-hour records production deadline. Boundaries: The team must preserve evidence sufficient for an external audit. No new data sources may be added during the incident window. No one is denied service solely due to an automated flag; a human fallback must exist. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "Judge Helen Marsh",
-      "identity": "I am Judge Helen Marsh, the accountable executive for Redwood Bay Emergency Services Program Office. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
-      "goal": "I want a decision memo that is honest about uncertainty, names tradeoffs explicitly, and commits to measurable safeguards rather than vibes-based reassurance.",
+      "name": "Response Commissioner Darius Vasquez",
+      "identity": "I am Response Commissioner Darius Vasquez, coordinating the Emergency Services response at Redwood Emergency Services Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want an authorization plan that preserves evidence, documents exceptions, and explicitly defines who gets relief first and why.",
       "philosophy": "care_ethics"
     },
     {
-      "name": "Charge Nurse Kim Alvarez",
-      "identity": "I am Charge Nurse Kim Alvarez, an independent voice in this Emergency Services process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
-      "goal": "I want independent checks and a staffed appeals channel so no one is forced to accept a harmful outcome because the system treats them as an edge case.",
+      "name": "Public Ombud Darius Chandra",
+      "identity": "I am Public Ombud Darius Chandra, coordinating the Emergency Services response at Redwood Emergency Services Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want safeguards that prevent a crisis workaround from becoming a permanent policy without oversight.",
       "philosophy": "pragmatism"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "Judge Helen Marsh",
+        "agent_name": "Response Commissioner Darius Vasquez",
         "choices": [
-          "I choose a reversible rollout: start small, document exceptions, and require independent sign-off before scaling beyond the initial cohort.",
-          "I choose an all-in rollout: move fast with open metrics and daily accountability, trading some procedural comfort for speed while harm is still accelerating."
+          "I will authorize a narrow, time-boxed pilot first, with two-person sign-off for overrides, weekly subgroup error-rate disclosure, and a hard pause threshold if harm indicators rise; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Deadlines are tightening and evidence is partial. Judge Helen Marsh must decide how to authorize the rollout. What does Judge Helen Marsh do?"
+        "call_to_action": "The window for a controlled decision is closing. Response Commissioner Darius Vasquez must choose an authorization approach for this Emergency Services decision. What does Response Commissioner Darius Vasquez do?"
       }
     },
     {

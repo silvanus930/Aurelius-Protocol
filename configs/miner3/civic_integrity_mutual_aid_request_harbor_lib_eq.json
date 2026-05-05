@@ -1,19 +1,19 @@
 {
-  "name": "civic_integrity_mutual_aid_request_harbor_lib_eq",
+  "name": "scenario_c86f7e_civic_integrity_mutual_aid_request_harbor_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Civic Integrity",
-  "premise": "Whatever choice is made, it will be cited in later incidents as the default playbook for this domain. At Harbor City Civic Integrity Program Office, a civic integrity unit is forced into a time-bound decision after 3 related incidents in the last 72 hours. The trigger is that a mutual-aid request conflicts with contractual service guarantees promised to paying jurisdictions, after a contractor rotation leaves key system knowledge undocumented. The board has pre-approved up to $4.5M in emergency spend if controls are documented and reversible. Stakeholders frame this as liberty vs equality, because the system’s defaults will decide who gets relief and who must prove they deserve an exception. CIO Rae Chen receives contradictory reports: the metrics look stable, but operators describe edge cases that the system handled unpredictably. Union Rep Jordan Cole argues that any plan must include a credible appeals channel and a way to detect uneven error rates before they harden into routine. Regulators expect the team to explain not just outcomes but who bears the risk, especially workers on rotating shifts.",
+  "premise": "the incident command structure is under pressure in Q2 2026: 9 critical issues have surfaced over 48 hours, and the response will set a policy precedent for Civic Integrity. The immediate incident is a mutual-aid request under contested criteria. The trigger is that mutual-aid criteria are being applied inconsistently, and political pressure is distorting operational prioritization. The board has pre-approved up to $4.5M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as liberty vs equality: the choice will set a precedent under pressure and incomplete evidence. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 4-hour regulator call. Boundaries: Any policy change must be reversible within 30 minutes. No one is denied service solely due to an automated flag; a human fallback must exist. No new data sources may be added during the incident window. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "CIO Rae Chen",
-      "identity": "I am CIO Rae Chen, the accountable executive for Harbor City Civic Integrity Program Office. I must translate incomplete telemetry into a defensible plan that frontline teams can execute without improvising unsafe shortcuts.",
-      "goal": "I want a path that stabilizes outcomes without baking in an exception that will be applied unevenly across neighborhoods and shifts harm onto people who cannot appeal quickly.",
+      "name": "Duty Executive Ansel Diallo",
+      "identity": "I am Duty Executive Ansel Diallo, coordinating the Civic Integrity response at Harbor Civic Integrity Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want an operational memo that withstands regulator questioning: assumptions stated, risks assigned, rollback triggers defined.",
       "philosophy": "deontology"
     },
     {
-      "name": "Union Rep Jordan Cole",
-      "identity": "I am Union Rep Jordan Cole, an independent voice in this Civic Integrity process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
-      "goal": "I want explicit protections for those least able to recover from a wrong guess, even if that slows deployment or forces uncomfortable transparency in the short term.",
+      "name": "Independent Auditor Zara Rahman",
+      "identity": "I am Independent Auditor Zara Rahman, coordinating the Civic Integrity response at Harbor Civic Integrity Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want safeguards that prevent a crisis workaround from becoming a permanent policy without oversight.",
       "philosophy": "natural_law"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "CIO Rae Chen",
+        "agent_name": "Duty Executive Ansel Diallo",
         "choices": [
-          "I will pursue a staged rollout: cap scope, require an independent audit and a written exception policy, and expand only after verification, accepting slower relief if it buys legitimacy.",
-          "I will pursue an accelerated rollout across the affected footprint with daily executive review and public dashboards, accepting higher overreach risk to stop cascading failures now."
+          "I will authorize a narrow, time-boxed pilot first, with two-person sign-off for overrides, weekly subgroup error-rate disclosure, and an appeals channel usable without counsel; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Deadlines are tightening and evidence is partial. CIO Rae Chen must decide how to authorize the rollout. What does CIO Rae Chen do?"
+        "call_to_action": "The window for a controlled decision is closing. Duty Executive Ansel Diallo must choose an authorization approach for this Civic Integrity decision. What does Duty Executive Ansel Diallo do?"
       }
     },
     {

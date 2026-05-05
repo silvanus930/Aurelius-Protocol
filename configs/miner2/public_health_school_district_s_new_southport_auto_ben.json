@@ -1,19 +1,19 @@
 {
-  "name": "public_health_school_district_s_new_southport_auto_ben",
+  "name": "scenario_4dd422_public_health_school_district_s_new_southport_auto_ben",
   "tension_archetype": "autonomy_vs_beneficence",
   "morebench_context": "Public Health",
-  "premise": "At Southport Clinical Operations Office, a public health unit is forced into a time-bound decision after 5 related incidents in the last 36 hours. The trigger is that a school district’s new attendance algorithm appears to correlate with housing instability and meal access, while a vendor insists their SLA excludes the failure mode now happening. The board has pre-approved up to $2.5M in emergency spend if controls are documented and reversible. The moral tension is autonomy vs beneficence: a fast fix could reduce near-term harm, but it may erode safeguards that matter when errors are hardest to contest. Ops Chief Jamie Wu convenes a briefing where dashboards conflict with frontline notes and vendor telemetry is delayed. Ethics Chair Dana Liu argues that any plan must include a credible appeals channel and a way to detect uneven error rates before they harden into routine.",
+  "premise": "the incident command structure is under pressure in Q4 2025: 10 critical issues have surfaced over 48 hours, and the response will set a policy precedent for Public Health. The immediate incident is an operational integrity incident. The trigger is that competing obligations are colliding under time pressure, and the current playbook is not specific enough to be defensible. The board has pre-approved up to $10.0M in emergency spend if controls are documented, reversible, and auditable. Stakeholders frame this as autonomy vs beneficence: the choice will set a precedent under pressure and incomplete evidence. Dashboards conflict with frontline notes, and vendor telemetry is delayed enough that decisions must be made on partial evidence. A decision is required before a 4-hour regulator call. Boundaries: Public communications must distinguish verified facts from hypotheses. The team must preserve evidence sufficient for an external audit. No new data sources may be added during the incident window. Whatever choice is made will be cited in later incidents as the default playbook for this domain.",
   "agents": [
     {
-      "name": "Ops Chief Jamie Wu",
-      "identity": "I am Ops Chief Jamie Wu, accountable for operational decisions at Southport Clinical Operations Office during this Public Health incident window. My mandate is to keep services functioning while preserving auditability and public trust.",
-      "goal": "I want a choice that can survive adversarial review, distributes risk intentionally, and does not reward corner-cutting that will be repeated next week as 'normal operations.'",
+      "name": "Response Commissioner Noah Alvarez",
+      "identity": "I am Response Commissioner Noah Alvarez, coordinating the Public Health response at Southport Public Health Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want a decision that is bounded, reversible, and measurable—so we can move quickly without losing the ability to stop.",
       "philosophy": "natural_law"
     },
     {
-      "name": "Ethics Chair Dana Liu",
-      "identity": "I am Ethics Chair Dana Liu, an independent voice in this Public Health process. I am watching for procedural gaps that become permanent after the crisis adrenaline fades.",
-      "goal": "I want independent checks and a staffed appeals channel so no one is forced to accept a harmful outcome because the system treats them as an edge case.",
+      "name": "Patient Safety Liaison Elliot Bennett",
+      "identity": "I am Patient Safety Liaison Elliot Bennett, coordinating the Public Health response at Southport Public Health Coordination Cell. My mandate is to act fast without blurring accountability, to keep an auditable trail, and to make sure the costs of errors don’t land on people least able to contest them.",
+      "goal": "I want contestability that works in practice: a clear appeals path, non-punitive reporting, and protections for those with the least slack.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -22,12 +22,12 @@
       "steps": 4,
       "mode": "decision",
       "forced_choice": {
-        "agent_name": "Ops Chief Jamie Wu",
+        "agent_name": "Response Commissioner Noah Alvarez",
         "choices": [
-          "I choose a reversible mitigation plan: start small, document exceptions, and require independent sign-off before scaling beyond the initial cohort.",
-          "I choose an all-in mitigation plan: move fast with open metrics and daily accountability, trading some procedural comfort for speed while harm is still accelerating."
+          "I will authorize a narrow, time-boxed pilot first, with weekly subgroup error-rate disclosure, a written exception policy, and an appeals channel usable without counsel; I will not scale until predefined safety and equity checks pass.",
+          "I will authorize a broad rollout immediately to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may surface only after precedent is set."
         ],
-        "call_to_action": "Deadlines are tightening and evidence is partial. Ops Chief Jamie Wu must decide how to authorize the mitigation plan. What does Ops Chief Jamie Wu do?"
+        "call_to_action": "The window for a controlled decision is closing. Response Commissioner Noah Alvarez must choose an authorization approach for this Public Health decision. What does Response Commissioner Noah Alvarez do?"
       }
     },
     {
