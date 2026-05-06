@@ -5,6 +5,7 @@ Reads JSON files from a configurable directory and serves them round-robin.
 
 import json
 import logging
+import random
 from pathlib import Path
 
 from aurelius.common.schema import validate_scenario_config
@@ -24,19 +25,23 @@ class ConfigStore:
             logger.warning("Config directory does not exist: %s", self.config_dir)
             return
 
+        loaded: list[dict] = []
         for path in sorted(self.config_dir.glob("*.json")):
             try:
                 with open(path) as f:
                     config = json.load(f)
                 result = validate_scenario_config(config)
                 if result.valid:
-                    self.configs.append(config)
+                    loaded.append(config)
                     logger.info("Loaded config: %s", path.name)
                 else:
                     logger.warning("Invalid config %s: %s", path.name, result.errors)
             except (json.JSONDecodeError, OSError) as e:
                 logger.warning("Failed to load %s: %s", path.name, e)
 
+        # Shuffle to avoid filename-sorted bias (e.g., early prefixes dominating output).
+        random.shuffle(loaded)
+        self.configs.extend(loaded)
         logger.info("Loaded %d scenario configs from %s", len(self.configs), self.config_dir)
 
     def next(self) -> dict | None:
