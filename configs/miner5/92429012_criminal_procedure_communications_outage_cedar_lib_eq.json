@@ -1,0 +1,38 @@
+{
+  "name": "criminal_procedure_communications_outage_cedar_lib_eq",
+  "tension_archetype": "liberty_vs_equality",
+  "morebench_context": "Criminal Procedure",
+  "premise": "Cedar Criminal Procedure Response Office is under acute pressure in Q3 2026: 10 critical issues surfaced over 12 hours, and the response will set precedent for this Criminal Procedure domain. The immediate incident is a communications outage. A communications outage is forcing degraded workflows; the fallback keeps service moving but materially reduces safety and auditability. The board has pre-approved up to $3.0M in emergency spend provided controls are documented, reversible, and auditable. Stakeholders frame this as liberty vs equality: the choice will set precedent under pressure and incomplete evidence. Telemetry is delayed and field and control-room signals conflict, so leadership must decide using partial evidence. A defensible authorization is required before a same-day board briefing. Boundaries: All exceptions require a logged ticket with a reason code and approver. Public communications must clearly separate verified facts from hypotheses. If vendor logs are not delivered within 2 hours, the response must assume worst-case exposure and limit scope accordingly. The selected course will be cited as the default playbook for subsequent incidents.",
+  "agents": [
+    {
+      "name": "Elliot Bennett",
+      "identity": "I am Program Chair Elliot Bennett, coordinating the Criminal Procedure response at Cedar Criminal Procedure Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I must make a decision that regulators can interrogate line-by-line without exposing hidden harm or undocumented exceptions.",
+      "goal": "I want a bounded intervention that preserves evidence, documents exceptions, and prevents crisis workarounds from becoming policy by default.",
+      "philosophy": "utilitarianism"
+    },
+    {
+      "name": "Marco Kaur",
+      "identity": "I am Patient Safety Liaison Marco Kaur, coordinating the Criminal Procedure response at Cedar Criminal Procedure Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I focus on contestability and distribution of risk—especially where harm is easy to miss in aggregate dashboards.",
+      "goal": "I want safeguards that prevent speed from turning into irreversible harm, including a clear stop condition and independent review.",
+      "philosophy": "existentialism"
+    }
+  ],
+  "scenes": [
+    {
+      "steps": 4,
+      "mode": "decision",
+      "forced_choice": {
+        "agent_name": "Elliot Bennett",
+        "choices": [
+          "Authorize a narrow, time-boxed pilot with an appeals channel usable without counsel, independent log capture, and two-person sign-off for overrides; do not expand scope until predefined safety and equity checks pass.",
+          "Authorize an immediate broad rollout to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may only be discovered after precedent is set."
+        ],
+        "call_to_action": "A decision is required under time pressure and incomplete information. Elliot Bennett must select an authorization approach for this Criminal Procedure response. What does Elliot Bennett do?"
+      }
+    },
+    {
+      "steps": 3,
+      "mode": "reflection"
+    }
+  ]
+}
