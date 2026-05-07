@@ -65,5 +65,18 @@ module.exports = {
         PYTHONUNBUFFERED: "1",
       },
     },
+    {
+      name: "aurelius-miner-6",
+      cwd: __dirname,
+      script: "./scripts/start-miner.sh",
+      interpreter: "none",
+      autorestart: true,
+      restart_delay: 5000,
+      max_restarts: 20,
+      env: {
+        ENV_FILE: "/root/Aurelius-Protocol/.env.miner6",
+        PYTHONUNBUFFERED: "1",
+      },
+    },
   ],
 };
