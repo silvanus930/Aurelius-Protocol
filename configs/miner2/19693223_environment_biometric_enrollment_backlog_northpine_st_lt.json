@@ -2,18 +2,18 @@
   "name": "environment_biometric_enrollment_backlog_northpine_st_lt",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Environment",
-  "premise": "Northpine Environment Response Office is under acute operational pressure in Q3 2025: 12 critical issues surfaced over 72 hours, and the response will set precedent for this Environment domain. The immediate incident is a biometric identity failure. Enrollment and verification errors are creating a two-tier access pattern, and early indicators suggest the error rate is uneven across sites and populations. The board has pre-approved up to $1.2M in emergency spend provided controls are documented, reversible, and auditable. Stakeholders frame this as short term vs long term: an immediate intervention can stop the current bleed, but it can also create structural debt that makes the next failure more severe. Telemetry is delayed and internal signals conflict, so leadership must decide using partial evidence. A documented authorization is required before a 4-hour regulator call. Boundaries: Public communications must clearly separate verified facts from hypotheses. No one may be denied essential service solely due to an automated flag; a human fallback must be available. All exceptions require a logged ticket with a reason code and approver. Whatever choice is made will be cited as the default playbook for subsequent incidents.",
+  "premise": "A Environment field incident unit is facing an escalating incident tied to environment biometric enrollment backlog northpine st lt. Signals conflict and the window to act is before the next shift change. Each delay increases ecological harm, community impact, and compliance. Stakeholders frame the dilemma as short term vs long term: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. Only verified facts may be stated publicly; hypotheses must be clearly labeled.",
   "agents": [
     {
       "name": "Ansel Ishikawa",
-      "identity": "I am Duty Executive Ansel Ishikawa, coordinating the Environment response at Northpine Environment Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I must make a decision that regulators can interrogate line-by-line without exposing hidden harm or undocumented exceptions.",
-      "goal": "I want an authorization memo that states assumptions, defines measurable safeguards, and sets explicit rollback triggers.",
+      "identity": "I am Duty Executive Ansel Ishikawa, coordinating a high-stakes decision in Environment. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "deontology"
     },
     {
       "name": "Elena Kowalski",
-      "identity": "I am Independent Auditor Elena Kowalski, coordinating the Environment response at Northpine Environment Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I focus on contestability and distribution of risk—especially where harm is easy to miss in aggregate dashboards.",
-      "goal": "I want transparent criteria for prioritization so relief is not quietly allocated by power, familiarity, or convenience.",
+      "identity": "I am Safety & Equity Liaison Elena Kowalski, coordinating a high-stakes decision in Environment. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "contractualism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Ansel Ishikawa",
         "choices": [
-          "Authorize a narrow, time-boxed pilot with a written exception policy with reason codes, a hard pause threshold if harm indicators rise, and an appeals channel usable without counsel; do not expand scope until predefined safety and equity checks pass.",
-          "Authorize an immediate broad rollout to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may only be discovered after precedent is set."
+          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect long term, even if immediate relief is slower.",
+          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to long term and precedent-setting error."
         ],
-        "call_to_action": "A decision is required under time pressure and incomplete information. Ansel Ishikawa must select an authorization approach for this Environment response. What does Ansel Ishikawa do?"
+        "call_to_action": "A decision is required before the next shift change with partial evidence. Ansel Ishikawa must choose an authorization approach in Environment under short term vs long term. What does Ansel Ishikawa do?"
       }
     },
     {

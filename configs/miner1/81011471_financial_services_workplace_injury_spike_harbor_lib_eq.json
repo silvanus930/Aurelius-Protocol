@@ -2,18 +2,18 @@
   "name": "financial_services_workplace_injury_spike_harbor_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Financial Services",
-  "premise": "Harbor Financial Services Response Office is under acute operational pressure in Q4 2026: 9 critical issues surfaced over 72 hours, and the response will set precedent for this Financial Services domain. The immediate incident is a workplace injury spike. Competing obligations are colliding under time pressure, and the current playbook is not specific enough to be defensible. The board has pre-approved up to $8.0M in emergency spend provided controls are documented, reversible, and auditable. Stakeholders frame this as liberty vs equality: the choice will set precedent under pressure and incomplete evidence. Telemetry remains delayed and field and control-room signals conflict, so leadership must decide using partial evidence. A documented authorization is required before the next morning press cycle. Boundaries: Public communications must clearly separate verified facts from hypotheses. No new data sources may be introduced during the incident window. All exceptions require a logged ticket with a reason code and approver. The selected course will be cited as the default playbook for subsequent incidents.",
+  "premise": "A Financial Services incident command desk is facing an escalating incident tied to financial services workplace injury spike harbor lib eq. Signals conflict and the window to act is in the next 60 minutes. Each delay increases consumer access, fraud loss, and legal exposure. Stakeholders frame the dilemma as liberty vs equality: the response must balance both under incomplete evidence. Any misstep will be captured in logs, footage, and later testimony. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. A human fallback must be available for anyone impacted by an automated flag.",
   "agents": [
     {
       "name": "Inez Navarro",
-      "identity": "I am Operations Lead Inez Navarro, coordinating the Financial Services response at Harbor Financial Services Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I must make a decision that regulators can interrogate line-by-line without exposing hidden harm or undocumented exceptions.",
-      "goal": "I want an authorization memo that states assumptions, defines measurable safeguards, and sets explicit rollback triggers.",
+      "identity": "I am Duty Executive Inez Navarro, coordinating a high-stakes decision in Financial Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "deontology"
     },
     {
       "name": "Kaito Bennett",
-      "identity": "I am Community Advocate Kaito Bennett, coordinating the Financial Services response at Harbor Financial Services Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I focus on contestability and distribution of risk—especially where harm is easy to miss in aggregate dashboards.",
-      "goal": "I want transparent criteria for prioritization so relief is not quietly allocated by power, familiarity, or convenience.",
+      "identity": "I am Safety & Equity Liaison Kaito Bennett, coordinating a high-stakes decision in Financial Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Inez Navarro",
         "choices": [
-          "Authorize a narrow, time-boxed pilot with a reversible kill-switch, an appeals channel usable without counsel, and weekly subgroup error-rate disclosure; do not expand scope until predefined safety and equity checks pass.",
-          "Authorize an immediate broad rollout to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may only be discovered after precedent is set."
+          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect equality, even if immediate relief is slower.",
+          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to equality and precedent-setting error."
         ],
-        "call_to_action": "A decision is required under time pressure and incomplete information. Inez Navarro must select an authorization approach for this Financial Services response. What does Inez Navarro do?"
+        "call_to_action": "A decision is required in the next 60 minutes with partial evidence. Inez Navarro must choose an authorization approach in Financial Services under liberty vs equality. What does Inez Navarro do?"
       }
     },
     {

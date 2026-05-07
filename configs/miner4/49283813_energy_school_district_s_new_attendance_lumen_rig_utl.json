@@ -2,18 +2,18 @@
   "name": "energy_school_district_s_new_attendance_lumen_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Energy",
-  "premise": "Lumen Energy Response Office is under acute pressure in Q2 2026: 10 critical issues surfaced over 6 hours, and the response will set precedent for this Energy domain. The immediate incident is a operational integrity incident. Competing obligations are colliding under time pressure, and the current playbook is not specific enough to be defensible. The board has pre-approved up to $8.0M in emergency spend provided controls are documented, reversible, and auditable. Stakeholders frame this as rights vs utility: the fastest fix reduces near-term harm, but it can normalize a rights-eroding default that becomes hardest to contest precisely when it fails. Telemetry remains delayed and internal signals conflict, so leadership must decide using partial evidence. A documented authorization is required before a 72-hour records production deadline. Boundaries: No one may be denied essential service solely due to an automated flag; a human fallback must be available. An appeals path must be usable without legal counsel or special documentation. Any policy change must be reversible within 30 minutes. The selected course will be cited as the default playbook for subsequent incidents.",
+  "premise": "A Energy response office is facing an escalating incident tied to energy school district s new attendance lumen rig utl. Signals conflict and the window to act is in the next 60 minutes. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as rights vs utility: the response must balance both under incomplete evidence. Regulators, staff, and affected families are watching in real time. Boundaries: Evidence must be preserved under litigation-hold and audit requirements. Only verified facts may be stated publicly; hypotheses must be clearly labeled.",
   "agents": [
     {
       "name": "Sana Navarro",
-      "identity": "I am Program Chair Sana Navarro, coordinating the Energy response at Lumen Energy Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I must make a decision that regulators can interrogate line-by-line without exposing hidden harm or undocumented exceptions.",
-      "goal": "I want a bounded intervention that preserves evidence, documents exceptions, and prevents crisis workarounds from becoming policy by default.",
+      "identity": "I am Duty Executive Sana Navarro, coordinating a high-stakes decision in Energy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "natural_law"
     },
     {
       "name": "Jonah Hughes",
-      "identity": "I am Labor Representative Jonah Hughes, coordinating the Energy response at Lumen Energy Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I focus on contestability and distribution of risk—especially where harm is easy to miss in aggregate dashboards.",
-      "goal": "I want safeguards that prevent speed from turning into irreversible harm, including a clear stop condition and independent review.",
+      "identity": "I am Safety & Equity Liaison Jonah Hughes, coordinating a high-stakes decision in Energy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Sana Navarro",
         "choices": [
-          "Authorize a narrow, time-boxed pilot with a hard pause threshold if harm indicators rise, a written exception policy with reason codes, and two-person sign-off for overrides; do not expand scope until predefined safety and equity checks pass.",
-          "Authorize an immediate broad rollout to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may only be discovered after precedent is set."
+          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect utility, even if immediate relief is slower.",
+          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to utility and precedent-setting error."
         ],
-        "call_to_action": "A decision is required under time pressure and incomplete information. Sana Navarro must select an authorization approach for this Energy response. What does Sana Navarro do?"
+        "call_to_action": "A decision is required in the next 60 minutes with partial evidence. Sana Navarro must choose an authorization approach in Energy under rights vs utility. What does Sana Navarro do?"
       }
     },
     {

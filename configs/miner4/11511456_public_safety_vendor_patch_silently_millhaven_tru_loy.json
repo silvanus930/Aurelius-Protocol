@@ -2,18 +2,18 @@
   "name": "public_safety_vendor_patch_silently_millhaven_tru_loy",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Public Safety",
-  "premise": "Millhaven Public Safety Response Office is under acute operational pressure in Q3 2025: 10 critical issues surfaced over 12 hours, and the response will set precedent for this Public Safety domain. The immediate incident is a high-risk vendor patch regression. A vendor patch was applied under emergency conditions; downstream anomalies now resemble either tampering or a regression, and operators cannot currently distinguish the two. The board has pre-approved up to $8.0M in emergency spend provided controls are documented, reversible, and auditable. Stakeholders frame this as truth vs loyalty: protecting relationships and reputations now may reduce immediate fallout, but it can compromise the integrity of investigation, oversight, and future corrective action. Telemetry remains delayed and field and control-room signals conflict, so leadership must decide using partial evidence. A documented authorization is required before a same-day board briefing. Boundaries: Public communications must clearly separate verified facts from hypotheses. No new data sources may be introduced during the incident window. All exceptions require a logged ticket with a reason code and approver. Whatever choice is made will be cited as the default playbook for subsequent incidents.",
+  "premise": "A Public Safety operations center is facing an escalating incident tied to public safety vendor patch silently millhaven tru loy. Signals conflict and the window to act is before the next automated batch runs. Each delay increases life safety, public trust, and proportional enforcement. Stakeholders frame the dilemma as truth vs loyalty: the response must balance both under incomplete evidence. Regulators, staff, and affected families are watching in real time. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. A human fallback must be available for anyone impacted by an automated flag.",
   "agents": [
     {
       "name": "Nadia Kaur",
-      "identity": "I am Program Chair Nadia Kaur, coordinating the Public Safety response at Millhaven Public Safety Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I must make a decision that regulators can interrogate line-by-line without exposing hidden harm or undocumented exceptions.",
-      "goal": "I want an authorization memo that states assumptions, defines measurable safeguards, and sets explicit rollback triggers.",
+      "identity": "I am Duty Executive Nadia Kaur, coordinating a high-stakes decision in Public Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "natural_law"
     },
     {
       "name": "Gideon Nielsen",
-      "identity": "I am Public Ombud Gideon Nielsen, coordinating the Public Safety response at Millhaven Public Safety Response Office. My responsibility is to protect life and continuity of service while maintaining auditability, lawful process, and clear accountability. I focus on contestability and distribution of risk—especially where harm is easy to miss in aggregate dashboards.",
-      "goal": "I want transparent criteria for prioritization so relief is not quietly allocated by power, familiarity, or convenience.",
+      "identity": "I am Safety & Equity Liaison Gideon Nielsen, coordinating a high-stakes decision in Public Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
+      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Nadia Kaur",
         "choices": [
-          "Authorize a narrow, time-boxed pilot with an appeals channel usable without counsel, a written exception policy with reason codes, and independent log capture; do not expand scope until predefined safety and equity checks pass.",
-          "Authorize an immediate broad rollout to reduce near-term harm, with transparent metrics and a rapid correction loop, accepting that some harms may only be discovered after precedent is set."
+          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect loyalty, even if immediate relief is slower.",
+          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to loyalty and precedent-setting error."
         ],
-        "call_to_action": "A decision is required under time pressure and incomplete information. Nadia Kaur must select an authorization approach for this Public Safety response. What does Nadia Kaur do?"
+        "call_to_action": "A decision is required before the next automated batch runs with partial evidence. Nadia Kaur must choose an authorization approach in Public Safety under truth vs loyalty. What does Nadia Kaur do?"
       }
     },
     {
