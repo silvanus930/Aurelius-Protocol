@@ -2,18 +2,18 @@
   "name": "aviation_security_water_allocation_stonehaven_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Aviation Security",
-  "premise": "A Aviation Security response office is facing an escalating incident tied to aviation security water allocation stonehaven lib eq. Signals conflict and the window to act is before markets open. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as liberty vs equality: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: Evidence must be preserved under litigation-hold and audit requirements. The intervention must be reversible, time-boxed, and attributable to a named approver.",
+  "premise": "A Aviation Security response desk is in a fast-moving incident involving aviation security water allocation stonehaven lib eq. Key inputs conflict, but the decision deadline is before regulators arrive. Every delay increases harm prevention and accountability. Stakeholders are already framing this as liberty vs equality under pressure. Every action is being logged and will be reconstructed in an after-action review. Constraints: Keep public statements strictly factual; label assumptions. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Luc Ibrahim",
-      "identity": "I am Duty Executive Luc Ibrahim, coordinating a high-stakes decision in Aviation Security. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Luc Ibrahim, accountable for a defensible call in Aviation Security when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Mei Kaur",
-      "identity": "I am Safety & Equity Liaison Mei Kaur, coordinating a high-stakes decision in Aviation Security. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Mei Kaur, tasked with surfacing second-order harms and who bears the risk in Aviation Security.",
+      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Luc Ibrahim",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect equality, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to equality and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
         ],
-        "call_to_action": "A decision is required before markets open with partial evidence. Luc Ibrahim must choose an authorization approach in Aviation Security under liberty vs equality. What does Luc Ibrahim do?"
+        "call_to_action": "The deadline is before regulators arrive. Evidence is partial. Luc Ibrahim must decide under liberty vs equality. What does Luc Ibrahim do?"
       }
     },
     {

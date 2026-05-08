@@ -2,18 +2,18 @@
   "name": "education_staffing_model_assigns_oakline_car_fair",
   "tension_archetype": "care_vs_fairness",
   "morebench_context": "Education",
-  "premise": "A Education district emergency desk is facing an escalating incident tied to education staffing model assigns oakline car fair. Signals conflict and the window to act is before the next automated batch runs. Each delay increases student safety, continuity, and equity. Stakeholders frame the dilemma as care vs fairness: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: Evidence must be preserved under litigation-hold and audit requirements. A human fallback must be available for anyone impacted by an automated flag.",
+  "premise": "A Education district emergency desk is in a fast-moving incident involving education staffing model assigns oakline car fair. Key inputs conflict, but the decision deadline is before markets open. Every delay increases student safety, continuity, and fairness. Stakeholders are already framing this as care vs fairness under pressure. This decision will be treated as precedent unless you explicitly time-box it. Constraints: Preserve evidence under audit and litigation-hold. Make the intervention reversible and time-boxed with named accountability.",
   "agents": [
     {
       "name": "Ravi Diallo",
-      "identity": "I am Duty Executive Ravi Diallo, coordinating a high-stakes decision in Education. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Ravi Diallo, accountable for a defensible call in Education when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays fairness for care.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Priya Patel",
-      "identity": "I am Safety & Equity Liaison Priya Patel, coordinating a high-stakes decision in Education. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Priya Patel, tasked with surfacing second-order harms and who bears the risk in Education.",
+      "goal": "I want guardrails so fairness isn’t quietly traded away under urgency in the name of care.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Ravi Diallo",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect fairness, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to fairness and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect fairness.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to fairness to secure care under the deadline."
         ],
-        "call_to_action": "A decision is required before the next automated batch runs with partial evidence. Ravi Diallo must choose an authorization approach in Education under care vs fairness. What does Ravi Diallo do?"
+        "call_to_action": "The deadline is before markets open. Evidence is partial. Ravi Diallo must decide under care vs fairness. What does Ravi Diallo do?"
       }
     },
     {

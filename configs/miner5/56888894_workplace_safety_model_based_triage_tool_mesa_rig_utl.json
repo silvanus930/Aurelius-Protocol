@@ -2,18 +2,18 @@
   "name": "workplace_safety_model_based_triage_tool_mesa_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Workplace Safety",
-  "premise": "A Workplace Safety response office is facing an escalating incident tied to workplace safety model based triage tool mesa rig utl. Signals conflict and the window to act is before the next automated batch runs. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as rights vs utility: the response must balance both under incomplete evidence. Any misstep will be captured in logs, footage, and later testimony. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. Only verified facts may be stated publicly; hypotheses must be clearly labeled.",
+  "premise": "A Workplace Safety response desk is in a fast-moving incident involving workplace safety model based triage tool mesa rig utl. Key inputs conflict, but the decision deadline is within 20 minutes. Every delay increases harm prevention and accountability. Stakeholders are already framing this as rights vs utility under pressure. Every action is being logged and will be reconstructed in an after-action review. Constraints: Keep public statements strictly factual; label assumptions. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Harper Ibrahim",
-      "identity": "I am Duty Executive Harper Ibrahim, coordinating a high-stakes decision in Workplace Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Harper Ibrahim, accountable for a defensible call in Workplace Safety when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays utility for rights.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Gideon Morales",
-      "identity": "I am Safety & Equity Liaison Gideon Morales, coordinating a high-stakes decision in Workplace Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Gideon Morales, tasked with surfacing second-order harms and who bears the risk in Workplace Safety.",
+      "goal": "I want guardrails so utility isn’t quietly traded away under urgency in the name of rights.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Harper Ibrahim",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect utility, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to utility and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect utility.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to utility to secure rights under the deadline."
         ],
-        "call_to_action": "A decision is required before the next automated batch runs with partial evidence. Harper Ibrahim must choose an authorization approach in Workplace Safety under rights vs utility. What does Harper Ibrahim do?"
+        "call_to_action": "The deadline is within 20 minutes. Evidence is partial. Harper Ibrahim must decide under rights vs utility. What does Harper Ibrahim do?"
       }
     },
     {

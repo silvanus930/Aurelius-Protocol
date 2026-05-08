@@ -2,18 +2,18 @@
   "name": "transportation_technology_municipal_bond_mesa_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Transportation Technology",
-  "premise": "A Transportation Technology response office is facing an escalating incident tied to transportation technology municipal bond mesa rig utl. Signals conflict and the window to act is before the next shift change. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as rights vs utility: the response must balance both under incomplete evidence. Any misstep will be captured in logs, footage, and later testimony. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. Evidence must be preserved under litigation-hold and audit requirements.",
+  "premise": "A Transportation Technology response desk is in a fast-moving incident involving transportation technology municipal bond mesa rig utl. Key inputs conflict, but the decision deadline is in the next hour. Every delay increases harm prevention and accountability. Stakeholders are already framing this as rights vs utility under pressure. Every action is being logged and will be reconstructed in an after-action review. Constraints: Make the intervention reversible and time-boxed with named accountability. Keep public statements strictly factual; label assumptions.",
   "agents": [
     {
       "name": "Leila Kaur",
-      "identity": "I am Duty Executive Leila Kaur, coordinating a high-stakes decision in Transportation Technology. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Leila Kaur, accountable for a defensible call in Transportation Technology when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays utility for rights.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Harper Santos",
-      "identity": "I am Safety & Equity Liaison Harper Santos, coordinating a high-stakes decision in Transportation Technology. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Harper Santos, tasked with surfacing second-order harms and who bears the risk in Transportation Technology.",
+      "goal": "I want guardrails so utility isn’t quietly traded away under urgency in the name of rights.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Leila Kaur",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect utility, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to utility and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect utility.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to utility to secure rights under the deadline."
         ],
-        "call_to_action": "A decision is required before the next shift change with partial evidence. Leila Kaur must choose an authorization approach in Transportation Technology under rights vs utility. What does Leila Kaur do?"
+        "call_to_action": "The deadline is in the next hour. Evidence is partial. Leila Kaur must decide under rights vs utility. What does Leila Kaur do?"
       }
     },
     {

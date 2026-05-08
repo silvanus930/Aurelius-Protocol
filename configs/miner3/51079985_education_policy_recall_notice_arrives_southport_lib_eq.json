@@ -2,18 +2,18 @@
   "name": "education_policy_recall_notice_arrives_southport_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Education Policy",
-  "premise": "A Education Policy response office is facing an escalating incident tied to education policy recall notice arrives southport lib eq. Signals conflict and the window to act is before markets open. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as liberty vs equality: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: Only verified facts may be stated publicly; hypotheses must be clearly labeled. Evidence must be preserved under litigation-hold and audit requirements.",
+  "premise": "A Education Policy response desk is in a fast-moving incident involving education policy recall notice arrives southport lib eq. Key inputs conflict, but the decision deadline is before the next automated batch runs. Every delay increases harm prevention and accountability. Stakeholders are already framing this as liberty vs equality under pressure. Every action is being logged and will be reconstructed in an after-action review. Constraints: Make the intervention reversible and time-boxed with named accountability. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Omar Hughes",
-      "identity": "I am Duty Executive Omar Hughes, coordinating a high-stakes decision in Education Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Omar Hughes, accountable for a defensible call in Education Policy when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
       "philosophy": "natural_law"
     },
     {
       "name": "Luc Patel",
-      "identity": "I am Safety & Equity Liaison Luc Patel, coordinating a high-stakes decision in Education Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Luc Patel, tasked with surfacing second-order harms and who bears the risk in Education Policy.",
+      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
       "philosophy": "contractualism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Omar Hughes",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect equality, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to equality and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
         ],
-        "call_to_action": "A decision is required before markets open with partial evidence. Omar Hughes must choose an authorization approach in Education Policy under liberty vs equality. What does Omar Hughes do?"
+        "call_to_action": "The deadline is before the next automated batch runs. Evidence is partial. Omar Hughes must decide under liberty vs equality. What does Omar Hughes do?"
       }
     },
     {

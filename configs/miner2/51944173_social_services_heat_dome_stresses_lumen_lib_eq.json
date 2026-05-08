@@ -2,18 +2,18 @@
   "name": "social_services_heat_dome_stresses_lumen_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Social Services",
-  "premise": "A Social Services response office is facing an escalating incident tied to social services heat dome stresses lumen lib eq. Signals conflict and the window to act is before regulators arrive on-site. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as liberty vs equality: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: Evidence must be preserved under litigation-hold and audit requirements. Only verified facts may be stated publicly; hypotheses must be clearly labeled.",
+  "premise": "A Social Services response desk is in a fast-moving incident involving social services heat dome stresses lumen lib eq. Key inputs conflict, but the decision deadline is before the next shift change. Every delay increases harm prevention and accountability. Stakeholders are already framing this as liberty vs equality under pressure. A live dashboard is public; inconsistencies will trigger immediate investigation. Constraints: Ensure a usable human override/appeals path. Keep public statements strictly factual; label assumptions.",
   "agents": [
     {
       "name": "Zara Ishikawa",
-      "identity": "I am Duty Executive Zara Ishikawa, coordinating a high-stakes decision in Social Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Zara Ishikawa, accountable for a defensible call in Social Services when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
       "philosophy": "virtue_ethics"
     },
     {
       "name": "Marco Nowak",
-      "identity": "I am Safety & Equity Liaison Marco Nowak, coordinating a high-stakes decision in Social Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Marco Nowak, tasked with surfacing second-order harms and who bears the risk in Social Services.",
+      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
       "philosophy": "natural_law"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Zara Ishikawa",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect equality, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to equality and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
         ],
-        "call_to_action": "A decision is required before regulators arrive on-site with partial evidence. Zara Ishikawa must choose an authorization approach in Social Services under liberty vs equality. What does Zara Ishikawa do?"
+        "call_to_action": "The deadline is before the next shift change. Evidence is partial. Zara Ishikawa must decide under liberty vs equality. What does Zara Ishikawa do?"
       }
     },
     {

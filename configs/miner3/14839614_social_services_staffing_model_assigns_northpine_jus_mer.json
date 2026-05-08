@@ -2,18 +2,18 @@
   "name": "social_services_staffing_model_assigns_northpine_jus_mer",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Social Services",
-  "premise": "A Social Services response office is facing an escalating incident tied to social services staffing model assigns northpine jus mer. Signals conflict and the window to act is before markets open. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as justice vs mercy: the response must balance both under incomplete evidence. The choice will be used as a precedent playbook under this context. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. Evidence must be preserved under litigation-hold and audit requirements.",
+  "premise": "A Social Services response desk is in a fast-moving incident involving social services staffing model assigns northpine jus mer. Key inputs conflict, but the decision deadline is before the next shift change. Every delay increases harm prevention and accountability. Stakeholders are already framing this as justice vs mercy under pressure. A live dashboard is public; inconsistencies will trigger immediate investigation. Constraints: Preserve evidence under audit and litigation-hold. Ensure a usable human override/appeals path.",
   "agents": [
     {
       "name": "Darius Kim",
-      "identity": "I am Duty Executive Darius Kim, coordinating a high-stakes decision in Social Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Darius Kim, accountable for a defensible call in Social Services when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays mercy for justice.",
       "philosophy": "deontology"
     },
     {
       "name": "Elena Petrov",
-      "identity": "I am Safety & Equity Liaison Elena Petrov, coordinating a high-stakes decision in Social Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Elena Petrov, tasked with surfacing second-order harms and who bears the risk in Social Services.",
+      "goal": "I want guardrails so mercy isn’t quietly traded away under urgency in the name of justice.",
       "philosophy": "natural_law"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Darius Kim",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect mercy, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to mercy and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect mercy.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to mercy to secure justice under the deadline."
         ],
-        "call_to_action": "A decision is required before markets open with partial evidence. Darius Kim must choose an authorization approach in Social Services under justice vs mercy. What does Darius Kim do?"
+        "call_to_action": "The deadline is before the next shift change. Evidence is partial. Darius Kim must decide under justice vs mercy. What does Darius Kim do?"
       }
     },
     {

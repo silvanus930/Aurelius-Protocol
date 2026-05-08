@@ -2,18 +2,18 @@
   "name": "financial_services_biometric_enrollment_mesa_car_fair",
   "tension_archetype": "care_vs_fairness",
   "morebench_context": "Financial Services",
-  "premise": "A Financial Services incident command desk is facing an escalating incident tied to financial services biometric enrollment mesa car fair. Signals conflict and the window to act is before regulators arrive on-site. Each delay increases consumer access, fraud loss, and legal exposure. Stakeholders frame the dilemma as care vs fairness: the response must balance both under incomplete evidence. The choice will be used as a precedent playbook under this context. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. A human fallback must be available for anyone impacted by an automated flag.",
+  "premise": "A Financial Services incident command desk is in a fast-moving incident involving financial services biometric enrollment mesa car fair. Key inputs conflict, but the decision deadline is in the next hour. Every delay increases customer access, fraud loss, and regulatory exposure. Stakeholders are already framing this as care vs fairness under pressure. This decision will be treated as precedent unless you explicitly time-box it. Constraints: Make the intervention reversible and time-boxed with named accountability. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Fatima Nielsen",
-      "identity": "I am Duty Executive Fatima Nielsen, coordinating a high-stakes decision in Financial Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Fatima Nielsen, accountable for a defensible call in Financial Services when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays fairness for care.",
       "philosophy": "existentialism"
     },
     {
       "name": "Hector Okoye",
-      "identity": "I am Safety & Equity Liaison Hector Okoye, coordinating a high-stakes decision in Financial Services. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Hector Okoye, tasked with surfacing second-order harms and who bears the risk in Financial Services.",
+      "goal": "I want guardrails so fairness isn’t quietly traded away under urgency in the name of care.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Fatima Nielsen",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect fairness, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to fairness and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect fairness.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to fairness to secure care under the deadline."
         ],
-        "call_to_action": "A decision is required before regulators arrive on-site with partial evidence. Fatima Nielsen must choose an authorization approach in Financial Services under care vs fairness. What does Fatima Nielsen do?"
+        "call_to_action": "The deadline is in the next hour. Evidence is partial. Fatima Nielsen must decide under care vs fairness. What does Fatima Nielsen do?"
       }
     },
     {

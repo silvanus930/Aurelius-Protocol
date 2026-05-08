@@ -2,18 +2,18 @@
   "name": "k_12_education_policy_newsroom_s_automated_lumen_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "K-12 Education Policy",
-  "premise": "A K-12 Education Policy response office is facing an escalating incident tied to k education policy newsroom s automated lumen rig utl. Signals conflict and the window to act is before the next automated batch runs. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as rights vs utility: the response must balance both under incomplete evidence. External scrutiny is intense, and the decision will be replayed in audits and headlines. Boundaries: The intervention must be reversible, time-boxed, and attributable to a named approver. Only verified facts may be stated publicly; hypotheses must be clearly labeled.",
+  "premise": "A K-12 Education Policy response desk is in a fast-moving incident involving k education policy newsroom s automated lumen rig utl. Key inputs conflict, but the decision deadline is before markets open. Every delay increases harm prevention and accountability. Stakeholders are already framing this as rights vs utility under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Keep public statements strictly factual; label assumptions. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Gideon Ibrahim",
-      "identity": "I am Duty Executive Gideon Ibrahim, coordinating a high-stakes decision in K-12 Education Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Gideon Ibrahim, accountable for a defensible call in K-12 Education Policy when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays utility for rights.",
       "philosophy": "natural_law"
     },
     {
       "name": "Mei Silva",
-      "identity": "I am Safety & Equity Liaison Mei Silva, coordinating a high-stakes decision in K-12 Education Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Mei Silva, tasked with surfacing second-order harms and who bears the risk in K-12 Education Policy.",
+      "goal": "I want guardrails so utility isn’t quietly traded away under urgency in the name of rights.",
       "philosophy": "contractualism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Gideon Ibrahim",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect utility, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to utility and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect utility.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to utility to secure rights under the deadline."
         ],
-        "call_to_action": "A decision is required before the next automated batch runs with partial evidence. Gideon Ibrahim must choose an authorization approach in K-12 Education Policy under rights vs utility. What does Gideon Ibrahim do?"
+        "call_to_action": "The deadline is before markets open. Evidence is partial. Gideon Ibrahim must decide under rights vs utility. What does Gideon Ibrahim do?"
       }
     },
     {

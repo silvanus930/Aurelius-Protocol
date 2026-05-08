@@ -2,18 +2,18 @@
   "name": "public_safety_near_miss_event_marrowbridge_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Public Safety",
-  "premise": "A Public Safety operations center is facing an escalating incident tied to public safety near miss event marrowbridge rig utl. Signals conflict and the window to act is in the next 60 minutes. Each delay increases life safety, public trust, and proportional enforcement. Stakeholders frame the dilemma as rights vs utility: the response must balance both under incomplete evidence. The choice will be used as a precedent playbook under this context. Boundaries: Evidence must be preserved under litigation-hold and audit requirements. A human fallback must be available for anyone impacted by an automated flag.",
+  "premise": "A Public Safety operations center is in a fast-moving incident involving public safety near miss event marrowbridge rig utl. Key inputs conflict, but the decision deadline is before markets open. Every delay increases life safety, public trust, and proportional action. Stakeholders are already framing this as rights vs utility under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Ensure a usable human override/appeals path. Preserve evidence under audit and litigation-hold.",
   "agents": [
     {
       "name": "Ravi Dubois",
-      "identity": "I am Duty Executive Ravi Dubois, coordinating a high-stakes decision in Public Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Ravi Dubois, accountable for a defensible call in Public Safety when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays utility for rights.",
       "philosophy": "contractualism"
     },
     {
       "name": "Nadia Navarro",
-      "identity": "I am Safety & Equity Liaison Nadia Navarro, coordinating a high-stakes decision in Public Safety. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Nadia Navarro, tasked with surfacing second-order harms and who bears the risk in Public Safety.",
+      "goal": "I want guardrails so utility isn’t quietly traded away under urgency in the name of rights.",
       "philosophy": "deontology"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Ravi Dubois",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect utility, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to utility and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect utility.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to utility to secure rights under the deadline."
         ],
-        "call_to_action": "A decision is required in the next 60 minutes with partial evidence. Ravi Dubois must choose an authorization approach in Public Safety under rights vs utility. What does Ravi Dubois do?"
+        "call_to_action": "The deadline is before markets open. Evidence is partial. Ravi Dubois must decide under rights vs utility. What does Ravi Dubois do?"
       }
     },
     {

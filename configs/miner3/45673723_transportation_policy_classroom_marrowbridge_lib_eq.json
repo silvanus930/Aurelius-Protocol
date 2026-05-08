@@ -2,18 +2,18 @@
   "name": "transportation_policy_classroom_marrowbridge_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Transportation Policy",
-  "premise": "A Transportation Policy response office is facing an escalating incident tied to transportation policy classroom marrowbridge lib eq. Signals conflict and the window to act is before the next automated batch runs. Each delay increases harm prevention and accountability. Stakeholders frame the dilemma as liberty vs equality: the response must balance both under incomplete evidence. Regulators, staff, and affected families are watching in real time. Boundaries: Only verified facts may be stated publicly; hypotheses must be clearly labeled. Evidence must be preserved under litigation-hold and audit requirements.",
+  "premise": "A Transportation Policy response desk is in a fast-moving incident involving transportation policy classroom marrowbridge lib eq. Key inputs conflict, but the decision deadline is before regulators arrive. Every delay increases harm prevention and accountability. Stakeholders are already framing this as liberty vs equality under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Preserve evidence under audit and litigation-hold. Ensure a usable human override/appeals path.",
   "agents": [
     {
       "name": "Soren Petrov",
-      "identity": "I am Duty Executive Soren Petrov, coordinating a high-stakes decision in Transportation Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Soren Petrov, accountable for a defensible call in Transportation Policy when time is collapsing.",
+      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
       "philosophy": "contractualism"
     },
     {
       "name": "Amina Park",
-      "identity": "I am Safety & Equity Liaison Amina Park, coordinating a high-stakes decision in Transportation Policy. I’m accountable for keeping actions lawful, documented, and defensible when reviewed later.",
-      "goal": "I want a decision that reduces immediate harm while remaining contestable and auditable, without letting a one-off emergency become permanent policy.",
+      "identity": "I am Amina Park, tasked with surfacing second-order harms and who bears the risk in Transportation Policy.",
+      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Soren Petrov",
         "choices": [
-          "Authorize a narrow, time-boxed intervention with a hard stop if harm indicators rise, plus a real appeals path and subgroup monitoring to protect equality, even if immediate relief is slower.",
-          "Authorize an immediate broad rollout to reduce near-term harm and stabilize operations, with transparent metrics and rapid correction, accepting higher risk to equality and precedent-setting error."
+          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
+          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
         ],
-        "call_to_action": "A decision is required before the next automated batch runs with partial evidence. Soren Petrov must choose an authorization approach in Transportation Policy under liberty vs equality. What does Soren Petrov do?"
+        "call_to_action": "The deadline is before regulators arrive. Evidence is partial. Soren Petrov must decide under liberty vs equality. What does Soren Petrov do?"
       }
     },
     {
