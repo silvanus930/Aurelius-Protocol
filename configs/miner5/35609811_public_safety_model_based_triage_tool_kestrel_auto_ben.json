@@ -2,18 +2,18 @@
   "name": "public_safety_model_based_triage_tool_kestrel_auto_ben",
   "tension_archetype": "autonomy_vs_beneficence",
   "morebench_context": "Public Safety",
-  "premise": "Resource deployment, civil liberties, and downstream liability are tightening together. A unified command post is managing an active public-safety event with incomplete field reports and conflicting eyewitness accounts. The situation maps to internal runbooks and external messaging tied to: public safety model based triage tool kestrel auto. The moral tension is explicitly framed as autonomy versus beneficence: leadership cannot fully satisfy both without accepting tradeoffs. A whistleblower tip has reached a reporter; silence reads as cover-up, while a rushed statement reads as recklessness. Legal and comms are on hold; you must record a decision in the incident audit trail within the next fifteen minutes. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Any exception must be time-boxed, named, and reversible where technically feasible.",
+  "premise": "Wildfire evacuation routes are jammed; police want contraflow lanes that cut off hospital access from the east. In Public Safety, the situation tagged internally around public safety model based triage tool kestrel auto ben has converged with local pressure in the Southport corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Counsel insists any public statement match what is already provable from retained logs, not what leadership believes is true. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. Regulators or auditors are en route with a ninety-minute ETA; the first documented response will anchor every later question. Framing has already hardened externally as autonomy against beneficence; internal nuance will not survive the first news cycle unless it is extremely careful.",
   "agents": [
     {
       "name": "Mira Bennett",
-      "identity": "I am Mira Bennett, the accountable decision-maker on this Public Safety bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes beneficence whenever someone invokes autonomy.",
+      "identity": "I am Mira Bennett, the incident lead whose name will appear on the after-action report in Public Safety. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat beneficence as disposable collateral every time autonomy spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Harper Reed",
-      "identity": "I am Harper Reed, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so beneficence is not sacrificed by default just because autonomy feels morally loud in the moment.",
+      "identity": "I am Harper Reed, the counsel or integrity officer watching downstream liability in Public Safety. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so autonomy cannot become a blank check that quietly vaporizes beneficence in the paperwork afterward.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Mira Bennett",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect beneficence.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to beneficence to secure autonomy before the window closes."
+          "I will publish a constrained policy exception with named owners, expiry, and metrics—so beneficence does not get sacrificed by informal norms.",
+          "I will issue an emergency blanket authorization with transparent metrics afterward—so autonomy does not fail for lack of a single bold move."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Mira Bennett must decide under autonomy versus beneficence. What does Mira Bennett do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Mira Bennett must choose under autonomy versus beneficence. What does Mira Bennett do?"
       }
     },
     {

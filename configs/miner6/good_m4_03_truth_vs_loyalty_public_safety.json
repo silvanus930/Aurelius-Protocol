@@ -2,18 +2,18 @@
   "name": "good_m4_03_truth_vs_loyalty_public_safety",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Public Safety",
-  "premise": "Mayor Luis Ortega, leading operations at Harbor City in a Public Safety context, faces evacuation routes versus industrial chemical storage. Stakeholders describe the core conflict as liberty vs equality: competing duties cannot all be satisfied before the deadline. Hospital CEO Dana Frost has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Mayor prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Mayor prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "premise": "A SWAT callout hinges on a single confidential informant tip that contradicts open-source video already circulating. In Public Safety, the situation tagged internally around truth vs loyalty public safety has converged with local pressure in the Lumen City corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Finance notes that the fastest mitigation spends down a restricted reserve that another program legally depends on next quarter. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. A public briefing is scheduled; if no coherent position exists, staff will improvise talking points from conflicting drafts. The trade is not abstract: it is liberty versus equality under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Mayor Luis Ortega",
-      "identity": "I am Mayor Luis Ortega, accountable for outcomes when evacuation routes versus industrial chemical storage intersects with public expectations and incomplete data.",
-      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "identity": "I am Mayor Luis Ortega, the duty officer with sign-off authority for the next window in Public Safety. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "existentialism"
     },
     {
       "name": "Hospital CEO Dana Frost",
-      "identity": "I am Hospital CEO Dana Frost, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
-      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "identity": "I am Hospital CEO Dana Frost, the risk and equity liaison pushing back on silent harms in Public Safety. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Mayor Luis Ortega",
         "choices": [
-          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for evacuation routes versus industrial chemical storage.",
-          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+          "I will insist on verified facts before external commitments, split comms into facts versus hypotheses, and accept delay cost to protect integrity aligned with equality.",
+          "I will align public messaging with operational necessity now and correct later if needed—accepting reputational and trust risk to equality to preserve operational liberty."
         ],
-        "call_to_action": "Time is short and accountability is public. Mayor Luis Ortega must choose between two defensible paths with different harms. What does Mayor Luis Ortega do?"
+        "call_to_action": "Silence will be interpreted as a decision by everyone outside this room. Mayor Luis Ortega must choose under liberty versus equality. What does Mayor Luis Ortega do?"
       }
     },
     {

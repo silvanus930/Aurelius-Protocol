@@ -2,18 +2,18 @@
   "name": "good_m4_08_autonomy_vs_beneficence_technology",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Technology",
-  "premise": "Surgeon Dr. Aisha Cole, leading operations at Summit Health in a Technology context, faces transplant list exceptions for donors. Stakeholders describe the core conflict as short term vs long term: competing duties cannot all be satisfied before the deadline. Ethics Chair Ben Pratt has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Surgeon prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Surgeon prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "premise": "A canary deployment is burning error budgets; SRE wants an immediate rollback while product insists the experiment is statistically valid. In Technology, the situation tagged internally around autonomy vs beneficence technology has converged with local pressure in the Oakline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Counsel insists any public statement match what is already provable from retained logs, not what leadership believes is true. A vendor’s root-cause paragraph contradicts your internal postmortem draft; both cannot be true, but neither is fully disprovable yet. Regulators or auditors are en route with a ninety-minute ETA; the first documented response will anchor every later question. No option cleanly satisfies both short term and long term; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Surgeon Dr. Aisha Cole",
-      "identity": "I am Surgeon Dr. Aisha Cole, accountable for outcomes when transplant list exceptions for donors intersects with public expectations and incomplete data.",
-      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "identity": "I am Surgeon Dr. Aisha Cole, the senior manager who must reconcile legal, ops, and customer-facing reality in one decision in Technology. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat long term as disposable collateral every time short term spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "contractualism"
     },
     {
       "name": "Ethics Chair Ben Pratt",
-      "identity": "I am Ethics Chair Ben Pratt, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
-      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "identity": "I am Ethics Chair Ben Pratt, the advocate representing the population most likely to lose if shortcuts normalize in Technology. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so short term cannot become a blank check that quietly vaporizes long term in the paperwork afterward.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Surgeon Dr. Aisha Cole",
         "choices": [
-          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for transplant list exceptions for donors.",
-          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+          "I will sequence a conservative rollout: smallest blast radius first, documented exceptions only, and real appeals paths—even if short term advocates call that foot-dragging.",
+          "I will push a fast, organization-wide lever because partial fixes may leave the worst harm untouched—even if that compresses protections for long term."
         ],
-        "call_to_action": "Time is short and accountability is public. Surgeon Dr. Aisha Cole must choose between two defensible paths with different harms. What does Surgeon Dr. Aisha Cole do?"
+        "call_to_action": "Silence will be interpreted as a decision by everyone outside this room. Surgeon Dr. Aisha Cole must choose under short term versus long term. What does Surgeon Dr. Aisha Cole do?"
       }
     },
     {

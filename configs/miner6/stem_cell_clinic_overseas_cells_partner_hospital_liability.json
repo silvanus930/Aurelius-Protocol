@@ -2,18 +2,18 @@
   "name": "stem_cell_clinic_overseas_cells_partner_hospital__a79540",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Bioethics",
-  "premise": "CFO Casey Lowe must decide whether to renew a contract importing culture-expanded stem cells from an overseas clinic after an anonymous leak alleges incomplete chain-of-custody paperwork. Chief counsel Nora Zhang warns continuing shipments could void malpractice reinsurance if a batch is traced to non-GMP conditions. Discontinuing cells cancels thirty-two scheduled cardiac regeneration trials for patients already immunosuppressed. The partner hospital CEO privately asks for loyalty until an onsite audit finishes next month. Stakeholders are split, and the decision must be justified in writing under a tight deadline with incomplete information. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Bioethics.",
+  "premise": "A biobank discovered samples were collected under an expired protocol version; IRB quorum cannot convene until tomorrow. In Bioethics, the situation tagged internally around stem cell clinic overseas cells partner hospital a79540 has converged with local pressure in the Kestrel Ridge corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Counsel insists any public statement match what is already provable from retained logs, not what leadership believes is true. Middle management filtered an escalation; the executive on point is hearing some details for the first time on this bridge. A hard operational cutoff hits in under twenty minutes unless a named executive posts a decision in the command log. The trade is not abstract: it is truth versus loyalty under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Casey Lowe",
-      "identity": "I am the health system chief financial officer balancing trial continuity, reinsurance covenants, and fiduciary duty when vendor documentation is questioned. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want patients treated without signing balance sheets that implode if a batch is later recalled. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Casey Lowe, the duty officer with sign-off authority for the next window in Bioethics. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat loyalty as disposable collateral every time truth spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "contractualism"
     },
     {
       "name": "Nora Zhang",
-      "identity": "I am chief counsel interpreting FDA import pathways, sponsor agreements, and whistleblower obligations after the custody leak. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want shipments paused until chain-of-custody is provably intact even if trials slip and public headlines accuse the system of cruelty. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Nora Zhang, the counsel or integrity officer watching downstream liability in Bioethics. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so truth cannot become a blank check that quietly vaporizes loyalty in the paperwork afterward.",
       "philosophy": "deontology"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Casey Lowe",
         "choices": [
-          "I will pause imports and switch patients to autologous fallback arms where ethically possible, accepting trial underpowering and patient disappointment.",
-          "I will continue shipments under escrow funding for rapid third-party audit with enhanced per-batch sequencing, accepting reinsurance breach risk if auditors find GMP gaps."
+          "I will publish a constrained policy exception with named owners, expiry, and metrics—so loyalty does not get sacrificed by informal norms.",
+          "I will issue an emergency blanket authorization with transparent metrics afterward—so truth does not fail for lack of a single bold move."
         ],
-        "call_to_action": "Trial sponsors need Casey Lowe's signature before the courier arrives at midnight. Casey Lowe must choose between pausing imports or continuing under escrow audit. What does Casey Lowe do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Casey Lowe must choose under truth versus loyalty. What does Casey Lowe do?"
       }
     },
     {

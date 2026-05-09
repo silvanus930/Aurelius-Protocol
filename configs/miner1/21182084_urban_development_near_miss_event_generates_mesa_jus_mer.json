@@ -2,18 +2,18 @@
   "name": "urban_development_near_miss_event_generates_mesa_jus_mer",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Urban Development",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: urban development near miss event generates mesa jus. The moral tension is explicitly framed as justice versus mercy: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Telemetry and logs are diverging; the SOC lead will freeze writes in twelve minutes if no accountable owner signs off. Any exception must be time-boxed, named, and reversible where technically feasible. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs.",
+  "premise": "A regulator-adjacent inquiry is live while customers are comparing notes in public channels faster than the facts can be verified. In Urban Development, the situation tagged internally around urban development near miss event generates mesa jus mer has converged with local pressure in the Harborline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Telemetry and witness accounts diverge; choosing one narrative for speed will discard evidence that may matter in court next month. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. A hard operational cutoff hits in under twenty minutes unless a named executive posts a decision in the command log. The organization’s past incidents make justice feel morally loud today, while mercy is the value that quietly erodes if you always choose expediency.",
   "agents": [
     {
       "name": "Mei Bennett",
-      "identity": "I am Mei Bennett, the accountable decision-maker on this Urban Development bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes mercy whenever someone invokes justice.",
+      "identity": "I am Mei Bennett, the incident lead whose name will appear on the after-action report in Urban Development. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat mercy as disposable collateral every time justice spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "existentialism"
     },
     {
       "name": "Gideon Kaur",
-      "identity": "I am Gideon Kaur, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so mercy is not sacrificed by default just because justice feels morally loud in the moment.",
+      "identity": "I am Gideon Kaur, the field counterpart whose constituency will feel the decision first in Urban Development. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so justice cannot become a blank check that quietly vaporizes mercy in the paperwork afterward.",
       "philosophy": "pragmatism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Mei Bennett",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect mercy.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to mercy to secure justice before the window closes."
+          "I will insist on verified facts before external commitments, split comms into facts versus hypotheses, and accept delay cost to protect integrity aligned with mercy.",
+          "I will align public messaging with operational necessity now and correct later if needed—accepting reputational and trust risk to mercy to preserve operational justice."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Mei Bennett must decide under justice versus mercy. What does Mei Bennett do?"
+        "call_to_action": "Silence will be interpreted as a decision by everyone outside this room. Mei Bennett must choose under justice versus mercy. What does Mei Bennett do?"
       }
     },
     {

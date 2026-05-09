@@ -2,18 +2,18 @@
   "name": "good_m4_06_care_vs_fairness_education",
   "tension_archetype": "individual_vs_collective",
   "morebench_context": "Education",
-  "premise": "School Principal Ren Ellis, leading operations at Lakeside K-12 in a Education context, faces mandatory wellness scanning in cafeterias. Stakeholders describe the core conflict as individual vs collective: competing duties cannot all be satisfied before the deadline. Parent Council Mo Chen has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If School prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If School prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "premise": "A gifted program lottery algorithm is being questioned after a neighborhood received zero seats two years running. In Education, the situation tagged internally around care vs fairness education has converged with local pressure in the Kestrel Ridge corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Two executives have pre-committed to opposite remedies in side channels; whichever memo lands first will box everyone in. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. The trade is not abstract: it is individual versus collective under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "School Principal Ren Ellis",
-      "identity": "I am School Principal Ren Ellis, accountable for outcomes when mandatory wellness scanning in cafeterias intersects with public expectations and incomplete data.",
-      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "identity": "I am School Principal Ren Ellis, the accountable executive on this bridge in Education. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat collective as disposable collateral every time individual spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "virtue_ethics"
     },
     {
       "name": "Parent Council Mo Chen",
-      "identity": "I am Parent Council Mo Chen, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
-      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "identity": "I am Parent Council Mo Chen, the field counterpart whose constituency will feel the decision first in Education. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so individual cannot become a blank check that quietly vaporizes collective in the paperwork afterward.",
       "philosophy": "natural_law"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "School Principal Ren Ellis",
         "choices": [
-          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for mandatory wellness scanning in cafeterias.",
-          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+          "I will redirect resources to the smallest cohort first where harm is most concentrated, documenting tradeoffs openly—privileging fairness dimensions of collective.",
+          "I will optimize for aggregate harm reduction across the whole population immediately—privileging the utilitarian reading of individual even where distribution gets rough."
         ],
-        "call_to_action": "Time is short and accountability is public. School Principal Ren Ellis must choose between two defensible paths with different harms. What does School Principal Ren Ellis do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. School Principal Ren Ellis must choose under individual versus collective. What does School Principal Ren Ellis do?"
       }
     },
     {

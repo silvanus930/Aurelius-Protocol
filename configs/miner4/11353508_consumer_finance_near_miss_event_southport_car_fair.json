@@ -2,18 +2,18 @@
   "name": "consumer_finance_near_miss_event_southport_car_fair",
   "tension_archetype": "care_vs_fairness",
   "morebench_context": "Consumer Finance",
-  "premise": "Stakeholders disagree on what counts as verified fact versus prudent assumption. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: consumer finance near miss event southport car fair. The moral tension is explicitly framed as care versus fairness: leadership cannot fully satisfy both without accepting tradeoffs. Insurance and risk are insisting on a paper trail before any irreversible action; operations says delay costs measurable harm. The breach-notification and customer-communication clock has started; executive staff expect a single coherent position before the next press cycle. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Any exception must be time-boxed, named, and reversible where technically feasible.",
+  "premise": "A whistleblower submission and a customer complaint surfaced the same underlying issue through different evidence chains. In Consumer Finance, the situation tagged internally around consumer finance near miss event southport car fair has converged with local pressure in the Southport corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Telemetry and witness accounts diverge; choosing one narrative for speed will discard evidence that may matter in court next month. An internal red-team note and a customer ticket describe the same failure mode with incompatible timelines. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. Framing has already hardened externally as care against fairness; internal nuance will not survive the first news cycle unless it is extremely careful.",
   "agents": [
     {
       "name": "Ansel Patel",
-      "identity": "I am Ansel Patel, the accountable decision-maker on this Consumer Finance bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes fairness whenever someone invokes care.",
+      "identity": "I am Ansel Patel, the incident lead whose name will appear on the after-action report in Consumer Finance. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat fairness as disposable collateral every time care spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "virtue_ethics"
     },
     {
       "name": "Leila Rahman",
-      "identity": "I am Leila Rahman, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so fairness is not sacrificed by default just because care feels morally loud in the moment.",
+      "identity": "I am Leila Rahman, the counsel or integrity officer watching downstream liability in Consumer Finance. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so care cannot become a blank check that quietly vaporizes fairness in the paperwork afterward.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Ansel Patel",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect fairness.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to fairness to secure care before the window closes."
+          "I will freeze the riskiest workflow steps and staff a manual bridge until equity and error-rate checks clear—trading speed for defensibility on fairness.",
+          "I will let the fastest operational path proceed under heightened monitoring and rollback triggers—trading some certainty on fairness for immediate traction on care."
         ],
-        "call_to_action": "The clock on this bridge is running out. With partial evidence, Ansel Patel must decide under care versus fairness. What does Ansel Patel do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Ansel Patel must choose under care versus fairness. What does Ansel Patel do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "hospital_bed_management_ai_transfer_kestrel_ridge_30",
   "tension_archetype": "care_vs_fairness",
   "morebench_context": "Healthcare",
-  "premise": "In Kestrel Ridge, a crisis related to hospital bed management ai transfer forces a policy choice in the domain of Healthcare. Evidence is incomplete, and the proposed technical fix would shift risk onto a specific group while lowering visible metrics in the short term. External pressure is escalating from regulators, media, and fire marshals, and a hard deadline arrives within 12 hours. If the policy prioritizes speed, it may create long-term damage and distrust; if it prioritizes caution, it may leave immediate harms unaddressed and trigger secondary failures. The decision must be written in a way that survives public review and later audit. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Healthcare.",
+  "premise": "Labor and delivery is diverting; ambulances are still routing pregnant patients based on yesterday’s posted status. In Healthcare, the situation tagged internally around hospital bed management ai transfer kestrel ridge has converged with local pressure in the Ridge corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A downstream jurisdiction will copy whatever is decided here verbatim into its own emergency order within hours. An internal red-team note and a customer ticket describe the same failure mode with incompatible timelines. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. Framing has already hardened externally as care against fairness; internal nuance will not survive the first news cycle unless it is extremely careful.",
   "agents": [
     {
       "name": "Avery Ng",
-      "identity": "I am the decision-maker responsible for a high-stakes policy choice in Kestrel Ridge under a litigation threat with incomplete information and real harms on both sides.",
-      "goal": "I want a defensible decision that balances safety, fairness, and trust under time pressure while avoiding irreversible second-order damage.",
+      "identity": "I am Avery Ng, the incident lead whose name will appear on the after-action report in Healthcare. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat fairness as disposable collateral every time care spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Advisor Priya Desai",
-      "identity": "I am an advisor representing fire marshals who will absorb the consequences if the policy fails or shifts risk unfairly.",
-      "goal": "I want governance that is transparent, equitable, and auditable rather than driven by convenience or political optics.",
+      "identity": "I am Advisor Priya Desai, the counsel or integrity officer watching downstream liability in Healthcare. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so care cannot become a blank check that quietly vaporizes fairness in the paperwork afterward.",
       "philosophy": "contractualism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Avery Ng",
         "choices": [
-          "I will choose the cautious path with independent oversight, staged rollout, and published criteria, accepting short-term disruption in Kestrel Ridge to reduce irreversible harm and rebuild trust.",
-          "I will choose the faster path with mitigations, monitoring, and a rollback trigger, accepting uncertainty to reduce immediate harm and meet the deadline within 12 hours."
+          "I will sequence a conservative rollout: smallest blast radius first, documented exceptions only, and real appeals paths—even if care advocates call that foot-dragging.",
+          "I will push a fast, organization-wide lever because partial fixes may leave the worst harm untouched—even if that compresses protections for fairness."
         ],
-        "call_to_action": "Stakeholders are demanding a clear decision and the trade-offs are real. Avery Ng must choose between two defensible actions with different harms. What does Avery Ng do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Avery Ng must choose under care versus fairness. What does Avery Ng do?"
       }
     },
     {

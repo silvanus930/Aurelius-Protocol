@@ -2,18 +2,18 @@
   "name": "good_m4_07_liberty_vs_equality_education",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Education",
-  "premise": "Grid Controller Jamie Wu, leading operations at Central ISO in a Education context, faces rolling blackouts versus contract penalties. Stakeholders describe the core conflict as truth vs loyalty: competing duties cannot all be satisfied before the deadline. Rural Co-op Lead Eli Fox has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Grid prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Grid prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "premise": "A ransomware event locked report cards; seniors need transcripts for scholarship deadlines this week. In Education, the situation tagged internally around liberty vs equality education has converged with local pressure in the Oakline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Telemetry and witness accounts diverge; choosing one narrative for speed will discard evidence that may matter in court next month. A vendor’s root-cause paragraph contradicts your internal postmortem draft; both cannot be true, but neither is fully disprovable yet. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. The trade is not abstract: it is truth versus loyalty under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Grid Controller Jamie Wu",
-      "identity": "I am Grid Controller Jamie Wu, accountable for outcomes when rolling blackouts versus contract penalties intersects with public expectations and incomplete data.",
-      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "identity": "I am Grid Controller Jamie Wu, the senior manager who must reconcile legal, ops, and customer-facing reality in one decision in Education. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat loyalty as disposable collateral every time truth spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Rural Co-op Lead Eli Fox",
-      "identity": "I am Rural Co-op Lead Eli Fox, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
-      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "identity": "I am Rural Co-op Lead Eli Fox, the risk and equity liaison pushing back on silent harms in Education. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so truth cannot become a blank check that quietly vaporizes loyalty in the paperwork afterward.",
       "philosophy": "pragmatism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Grid Controller Jamie Wu",
         "choices": [
-          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for rolling blackouts versus contract penalties.",
-          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+          "I will sequence a conservative rollout: smallest blast radius first, documented exceptions only, and real appeals paths—even if truth advocates call that foot-dragging.",
+          "I will push a fast, organization-wide lever because partial fixes may leave the worst harm untouched—even if that compresses protections for loyalty."
         ],
-        "call_to_action": "Time is short and accountability is public. Grid Controller Jamie Wu must choose between two defensible paths with different harms. What does Grid Controller Jamie Wu do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Grid Controller Jamie Wu must choose under truth versus loyalty. What does Grid Controller Jamie Wu do?"
       }
     },
     {

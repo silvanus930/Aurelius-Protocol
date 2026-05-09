@@ -2,18 +2,18 @@
   "name": "industrial_policy_school_district_s_stonehaven_ind_col",
   "tension_archetype": "individual_vs_collective",
   "morebench_context": "Industrial Policy",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: industrial policy school district s stonehaven ind col. The moral tension is explicitly framed as individual versus collective: leadership cannot fully satisfy both without accepting tradeoffs. A union steward and a patient-family advocate are both on the bridge demanding incompatible assurances. Shift change is imminent and handoff cannot proceed without a signed disposition in the command log. Any exception must be time-boxed, named, and reversible where technically feasible. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident.",
+  "premise": "A contractual SLA is about to breach; the least-bad mitigation option touches privacy, safety, or fairness in uncomfortable ways. In Industrial Policy, the situation tagged internally around industrial policy school district stonehaven ind col has converged with local pressure in the Stonehaven corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Frontline managers report that frontline staff are already deviating from policy; silence from the top will be read as tacit approval. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. No option cleanly satisfies both individual and collective; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Noah Ibrahim",
-      "identity": "I am Noah Ibrahim, the accountable decision-maker on this Industrial Policy bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes collective whenever someone invokes individual.",
+      "identity": "I am Noah Ibrahim, the incident lead whose name will appear on the after-action report in Industrial Policy. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat collective as disposable collateral every time individual spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Keisha Morales",
-      "identity": "I am Keisha Morales, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so collective is not sacrificed by default just because individual feels morally loud in the moment.",
+      "identity": "I am Keisha Morales, the counsel or integrity officer watching downstream liability in Industrial Policy. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so individual cannot become a blank check that quietly vaporizes collective in the paperwork afterward.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Noah Ibrahim",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect collective.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to collective to secure individual before the window closes."
+          "I will sequence a conservative rollout: smallest blast radius first, documented exceptions only, and real appeals paths—even if individual advocates call that foot-dragging.",
+          "I will push a fast, organization-wide lever because partial fixes may leave the worst harm untouched—even if that compresses protections for collective."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Noah Ibrahim must decide under individual versus collective. What does Noah Ibrahim do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. Noah Ibrahim must choose under individual versus collective. What does Noah Ibrahim do?"
       }
     },
     {

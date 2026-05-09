@@ -2,18 +2,18 @@
   "name": "good_m4_01_justice_vs_mercy_business_ethics",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Business Ethics",
-  "premise": "Dean Morgan Lee, leading operations at Westlake University in a Business Ethics context, faces a plagiarism probe tied to generative AI drafts. Stakeholders describe the core conflict as rights vs utility: competing duties cannot all be satisfied before the deadline. Prof. Sam Ortiz has publicly challenged assumptions in prior meetings and now demands transparency before any irreversible step. Internal counsel warns that delaying could breach oversight bodies expectations, while community representatives argue that rushing erodes trust. If Dean prioritizes continuity and legal compliance, downstream units must absorb disruption and vulnerable groups may lose access temporarily. If Dean prioritizes transparency and community consent, metrics may improve short term but create liabilities that surface in audits or litigation. Media attention is rising, logs are incomplete, and a vendor is offering a fast patch that has not been independently verified. Employees are split: some want a bold announcement today; others want a staged pilot with opt-in only. The board wants a single accountable decision that can be defended in public without contradicting earlier commitments.",
+  "premise": "A layoff list was drafted using performance scores that correlate with a protected class in regression tests HR did not run. In Business Ethics, the situation tagged internally around justice vs mercy business ethics has converged with local pressure in the Lumen City corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A downstream jurisdiction will copy whatever is decided here verbatim into its own emergency order within hours. An internal red-team note and a customer ticket describe the same failure mode with incompatible timelines. A public briefing is scheduled; if no coherent position exists, staff will improvise talking points from conflicting drafts. The trade is not abstract: it is rights versus utility under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Dean Morgan Lee",
-      "identity": "I am Dean Morgan Lee, accountable for outcomes when a plagiarism probe tied to generative AI drafts intersects with public expectations and incomplete data.",
-      "goal": "I want a decision that is defensible under scrutiny, minimizes preventable harm, and preserves institutional integrity.",
+      "identity": "I am Dean Morgan Lee, the incident lead whose name will appear on the after-action report in Business Ethics. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat utility as disposable collateral every time rights spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "natural_law"
     },
     {
       "name": "Prof. Sam Ortiz",
-      "identity": "I am Prof. Sam Ortiz, responsible for advocating for stakeholders who will bear the consequences of whichever path is chosen first.",
-      "goal": "I want protections for the most exposed people even if that slows adoption or challenges leadership optics.",
+      "identity": "I am Prof. Sam Ortiz, the counsel or integrity officer watching downstream liability in Business Ethics. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so rights cannot become a blank check that quietly vaporizes utility in the paperwork afterward.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Dean Morgan Lee",
         "choices": [
-          "I will pursue the cautious path: staged rollout, documented consent, and independent review, accepting slower relief for a plagiarism probe tied to generative AI drafts.",
-          "I will pursue the decisive path: immediate operational change with transparent metrics, accepting backlash if vulnerable groups feel sidelined."
+          "I will impose a narrow, time-boxed intervention with human override, subgroup checks, and a hard stop if harm rises—accepting slower relief to protect utility.",
+          "I will authorize a broad immediate action to stabilize outcomes now, with post-hoc measurement and correction—accepting elevated risk to utility to secure rights before the window closes."
         ],
-        "call_to_action": "Time is short and accountability is public. Dean Morgan Lee must choose between two defensible paths with different harms. What does Dean Morgan Lee do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Dean Morgan Lee must choose under rights versus utility. What does Dean Morgan Lee do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "courtroom_anonymous_jury_ai_threat_cedar_point_03",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Criminal Justice",
-  "premise": "In Cedar Point, a crisis related to courtroom anonymous jury ai threat forces a policy choice in the domain of Criminal Justice. Evidence is incomplete, and the proposed technical fix would shift risk onto a specific group while lowering visible metrics in the short term. External pressure is escalating from regulators, media, and port operators, and a hard deadline arrives before the storm arrives. If the policy prioritizes speed, it may create long-term damage and distrust; if it prioritizes caution, it may leave immediate harms unaddressed and trigger secondary failures. The decision must be written in a way that survives public review and later audit. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Criminal Justice.",
+  "premise": "A judge must rule on sealing a transcript that names a minor while media already possesses an unredacted copy. In Criminal Justice, the situation tagged internally around courtroom anonymous jury ai threat cedar point has converged with local pressure in the Point corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Frontline managers report that frontline staff are already deviating from policy; silence from the top will be read as tacit approval. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. The organization’s past incidents make justice feel morally loud today, while mercy is the value that quietly erodes if you always choose expediency.",
   "agents": [
     {
       "name": "Victor Mensah",
-      "identity": "I am the decision-maker responsible for a high-stakes policy choice in Cedar Point under a contaminated sample report with incomplete information and real harms on both sides.",
-      "goal": "I want a defensible decision that balances safety, fairness, and trust under time pressure while avoiding irreversible second-order damage.",
+      "identity": "I am Victor Mensah, the accountable executive on this bridge in Criminal Justice. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat mercy as disposable collateral every time justice spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Advisor Ravi Singh",
-      "identity": "I am an advisor representing port operators who will absorb the consequences if the policy fails or shifts risk unfairly.",
-      "goal": "I want governance that is transparent, equitable, and auditable rather than driven by convenience or political optics.",
+      "identity": "I am Advisor Ravi Singh, the counsel or integrity officer watching downstream liability in Criminal Justice. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so justice cannot become a blank check that quietly vaporizes mercy in the paperwork afterward.",
       "philosophy": "contractualism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Victor Mensah",
         "choices": [
-          "I will choose the cautious path with independent oversight, staged rollout, and published criteria, accepting short-term disruption in Cedar Point to reduce irreversible harm and rebuild trust.",
-          "I will choose the faster path with mitigations, monitoring, and a rollback trigger, accepting uncertainty to reduce immediate harm and meet the deadline before the storm arrives."
+          "I will redirect resources to the smallest cohort first where harm is most concentrated, documenting tradeoffs openly—privileging fairness dimensions of mercy.",
+          "I will optimize for aggregate harm reduction across the whole population immediately—privileging the utilitarian reading of justice even where distribution gets rough."
         ],
-        "call_to_action": "Stakeholders are demanding a clear decision and the trade-offs are real. Victor Mensah must choose between two defensible actions with different harms. What does Victor Mensah do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Victor Mensah must choose under justice versus mercy. What does Victor Mensah do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "trade_policy_recall_notice_arrives_stonehaven_jus_mer",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Trade Policy",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: trade policy recall notice arrives stonehaven jus mer. The moral tension is explicitly framed as justice versus mercy: leadership cannot fully satisfy both without accepting tradeoffs. Pager queues are saturated; middle management is forwarding screenshots from an internal channel that is already leaking. Legal and comms are on hold; you must record a decision in the incident audit trail within the next fifteen minutes. Any exception must be time-boxed, named, and reversible where technically feasible. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs.",
+  "premise": "A whistleblower submission and a customer complaint surfaced the same underlying issue through different evidence chains. In Trade Policy, the situation tagged internally around trade policy recall notice arrives stonehaven jus mer has converged with local pressure in the Stonehaven corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Two executives have pre-committed to opposite remedies in side channels; whichever memo lands first will box everyone in. A vendor’s root-cause paragraph contradicts your internal postmortem draft; both cannot be true, but neither is fully disprovable yet. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. Framing has already hardened externally as justice against mercy; internal nuance will not survive the first news cycle unless it is extremely careful.",
   "agents": [
     {
       "name": "Inez Ishikawa",
-      "identity": "I am Inez Ishikawa, the accountable decision-maker on this Trade Policy bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes mercy whenever someone invokes justice.",
+      "identity": "I am Inez Ishikawa, the accountable executive on this bridge in Trade Policy. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat mercy as disposable collateral every time justice spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Elena Chen",
-      "identity": "I am Elena Chen, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so mercy is not sacrificed by default just because justice feels morally loud in the moment.",
+      "identity": "I am Elena Chen, the field counterpart whose constituency will feel the decision first in Trade Policy. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so justice cannot become a blank check that quietly vaporizes mercy in the paperwork afterward.",
       "philosophy": "care_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Inez Ishikawa",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect mercy.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to mercy to secure justice before the window closes."
+          "I will impose a narrow, time-boxed intervention with human override, subgroup checks, and a hard stop if harm rises—accepting slower relief to protect mercy.",
+          "I will authorize a broad immediate action to stabilize outcomes now, with post-hoc measurement and correction—accepting elevated risk to mercy to secure justice before the window closes."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Inez Ishikawa must decide under justice versus mercy. What does Inez Ishikawa do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. Inez Ishikawa must choose under justice versus mercy. What does Inez Ishikawa do?"
       }
     },
     {

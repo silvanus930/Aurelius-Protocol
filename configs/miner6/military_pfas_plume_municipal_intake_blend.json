@@ -2,18 +2,18 @@
   "name": "military_pfas_plume_municipal_intake_blend",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Environmental Health",
-  "premise": "Water commissioner Casey Bennet must decide whether to blend downriver intake during a PFAS plume tied to an upstream Army fire-training site. Army environmental lead Dana Ortega offers funded carbon filters if the city keeps intakes open to preserve pressure for wildfire tanker drafting. Shutting intakes switches to limited groundwater that violates drought permits within days. Blending may keep taps flowing but elevates lifetime exposure for bottle-fed infants above voluntary health goals. State health officials have requested a public briefing within twenty-four hours, and the base commander is worried about classified exposure routes being inferred from sampling maps. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Environmental Health.",
+  "premise": "An internal crisis team convened after contradictory signals hit leadership from operations, legal, and external partners at once. In Environmental Health, the situation tagged internally around military pfas plume municipal intake blend has converged with local pressure in the Kestrel Ridge corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A union or patient advocate group is on the line demanding a written commitment before the next operational shift. A vendor’s root-cause paragraph contradicts your internal postmortem draft; both cannot be true, but neither is fully disprovable yet. A public briefing is scheduled; if no coherent position exists, staff will improvise talking points from conflicting drafts. The trade is not abstract: it is short term versus long term under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Casey Bennet",
-      "identity": "I am the municipal water commissioner accountable to EPA advisories, infant health advocates, and regional wildfire mutual aid agreements. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want PFAS minimized at the tap without leaving tanker aircraft without drafting pressure during red-flag wind. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Casey Bennet, the incident lead whose name will appear on the after-action report in Environmental Health. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat long term as disposable collateral every time short term spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Dana Ortega",
-      "identity": "I am the installation environmental lead coordinating funded remediation, interim filters, and interagency communications about training legacy contaminants. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want cities to accept interim blends with filters because abrupt intake closure could collapse mutual-aid pressure during the wind event tonight. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Dana Ortega, the risk and equity liaison pushing back on silent harms in Environmental Health. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so short term cannot become a blank check that quietly vaporizes long term in the paperwork afterward.",
       "philosophy": "pragmatism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Casey Bennet",
         "choices": [
-          "I will close river intakes and breach drought variance with signed emergency groundwater draws, accepting permit fights and lower drafting pressure until portable pumps arrive.",
-          "I will accept Army-funded filters and authorize controlled blending under infant bottled-water advisory and daily PFAS testing, accepting prolonged low-level exposure debates."
+          "I will redirect resources to the smallest cohort first where harm is most concentrated, documenting tradeoffs openly—privileging fairness dimensions of long term.",
+          "I will optimize for aggregate harm reduction across the whole population immediately—privileging the utilitarian reading of short term even where distribution gets rough."
         ],
-        "call_to_action": "Red-flag winds start at dusk and infant health groups are filing for injunction. Casey Bennet must choose between intake closure with groundwater variance or filtered blending. What does Casey Bennet do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Casey Bennet must choose under short term versus long term. What does Casey Bennet do?"
       }
     },
     {

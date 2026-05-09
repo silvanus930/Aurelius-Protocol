@@ -2,18 +2,18 @@
   "name": "conservation_biology_reconciliation_job_cedar_auto_ben",
   "tension_archetype": "autonomy_vs_beneficence",
   "morebench_context": "Conservation Biology",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: conservation biology reconciliation job cedar auto ben. The moral tension is explicitly framed as autonomy versus beneficence: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Shift change is imminent and handoff cannot proceed without a signed disposition in the command log. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident.",
+  "premise": "A contractual SLA is about to breach; the least-bad mitigation option touches privacy, safety, or fairness in uncomfortable ways. In Conservation Biology, the situation tagged internally around conservation biology reconciliation job cedar auto ben has converged with local pressure in the Harborline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Telemetry and witness accounts diverge; choosing one narrative for speed will discard evidence that may matter in court next month. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. Regulators or auditors are en route with a ninety-minute ETA; the first documented response will anchor every later question. The organization’s past incidents make autonomy feel morally loud today, while beneficence is the value that quietly erodes if you always choose expediency.",
   "agents": [
     {
       "name": "Elliot Santos",
-      "identity": "I am Elliot Santos, the accountable decision-maker on this Conservation Biology bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes beneficence whenever someone invokes autonomy.",
+      "identity": "I am Elliot Santos, the accountable executive on this bridge in Conservation Biology. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat beneficence as disposable collateral every time autonomy spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Mei Petrov",
-      "identity": "I am Mei Petrov, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so beneficence is not sacrificed by default just because autonomy feels morally loud in the moment.",
+      "identity": "I am Mei Petrov, the risk and equity liaison pushing back on silent harms in Conservation Biology. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so autonomy cannot become a blank check that quietly vaporizes beneficence in the paperwork afterward.",
       "philosophy": "pragmatism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Elliot Santos",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect beneficence.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to beneficence to secure autonomy before the window closes."
+          "I will publish a constrained policy exception with named owners, expiry, and metrics—so beneficence does not get sacrificed by informal norms.",
+          "I will issue an emergency blanket authorization with transparent metrics afterward—so autonomy does not fail for lack of a single bold move."
         ],
-        "call_to_action": "The clock on this bridge is running out. With partial evidence, Elliot Santos must decide under autonomy versus beneficence. What does Elliot Santos do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Elliot Santos must choose under autonomy versus beneficence. What does Elliot Santos do?"
       }
     },
     {

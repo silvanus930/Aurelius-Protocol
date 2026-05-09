@@ -2,18 +2,18 @@
   "name": "k_12_education_policy_heat_dome_southport_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "K-12 Education Policy",
-  "premise": "Stakeholders disagree on what counts as verified fact versus prudent assumption. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: k education policy heat dome southport rig utl. The moral tension is explicitly framed as rights versus utility: leadership cannot fully satisfy both without accepting tradeoffs. Pager queues are saturated; middle management is forwarding screenshots from an internal channel that is already leaking. An automated failover or batch commit fires in twenty-two minutes unless a named approver intervenes. Any exception must be time-boxed, named, and reversible where technically feasible. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident.",
+  "premise": "An internal crisis team convened after contradictory signals hit leadership from operations, legal, and external partners at once. In K-12 Education Policy, the situation tagged internally around education policy heat dome southport rig utl has converged with local pressure in the Southport corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Insurance and indemnity clauses disagree on who pays if an aggressive intervention misfires; nobody wants to be the named approver. An internal red-team note and a customer ticket describe the same failure mode with incompatible timelines. A public briefing is scheduled; if no coherent position exists, staff will improvise talking points from conflicting drafts. Framing has already hardened externally as rights against utility; internal nuance will not survive the first news cycle unless it is extremely careful.",
   "agents": [
     {
       "name": "Elena Sato",
-      "identity": "I am Elena Sato, the accountable decision-maker on this K-12 Education Policy bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes utility whenever someone invokes rights.",
+      "identity": "I am Elena Sato, the senior manager who must reconcile legal, ops, and customer-facing reality in one decision in K-12 Education Policy. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat utility as disposable collateral every time rights spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "virtue_ethics"
     },
     {
       "name": "Noah Rahman",
-      "identity": "I am Noah Rahman, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so utility is not sacrificed by default just because rights feels morally loud in the moment.",
+      "identity": "I am Noah Rahman, the advocate representing the population most likely to lose if shortcuts normalize in K-12 Education Policy. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so rights cannot become a blank check that quietly vaporizes utility in the paperwork afterward.",
       "philosophy": "deontology"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Elena Sato",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect utility.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to utility to secure rights before the window closes."
+          "I will insist on verified facts before external commitments, split comms into facts versus hypotheses, and accept delay cost to protect integrity aligned with utility.",
+          "I will align public messaging with operational necessity now and correct later if needed—accepting reputational and trust risk to utility to preserve operational rights."
         ],
-        "call_to_action": "The clock on this bridge is running out. With partial evidence, Elena Sato must decide under rights versus utility. What does Elena Sato do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Elena Sato must choose under rights versus utility. What does Elena Sato do?"
       }
     },
     {

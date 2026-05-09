@@ -2,18 +2,18 @@
   "name": "humanitarian_aid_port_security_scanner_northpine_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Humanitarian Aid",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: humanitarian aid port security scanner northpine rig utl. The moral tension is explicitly framed as rights versus utility: leadership cannot fully satisfy both without accepting tradeoffs. A whistleblower tip has reached a reporter; silence reads as cover-up, while a rushed statement reads as recklessness. An automated failover or batch commit fires in twenty-two minutes unless a named approver intervenes. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Anyone affected by an automated hold or model output must retain a human escalation path that is actually staffed.",
+  "premise": "Two departments published incompatible guidance; frontline staff are improvising and liability is concentrating on one signature line. In Humanitarian Aid, the situation tagged internally around humanitarian aid port security scanner northpine rig utl has converged with local pressure in the Port corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Two executives have pre-committed to opposite remedies in side channels; whichever memo lands first will box everyone in. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. A hard operational cutoff hits in under twenty minutes unless a named executive posts a decision in the command log. The trade is not abstract: it is rights versus utility under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Keisha Berg",
-      "identity": "I am Keisha Berg, the accountable decision-maker on this Humanitarian Aid bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes utility whenever someone invokes rights.",
+      "identity": "I am Keisha Berg, the duty officer with sign-off authority for the next window in Humanitarian Aid. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat utility as disposable collateral every time rights spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "contractualism"
     },
     {
       "name": "Elena Rahman",
-      "identity": "I am Elena Rahman, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so utility is not sacrificed by default just because rights feels morally loud in the moment.",
+      "identity": "I am Elena Rahman, the risk and equity liaison pushing back on silent harms in Humanitarian Aid. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so rights cannot become a blank check that quietly vaporizes utility in the paperwork afterward.",
       "philosophy": "natural_law"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Keisha Berg",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect utility.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to utility to secure rights before the window closes."
+          "I will sequence a conservative rollout: smallest blast radius first, documented exceptions only, and real appeals paths—even if rights advocates call that foot-dragging.",
+          "I will push a fast, organization-wide lever because partial fixes may leave the worst harm untouched—even if that compresses protections for utility."
         ],
-        "call_to_action": "The next automated step is minutes away. With partial evidence, Keisha Berg must decide under rights versus utility. What does Keisha Berg do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Keisha Berg must choose under rights versus utility. What does Keisha Berg do?"
       }
     },
     {

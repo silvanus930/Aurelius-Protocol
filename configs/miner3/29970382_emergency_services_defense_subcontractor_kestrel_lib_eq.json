@@ -2,18 +2,18 @@
   "name": "emergency_services_defense_subcontractor_kestrel_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Emergency Services",
-  "premise": "Stakeholders disagree on what counts as verified fact versus prudent assumption. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: emergency services defense subcontractor kestrel lib eq. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. An automated failover or batch commit fires in twenty-two minutes unless a named approver intervenes. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Any exception must be time-boxed, named, and reversible where technically feasible.",
+  "premise": "A vendor outage and an internal change window collided; rollback paths are not symmetric and both teams blame the other. In Emergency Services, the situation tagged internally around emergency services defense subcontractor kestrel lib eq has converged with local pressure in the Lumen City corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Counsel insists any public statement match what is already provable from retained logs, not what leadership believes is true. Key facts are still arriving from the field; the team is working off stale dashboards and verbal handoffs. Regulators or auditors are en route with a ninety-minute ETA; the first documented response will anchor every later question. No option cleanly satisfies both liberty and equality; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Soren Serrano",
-      "identity": "I am Soren Serrano, the accountable decision-maker on this Emergency Services bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
+      "identity": "I am Soren Serrano, the incident lead whose name will appear on the after-action report in Emergency Services. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Mei Nowak",
-      "identity": "I am Mei Nowak, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
+      "identity": "I am Mei Nowak, the advocate representing the population most likely to lose if shortcuts normalize in Emergency Services. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Soren Serrano",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
+          "I will freeze the riskiest workflow steps and staff a manual bridge until equity and error-rate checks clear—trading speed for defensibility on equality.",
+          "I will let the fastest operational path proceed under heightened monitoring and rollback triggers—trading some certainty on equality for immediate traction on liberty."
         ],
-        "call_to_action": "The next automated step is minutes away. With partial evidence, Soren Serrano must decide under liberty versus equality. What does Soren Serrano do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. Soren Serrano must choose under liberty versus equality. What does Soren Serrano do?"
       }
     },
     {

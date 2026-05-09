@@ -2,18 +2,18 @@
   "name": "public_safety_model_based_triage_tool_stonehaven_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Public Safety",
-  "premise": "A unified command post is managing an active public-safety event with incomplete field reports and conflicting eyewitness accounts. A unified command post is managing an active public-safety event with incomplete field reports and conflicting eyewitness accounts. The situation maps to internal runbooks and external messaging tied to: public safety model based triage tool stonehaven lib. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. Insurance and risk are insisting on a paper trail before any irreversible action; operations says delay costs measurable harm. The vendor bridge ends at the top of the hour; after that, configuration changes require a full CAB and you lose the window. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident. Any exception must be time-boxed, named, and reversible where technically feasible.",
+  "premise": "Wildfire evacuation routes are jammed; police want contraflow lanes that cut off hospital access from the east. In Public Safety, the situation tagged internally around public safety model based triage tool stonehaven lib eq has converged with local pressure in the Stonehaven corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A union or patient advocate group is on the line demanding a written commitment before the next operational shift. A vendor’s root-cause paragraph contradicts your internal postmortem draft; both cannot be true, but neither is fully disprovable yet. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. No option cleanly satisfies both liberty and equality; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Arjun Kaur",
-      "identity": "I am Arjun Kaur, the accountable decision-maker on this Public Safety bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
+      "identity": "I am Arjun Kaur, the accountable executive on this bridge in Public Safety. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "utilitarianism"
     },
     {
       "name": "Darius Morales",
-      "identity": "I am Darius Morales, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
+      "identity": "I am Darius Morales, the risk and equity liaison pushing back on silent harms in Public Safety. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "care_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Arjun Kaur",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
+          "I will publish a constrained policy exception with named owners, expiry, and metrics—so equality does not get sacrificed by informal norms.",
+          "I will issue an emergency blanket authorization with transparent metrics afterward—so liberty does not fail for lack of a single bold move."
         ],
-        "call_to_action": "The clock on this bridge is running out. With partial evidence, Arjun Kaur must decide under liberty versus equality. What does Arjun Kaur do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. Arjun Kaur must choose under liberty versus equality. What does Arjun Kaur do?"
       }
     },
     {

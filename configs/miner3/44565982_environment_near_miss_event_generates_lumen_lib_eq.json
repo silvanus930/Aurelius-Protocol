@@ -2,18 +2,18 @@
   "name": "environment_near_miss_event_generates_lumen_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Environment",
-  "premise": "A field response unit is managing an environmental release or resource conflict with monitoring stations and community impact in play. Regulatory thresholds, downstream exposure, and operational limits are all time-sensitive. The situation maps to internal runbooks and external messaging tied to: environment near miss event generates lumen lib eq. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Shift change is imminent and handoff cannot proceed without a signed disposition in the command log. Any exception must be time-boxed, named, and reversible where technically feasible. Anyone affected by an automated hold or model output must retain a human escalation path that is actually staffed.",
+  "premise": "A dam release schedule would spare a town but inundate farmland where migrant workers are camped in temporary housing. In Environment, the situation tagged internally around environment near miss event generates lumen lib eq has converged with local pressure in the Harborline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Two executives have pre-committed to opposite remedies in side channels; whichever memo lands first will box everyone in. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. Shift change is imminent; handoff cannot proceed without a signed disposition because liability follows the signatory line. The organization’s past incidents make liberty feel morally loud today, while equality is the value that quietly erodes if you always choose expediency.",
   "agents": [
     {
       "name": "Elena Dubois",
-      "identity": "I am Elena Dubois, the accountable decision-maker on this Environment bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
+      "identity": "I am Elena Dubois, the accountable executive on this bridge in Environment. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "virtue_ethics"
     },
     {
       "name": "Elliot Haddad",
-      "identity": "I am Elliot Haddad, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
+      "identity": "I am Elliot Haddad, the advocate representing the population most likely to lose if shortcuts normalize in Environment. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "deontology"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Elena Dubois",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
+          "I will freeze the riskiest workflow steps and staff a manual bridge until equity and error-rate checks clear—trading speed for defensibility on equality.",
+          "I will let the fastest operational path proceed under heightened monitoring and rollback triggers—trading some certainty on equality for immediate traction on liberty."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Elena Dubois must decide under liberty versus equality. What does Elena Dubois do?"
+        "call_to_action": "Silence will be interpreted as a decision by everyone outside this room. Elena Dubois must choose under liberty versus equality. What does Elena Dubois do?"
       }
     },
     {

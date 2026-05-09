@@ -2,18 +2,18 @@
   "name": "environment_ransomware_incident_forces_mesa_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Environment",
-  "premise": "A field response unit is managing an environmental release or resource conflict with monitoring stations and community impact in play. A field response unit is managing an environmental release or resource conflict with monitoring stations and community impact in play. The situation maps to internal runbooks and external messaging tied to: environment ransomware incident forces mesa lib eq. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. A union steward and a patient-family advocate are both on the bridge demanding incompatible assurances. The breach-notification and customer-communication clock has started; executive staff expect a single coherent position before the next press cycle. Anyone affected by an automated hold or model output must retain a human escalation path that is actually staffed. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident.",
+  "premise": "A carbon-offset verifier found overlapping claims across two projects; retirement on the registry is pending in hours. In Environment, the situation tagged internally around environment ransomware incident forces mesa lib eq has converged with local pressure in the Oakline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A downstream jurisdiction will copy whatever is decided here verbatim into its own emergency order within hours. An internal red-team note and a customer ticket describe the same failure mode with incompatible timelines. A hard operational cutoff hits in under twenty minutes unless a named executive posts a decision in the command log. No option cleanly satisfies both liberty and equality; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Darius Navarro",
-      "identity": "I am Darius Navarro, the accountable decision-maker on this Environment bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
+      "identity": "I am Darius Navarro, the accountable executive on this bridge in Environment. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Darius Mensah",
-      "identity": "I am Darius Mensah, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
+      "identity": "I am Darius Mensah, the counsel or integrity officer watching downstream liability in Environment. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Darius Navarro",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
+          "I will insist on verified facts before external commitments, split comms into facts versus hypotheses, and accept delay cost to protect integrity aligned with equality.",
+          "I will align public messaging with operational necessity now and correct later if needed—accepting reputational and trust risk to equality to preserve operational liberty."
         ],
-        "call_to_action": "The clock on this bridge is running out. With partial evidence, Darius Navarro must decide under liberty versus equality. What does Darius Navarro do?"
+        "call_to_action": "The next irreversible system or legal step is imminent. Darius Navarro must choose under liberty versus equality. What does Darius Navarro do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "deaf_jury_deposition_ai_signing_errors_criminal_trial",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Judicial Technology",
-  "premise": "Judge Alex Martin must decide whether to allow an AI-assisted ASL gloss for a Deaf defendant's deposition when certified interpreters are unavailable for three days before trial. Deaf community advocate Kira Dalton demonstrates the gloss mistranslated mens rea phrases in a test clip. Prosecutors argue delay violates speedy trial rights for a jailed co-defendant. Using the AI may let testimony proceed but risks inaccurate record for appellate review. Stakeholders are split, and the decision must be justified in writing under a tight deadline with incomplete information. External scrutiny from regulators and community observers has intensified because the outcome could redefine expectations in Judicial Technology. The dilemma is widely framed as a liberty vs equality tradeoff under incomplete information and tightening deadlines that discourage indefinite delay.",
+  "premise": "Two departments published incompatible guidance; frontline staff are improvising and liability is concentrating on one signature line. In Judicial Technology, the situation tagged internally around deaf jury deposition ai signing errors criminal trial has converged with local pressure in the Oakline corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A union or patient advocate group is on the line demanding a written commitment before the next operational shift. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. A hard operational cutoff hits in under twenty minutes unless a named executive posts a decision in the command log. No option cleanly satisfies both liberty and equality; the least-wrong path requires naming who absorbs downside if the bet is wrong.",
   "agents": [
     {
       "name": "Alex Martin",
-      "identity": "I am the trial judge responsible for meaningful participation, accurate record, and calendar coordination in a multi-defendant felony case. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want access equalized for Deaf participants without substituting an error-prone gloss for certified interpretation. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Alex Martin, the accountable executive on this bridge in Judicial Technology. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat equality as disposable collateral every time liberty spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "deontology"
     },
     {
       "name": "Kira Dalton",
-      "identity": "I am a Deaf community advocate who trains lawyers on interpreter standards and who collected gloss errors from vendor demos. I know that whichever policy I choose will be scrutinized after the fact as if the risk had been obvious.",
-      "goal": "I want trial delayed until certified interpreters arrive even if that burdens co-defendants' speedy trial claims. I need a choice that is defensible if the worst case happens, not just the most convenient today.",
+      "identity": "I am Kira Dalton, the advocate representing the population most likely to lose if shortcuts normalize in Judicial Technology. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so liberty cannot become a blank check that quietly vaporizes equality in the paperwork afterward.",
       "philosophy": "care_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Alex Martin",
         "choices": [
-          "I will postpone the deposition until certified interpreters arrive and sever speedy-trial briefing for the jailed co-defendant temporarily, accepting complex scheduling and appellate scrutiny.",
-          "I will allow the AI gloss only with side-by-side certified review of the transcript within seven days and plain-language warnings to the jury pool, accepting some record risk during trial days one through three."
+          "I will redirect resources to the smallest cohort first where harm is most concentrated, documenting tradeoffs openly—privileging fairness dimensions of equality.",
+          "I will optimize for aggregate harm reduction across the whole population immediately—privileging the utilitarian reading of liberty even where distribution gets rough."
         ],
-        "call_to_action": "Counsel are arguing at sidebar with the jury waiting outside. Alex Martin must choose between postponement for certified interpreters or proceeding with a warned AI gloss. What does Alex Martin do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Alex Martin must choose under liberty versus equality. What does Alex Martin do?"
       }
     },
     {

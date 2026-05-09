@@ -2,18 +2,18 @@
   "name": "healthcare_workplace_injury_spike_harbor_jus_mer",
   "tension_archetype": "justice_vs_mercy",
   "morebench_context": "Healthcare",
-  "premise": "A hospital incident command bridge convened after a critical infrastructure or patient-flow failure with competing clinical priorities. Bed capacity, consent, and chart documentation are all under real-time scrutiny. The situation maps to internal runbooks and external messaging tied to: healthcare workplace injury spike harbor jus mer. The moral tension is explicitly framed as justice versus mercy: leadership cannot fully satisfy both without accepting tradeoffs. Insurance and risk are insisting on a paper trail before any irreversible action; operations says delay costs measurable harm. The breach-notification and customer-communication clock has started; executive staff expect a single coherent position before the next press cycle. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs.",
+  "premise": "Infection control wants a ward closed; bed management is refusing without a signed surge plan from the county. In Healthcare, the situation tagged internally around healthcare workplace injury spike harbor jus mer has converged with local pressure in the Marrowbridge corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. A reporter has partial screenshots; if the official narrative shifts later, the organization risks a false-information allegation. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. OR block time and blood-bank release rules create a hard decision point before the next trauma activation window. The trade is not abstract: it is justice versus mercy under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Keisha Chandra",
-      "identity": "I am Keisha Chandra, the accountable decision-maker on this Healthcare bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes mercy whenever someone invokes justice.",
+      "identity": "I am Keisha Chandra, the accountable executive on this bridge in Healthcare. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat mercy as disposable collateral every time justice spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "contractualism"
     },
     {
       "name": "Talia Sato",
-      "identity": "I am Talia Sato, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so mercy is not sacrificed by default just because justice feels morally loud in the moment.",
+      "identity": "I am Talia Sato, the counsel or integrity officer watching downstream liability in Healthcare. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so justice cannot become a blank check that quietly vaporizes mercy in the paperwork afterward.",
       "philosophy": "deontology"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Keisha Chandra",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect mercy.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to mercy to secure justice before the window closes."
+          "I will freeze the riskiest workflow steps and staff a manual bridge until equity and error-rate checks clear—trading speed for defensibility on mercy.",
+          "I will let the fastest operational path proceed under heightened monitoring and rollback triggers—trading some certainty on mercy for immediate traction on justice."
         ],
-        "call_to_action": "The next automated step is minutes away. With partial evidence, Keisha Chandra must decide under justice versus mercy. What does Keisha Chandra do?"
+        "call_to_action": "Partial evidence is all that will exist before the window closes. Keisha Chandra must choose under justice versus mercy. What does Keisha Chandra do?"
       }
     },
     {

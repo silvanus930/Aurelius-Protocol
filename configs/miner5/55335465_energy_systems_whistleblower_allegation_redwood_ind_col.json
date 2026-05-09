@@ -2,18 +2,18 @@
   "name": "energy_systems_whistleblower_allegation_redwood_ind_col",
   "tension_archetype": "individual_vs_collective",
   "morebench_context": "Energy Systems",
-  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: energy systems whistleblower allegation redwood ind col. The moral tension is explicitly framed as individual versus collective: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Regulators are en route with a ninety-minute ETA; whatever you authorize now will be the documented first response. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident. Any exception must be time-boxed, named, and reversible where technically feasible.",
+  "premise": "Two departments published incompatible guidance; frontline staff are improvising and liability is concentrating on one signature line. In Energy Systems, the situation tagged internally around energy systems whistleblower allegation redwood ind col has converged with local pressure in the Redwood corridor. That label is not a full explanation, but it is how crews, counsel, and comms are indexing the case file right now. Insurance and indemnity clauses disagree on who pays if an aggressive intervention misfires; nobody wants to be the named approver. Legal has not signed off on data sharing between teams; analysts are inferring causality from incomplete joins. Regulators or auditors are en route with a ninety-minute ETA; the first documented response will anchor every later question. The trade is not abstract: it is individual versus collective under incomplete information, and whichever value you deprioritize will have defenders who are technically correct about the risk they fear.",
   "agents": [
     {
       "name": "Talia Nielsen",
-      "identity": "I am Talia Nielsen, the accountable decision-maker on this Energy Systems bridge; I own what gets logged, communicated, and executed in the next window.",
-      "goal": "I need to stop the bleeding without baking in a rule that later punishes collective whenever someone invokes individual.",
+      "identity": "I am Talia Nielsen, the incident lead whose name will appear on the after-action report in Energy Systems. I own the signature line that turns a recommendation into an irreversible operational fact for the next phase.",
+      "goal": "I need a path that does not treat collective as disposable collateral every time individual spikes in urgency, but I also cannot pretend we have luxury time we do not have.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Mateo Rahman",
-      "identity": "I am Mateo Rahman, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
-      "goal": "I want safeguards so collective is not sacrificed by default just because individual feels morally loud in the moment.",
+      "identity": "I am Mateo Rahman, the counsel or integrity officer watching downstream liability in Energy Systems. I am tracking who gets protected last if we choose speed, silence, or a narrow definition of success.",
+      "goal": "I want explicit guardrails so individual cannot become a blank check that quietly vaporizes collective in the paperwork afterward.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Talia Nielsen",
         "choices": [
-          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect collective.",
-          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to collective to secure individual before the window closes."
+          "I will impose a narrow, time-boxed intervention with human override, subgroup checks, and a hard stop if harm rises—accepting slower relief to protect collective.",
+          "I will authorize a broad immediate action to stabilize outcomes now, with post-hoc measurement and correction—accepting elevated risk to collective to secure individual before the window closes."
         ],
-        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Talia Nielsen must decide under individual versus collective. What does Talia Nielsen do?"
+        "call_to_action": "Two incompatible drafts are circulating; only one can become official. Talia Nielsen must choose under individual versus collective. What does Talia Nielsen do?"
       }
     },
     {
