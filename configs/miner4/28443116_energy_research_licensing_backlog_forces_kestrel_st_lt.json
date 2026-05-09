@@ -2,18 +2,18 @@
   "name": "energy_research_licensing_backlog_forces_kestrel_st_lt",
   "tension_archetype": "short_term_vs_long_term",
   "morebench_context": "Energy Research",
-  "premise": "A Energy Research response desk is in a fast-moving incident involving energy research licensing backlog forces kestrel st lt. Key inputs conflict, but the decision deadline is before regulators arrive. Every delay increases harm prevention and accountability. Stakeholders are already framing this as short term vs long term under pressure. A live dashboard is public; inconsistencies will trigger immediate investigation. Constraints: Make the intervention reversible and time-boxed with named accountability. Ensure a usable human override/appeals path.",
+  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: energy research licensing backlog forces kestrel st lt. The moral tension is explicitly framed as short term versus long term: leadership cannot fully satisfy both without accepting tradeoffs. A union steward and a patient-family advocate are both on the bridge demanding incompatible assurances. A wire cutoff and settlement window closes in under thirty minutes; reversals may be impossible until the next business day. Any exception must be time-boxed, named, and reversible where technically feasible. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident.",
   "agents": [
     {
       "name": "Elena Navarro",
-      "identity": "I am Elena Navarro, accountable for a defensible call in Energy Research when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays long term for short term.",
+      "identity": "I am Elena Navarro, the accountable decision-maker on this Energy Research bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes long term whenever someone invokes short term.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Ansel Kim",
-      "identity": "I am Ansel Kim, tasked with surfacing second-order harms and who bears the risk in Energy Research.",
-      "goal": "I want guardrails so long term isn’t quietly traded away under urgency in the name of short term.",
+      "identity": "I am Ansel Kim, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so long term is not sacrificed by default just because short term feels morally loud in the moment.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Elena Navarro",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect long term.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to long term to secure short term under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect long term.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to long term to secure short term before the window closes."
         ],
-        "call_to_action": "The deadline is before regulators arrive. Evidence is partial. Elena Navarro must decide under short term vs long term. What does Elena Navarro do?"
+        "call_to_action": "The clock on this bridge is running out. With partial evidence, Elena Navarro must decide under short term versus long term. What does Elena Navarro do?"
       }
     },
     {

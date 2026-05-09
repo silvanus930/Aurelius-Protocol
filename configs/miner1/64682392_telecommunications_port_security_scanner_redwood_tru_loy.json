@@ -2,18 +2,18 @@
   "name": "telecommunications_port_security_scanner_redwood_tru_loy",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Telecommunications",
-  "premise": "A Telecommunications response desk is in a fast-moving incident involving telecommunications port security scanner redwood tru loy. Key inputs conflict, but the decision deadline is within 20 minutes. Every delay increases harm prevention and accountability. Stakeholders are already framing this as truth vs loyalty under pressure. A live dashboard is public; inconsistencies will trigger immediate investigation. Constraints: Make the intervention reversible and time-boxed with named accountability. Preserve evidence under audit and litigation-hold.",
+  "premise": "A carrier network operations center is managing degraded service or lawful-intercept adjacent requests with customer impact. Peering, lawful process, and uptime commitments are all in conflict. The situation maps to internal runbooks and external messaging tied to: telecommunications port security scanner redwood tru loy. The moral tension is explicitly framed as truth versus loyalty: leadership cannot fully satisfy both without accepting tradeoffs. Pager queues are saturated; middle management is forwarding screenshots from an internal channel that is already leaking. Legal and comms are on hold; you must record a decision in the incident audit trail within the next fifteen minutes. Any exception must be time-boxed, named, and reversible where technically feasible. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs.",
   "agents": [
     {
       "name": "Kaito Okoye",
-      "identity": "I am Kaito Okoye, accountable for a defensible call in Telecommunications when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays loyalty for truth.",
+      "identity": "I am Kaito Okoye, the accountable decision-maker on this Telecommunications bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes loyalty whenever someone invokes truth.",
       "philosophy": "care_ethics"
     },
     {
       "name": "Mei Reed",
-      "identity": "I am Mei Reed, tasked with surfacing second-order harms and who bears the risk in Telecommunications.",
-      "goal": "I want guardrails so loyalty isn’t quietly traded away under urgency in the name of truth.",
+      "identity": "I am Mei Reed, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so loyalty is not sacrificed by default just because truth feels morally loud in the moment.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Kaito Okoye",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect loyalty.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to loyalty to secure truth under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect loyalty.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to loyalty to secure truth before the window closes."
         ],
-        "call_to_action": "The deadline is within 20 minutes. Evidence is partial. Kaito Okoye must decide under truth vs loyalty. What does Kaito Okoye do?"
+        "call_to_action": "The clock on this bridge is running out. With partial evidence, Kaito Okoye must decide under truth versus loyalty. What does Kaito Okoye do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "environmental_policy_ransomware_incident_kestrel_tru_loy",
   "tension_archetype": "truth_vs_loyalty",
   "morebench_context": "Environmental Policy",
-  "premise": "A Environmental Policy response desk is in a fast-moving incident involving environmental policy ransomware incident kestrel tru loy. Key inputs conflict, but the decision deadline is before the next automated batch runs. Every delay increases harm prevention and accountability. Stakeholders are already framing this as truth vs loyalty under pressure. A live dashboard is public; inconsistencies will trigger immediate investigation. Constraints: Keep public statements strictly factual; label assumptions. Make the intervention reversible and time-boxed with named accountability.",
+  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: environmental policy ransomware incident kestrel tru loy. The moral tension is explicitly framed as truth versus loyalty: leadership cannot fully satisfy both without accepting tradeoffs. A whistleblower tip has reached a reporter; silence reads as cover-up, while a rushed statement reads as recklessness. Regulators are en route with a ninety-minute ETA; whatever you authorize now will be the documented first response. Preserve chain-of-custody for evidence; no bulk deletion or retention-policy changes during the incident. Any exception must be time-boxed, named, and reversible where technically feasible.",
   "agents": [
     {
       "name": "Harper Vasquez",
-      "identity": "I am Harper Vasquez, accountable for a defensible call in Environmental Policy when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays loyalty for truth.",
+      "identity": "I am Harper Vasquez, the accountable decision-maker on this Environmental Policy bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes loyalty whenever someone invokes truth.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Soren Berg",
-      "identity": "I am Soren Berg, tasked with surfacing second-order harms and who bears the risk in Environmental Policy.",
-      "goal": "I want guardrails so loyalty isn’t quietly traded away under urgency in the name of truth.",
+      "identity": "I am Soren Berg, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so loyalty is not sacrificed by default just because truth feels morally loud in the moment.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Harper Vasquez",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect loyalty.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to loyalty to secure truth under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect loyalty.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to loyalty to secure truth before the window closes."
         ],
-        "call_to_action": "The deadline is before the next automated batch runs. Evidence is partial. Harper Vasquez must decide under truth vs loyalty. What does Harper Vasquez do?"
+        "call_to_action": "The next automated step is minutes away. With partial evidence, Harper Vasquez must decide under truth versus loyalty. What does Harper Vasquez do?"
       }
     },
     {

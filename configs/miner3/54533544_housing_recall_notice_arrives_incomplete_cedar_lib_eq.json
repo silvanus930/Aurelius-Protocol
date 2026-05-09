@@ -2,18 +2,18 @@
   "name": "housing_recall_notice_arrives_incomplete_cedar_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Housing",
-  "premise": "A Housing response desk is in a fast-moving incident involving housing recall notice arrives incomplete cedar lib eq. Key inputs conflict, but the decision deadline is within 45 minutes. Every delay increases harm prevention and accountability. Stakeholders are already framing this as liberty vs equality under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Preserve evidence under audit and litigation-hold. Ensure a usable human override/appeals path.",
+  "premise": "A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. A cross-functional incident desk is managing a domain incident with incomplete information and high reputational exposure. The situation maps to internal runbooks and external messaging tied to: housing recall notice arrives incomplete cedar lib eq. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. The vendor bridge ends at the top of the hour; after that, configuration changes require a full CAB and you lose the window. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Anyone affected by an automated hold or model output must retain a human escalation path that is actually staffed.",
   "agents": [
     {
       "name": "Kaito Diallo",
-      "identity": "I am Kaito Diallo, accountable for a defensible call in Housing when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
+      "identity": "I am Kaito Diallo, the accountable decision-maker on this Housing bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
       "philosophy": "pragmatism"
     },
     {
       "name": "Ravi Nielsen",
-      "identity": "I am Ravi Nielsen, tasked with surfacing second-order harms and who bears the risk in Housing.",
-      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
+      "identity": "I am Ravi Nielsen, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
       "philosophy": "existentialism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Kaito Diallo",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
         ],
-        "call_to_action": "The deadline is within 45 minutes. Evidence is partial. Kaito Diallo must decide under liberty vs equality. What does Kaito Diallo do?"
+        "call_to_action": "The next automated step is minutes away. With partial evidence, Kaito Diallo must decide under liberty versus equality. What does Kaito Diallo do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "technology_licensing_backlog_forces_staff_oakline_lib_eq",
   "tension_archetype": "liberty_vs_equality",
   "morebench_context": "Technology",
-  "premise": "A Technology reliability war-room is in a fast-moving incident involving technology licensing backlog forces staff oakline lib eq. Key inputs conflict, but the decision deadline is within 20 minutes. Every delay increases security, uptime, and user rights. Stakeholders are already framing this as liberty vs equality under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Make the intervention reversible and time-boxed with named accountability. Keep public statements strictly factual; label assumptions.",
+  "premise": "Rollback, blast radius, and customer data handling must be decided before automation takes the next step. Rollback, blast radius, and customer data handling must be decided before automation takes the next step. The situation maps to internal runbooks and external messaging tied to: technology licensing backlog forces staff oakline lib eq. The moral tension is explicitly framed as liberty versus equality: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Shift change is imminent and handoff cannot proceed without a signed disposition in the command log. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs. Any exception must be time-boxed, named, and reversible where technically feasible.",
   "agents": [
     {
       "name": "Sana Okoye",
-      "identity": "I am Sana Okoye, accountable for a defensible call in Technology when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays equality for liberty.",
+      "identity": "I am Sana Okoye, the accountable decision-maker on this Technology bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes equality whenever someone invokes liberty.",
       "philosophy": "existentialism"
     },
     {
       "name": "Omar Patel",
-      "identity": "I am Omar Patel, tasked with surfacing second-order harms and who bears the risk in Technology.",
-      "goal": "I want guardrails so equality isn’t quietly traded away under urgency in the name of liberty.",
+      "identity": "I am Omar Patel, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so equality is not sacrificed by default just because liberty feels morally loud in the moment.",
       "philosophy": "moral_relativism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Sana Okoye",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect equality.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to equality to secure liberty under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect equality.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to equality to secure liberty before the window closes."
         ],
-        "call_to_action": "The deadline is within 20 minutes. Evidence is partial. Sana Okoye must decide under liberty vs equality. What does Sana Okoye do?"
+        "call_to_action": "External parties will infer a decision if none is posted. With partial evidence, Sana Okoye must decide under liberty versus equality. What does Sana Okoye do?"
       }
     },
     {

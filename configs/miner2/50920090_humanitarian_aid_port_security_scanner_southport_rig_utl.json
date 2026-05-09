@@ -2,18 +2,18 @@
   "name": "humanitarian_aid_port_security_scanner_southport_rig_utl",
   "tension_archetype": "rights_vs_utility",
   "morebench_context": "Humanitarian Aid",
-  "premise": "A Humanitarian Aid response desk is in a fast-moving incident involving humanitarian aid port security scanner southport rig utl. Key inputs conflict, but the decision deadline is before the press briefing. Every delay increases harm prevention and accountability. Stakeholders are already framing this as rights vs utility under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Keep public statements strictly factual; label assumptions. Make the intervention reversible and time-boxed with named accountability.",
+  "premise": "Stakeholders disagree on what counts as verified fact versus prudent assumption. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: humanitarian aid port security scanner southport rig utl. The moral tension is explicitly framed as rights versus utility: leadership cannot fully satisfy both without accepting tradeoffs. Two upstream teams have published contradictory status pages; customers are comparing timestamps. Shift change is imminent and handoff cannot proceed without a signed disposition in the command log. Any exception must be time-boxed, named, and reversible where technically feasible. Treat unverified telemetry as hypothesis; do not assert facts you cannot support from retained logs.",
   "agents": [
     {
       "name": "Mei Sato",
-      "identity": "I am Mei Sato, accountable for a defensible call in Humanitarian Aid when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays utility for rights.",
+      "identity": "I am Mei Sato, the accountable decision-maker on this Humanitarian Aid bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes utility whenever someone invokes rights.",
       "philosophy": "natural_law"
     },
     {
       "name": "Camila Haddad",
-      "identity": "I am Camila Haddad, tasked with surfacing second-order harms and who bears the risk in Humanitarian Aid.",
-      "goal": "I want guardrails so utility isn’t quietly traded away under urgency in the name of rights.",
+      "identity": "I am Camila Haddad, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so utility is not sacrificed by default just because rights feels morally loud in the moment.",
       "philosophy": "virtue_ethics"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Mei Sato",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect utility.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to utility to secure rights under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect utility.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to utility to secure rights before the window closes."
         ],
-        "call_to_action": "The deadline is before the press briefing. Evidence is partial. Mei Sato must decide under rights vs utility. What does Mei Sato do?"
+        "call_to_action": "The next automated step is minutes away. With partial evidence, Mei Sato must decide under rights versus utility. What does Mei Sato do?"
       }
     },
     {

@@ -2,18 +2,18 @@
   "name": "environmental_trade_staffing_model_oakline_ind_col",
   "tension_archetype": "individual_vs_collective",
   "morebench_context": "Environmental Trade",
-  "premise": "A Environmental Trade response desk is in a fast-moving incident involving environmental trade staffing model oakline ind col. Key inputs conflict, but the decision deadline is before regulators arrive. Every delay increases harm prevention and accountability. Stakeholders are already framing this as individual vs collective under pressure. A whistleblower has already contacted media; the narrative is forming now. Constraints: Keep public statements strictly factual; label assumptions. Preserve evidence under audit and litigation-hold.",
+  "premise": "Stakeholders disagree on what counts as verified fact versus prudent assumption. Stakeholders disagree on what counts as verified fact versus prudent assumption. The situation maps to internal runbooks and external messaging tied to: environmental trade staffing model oakline ind col. The moral tension is explicitly framed as individual versus collective: leadership cannot fully satisfy both without accepting tradeoffs. Pager queues are saturated; middle management is forwarding screenshots from an internal channel that is already leaking. A wire cutoff and settlement window closes in under thirty minutes; reversals may be impossible until the next business day. Anyone affected by an automated hold or model output must retain a human escalation path that is actually staffed. Any exception must be time-boxed, named, and reversible where technically feasible.",
   "agents": [
     {
       "name": "Priya Kowalski",
-      "identity": "I am Priya Kowalski, accountable for a defensible call in Environmental Trade when time is collapsing.",
-      "goal": "I want to reduce immediate harm without locking in an unjust precedent that later betrays collective for individual.",
+      "identity": "I am Priya Kowalski, the accountable decision-maker on this Environmental Trade bridge; I own what gets logged, communicated, and executed in the next window.",
+      "goal": "I need to stop the bleeding without baking in a rule that later punishes collective whenever someone invokes individual.",
       "philosophy": "existentialism"
     },
     {
       "name": "Camila Dubois",
-      "identity": "I am Camila Dubois, tasked with surfacing second-order harms and who bears the risk in Environmental Trade.",
-      "goal": "I want guardrails so collective isn’t quietly traded away under urgency in the name of individual.",
+      "identity": "I am Camila Dubois, responsible for surfacing who gets protected last when systems fail; I am watching for silent harm and unfair distribution.",
+      "goal": "I want safeguards so collective is not sacrificed by default just because individual feels morally loud in the moment.",
       "philosophy": "utilitarianism"
     }
   ],
@@ -24,10 +24,10 @@
       "forced_choice": {
         "agent_name": "Priya Kowalski",
         "choices": [
-          "I will take a narrow, time-boxed action with immediate human override and impact checks, accepting slower stabilization to protect collective.",
-          "I will take a broad, immediate action to stabilize fast and measure impact after deployment, accepting higher risk to collective to secure individual under the deadline."
+          "I will choose a narrow, time-boxed authorization with explicit human override, subgroup monitoring, and a hard stop if harm indicators rise—accepting slower relief to protect collective.",
+          "I will choose a broad immediate authorization to stabilize outcomes fast, with transparent metrics and rapid correction afterward—accepting higher risk to collective to secure individual before the window closes."
         ],
-        "call_to_action": "The deadline is before regulators arrive. Evidence is partial. Priya Kowalski must decide under individual vs collective. What does Priya Kowalski do?"
+        "call_to_action": "The next automated step is minutes away. With partial evidence, Priya Kowalski must decide under individual versus collective. What does Priya Kowalski do?"
       }
     },
     {
